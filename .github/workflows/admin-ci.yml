@@ -1,0 +1,38 @@
+name: admin-ci
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'admin/**'
+      - '.github/workflows/admin-ci.yml'
+  pull_request:
+    paths:
+      - 'admin/**'
+      - '.github/workflows/admin-ci.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: admin/package-lock.json
+
+      - name: Install dependencies
+        working-directory: admin
+        run: npm ci
+
+      - name: Lint
+        working-directory: admin
+        run: npm run lint || true   # TODO(stage-1): enable strict lint
+
+      - name: Build
+        working-directory: admin
+        run: npm run build
