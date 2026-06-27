@@ -28,4 +28,7 @@ class RouteNames {
   static const about = 'about';
   static const maintenance = 'maintenance';
   static const notFound = 'not_found';
+  // Onboarding
+  static const onboarding = 'onboarding';
+  static const privacyConsent = 'privacy_consent';
 }

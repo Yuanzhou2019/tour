@@ -12,6 +12,12 @@
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 
+import '../../features/onboarding/data/repositories/onboarding_repository_impl.dart'
+    as _i1;
+import '../../features/onboarding/domain/repositories/onboarding_repository.dart'
+    as _i2;
+import '../../features/onboarding/presentation/cubit/first_run_settings_cubit.dart'
+    as _i3;
 import '../i18n/locale_cubit.dart' as _i734;
 import '../network/dio_client.dart' as _i667;
 import '../network/interceptors/auth_interceptor.dart' as _i745;
@@ -32,6 +38,12 @@ extension GetItInjectableX on _i174.GetIt {
       environment,
       environmentFilter,
     );
+    gh.lazySingleton<_i1.OnboardingRepositoryImpl>(
+        () => _i1.OnboardingRepositoryImpl());
+    gh.lazySingleton<_i2.OnboardingRepository>(
+        () => gh<_i1.OnboardingRepositoryImpl>());
+    gh.lazySingleton<_i3.FirstRunSettingsCubit>(
+        () => _i3.FirstRunSettingsCubit());
     gh.lazySingleton<_i734.LocaleCubit>(() => _i734.LocaleCubit());
     gh.lazySingleton<_i745.AuthInterceptor>(() => _i745.AuthInterceptor());
     gh.lazySingleton<_i511.ErrorInterceptor>(() => _i511.ErrorInterceptor());
