@@ -12,6 +12,12 @@
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 
+import '../../features/feedback/data/repositories/feedback_repository_impl.dart'
+    as _i4;
+import '../../features/feedback/domain/repositories/feedback_repository.dart'
+    as _i5;
+import '../../features/feedback/presentation/cubit/feedback_form_cubit.dart'
+    as _i6;
 import '../../features/onboarding/data/repositories/onboarding_repository_impl.dart'
     as _i1;
 import '../../features/onboarding/domain/repositories/onboarding_repository.dart'
@@ -44,6 +50,12 @@ extension GetItInjectableX on _i174.GetIt {
         () => gh<_i1.OnboardingRepositoryImpl>());
     gh.lazySingleton<_i3.FirstRunSettingsCubit>(
         () => _i3.FirstRunSettingsCubit());
+    gh.lazySingleton<_i4.FeedbackRepositoryImpl>(
+        () => _i4.FeedbackRepositoryImpl(gh<_i667.DioClient>()));
+    gh.lazySingleton<_i5.FeedbackRepository>(
+        () => gh<_i4.FeedbackRepositoryImpl>());
+    gh.factory<_i6.FeedbackFormCubit>(
+        () => _i6.FeedbackFormCubit(gh<_i5.FeedbackRepository>()));
     gh.lazySingleton<_i734.LocaleCubit>(() => _i734.LocaleCubit());
     gh.lazySingleton<_i745.AuthInterceptor>(() => _i745.AuthInterceptor());
     gh.lazySingleton<_i511.ErrorInterceptor>(() => _i511.ErrorInterceptor());

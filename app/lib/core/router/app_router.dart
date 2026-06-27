@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/discover/presentation/pages/discover_page.dart';
+import '../../features/feedback/presentation/pages/feedback_form_page.dart';
 import '../../features/map/presentation/pages/map_page.dart';
 import '../../features/onboarding/domain/repositories/onboarding_repository.dart';
 import '../../features/onboarding/presentation/pages/onboarding_flow_page.dart';
@@ -143,6 +144,16 @@ final appRouter = GoRouter(
           path: '/you',
           name: RouteNames.you,
           builder: (_, __) => const YouPage(),
+          routes: <RouteBase>[
+            GoRoute(
+              path: 'feedback',
+              name: RouteNames.feedback,
+              pageBuilder: (_, __) => const MaterialPage(
+                fullscreenDialog: true,
+                child: FeedbackFormPage(),
+              ),
+            ),
+          ],
         ),
       ],
     ),

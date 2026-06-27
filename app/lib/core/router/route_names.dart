@@ -18,6 +18,7 @@ class RouteNames {
   static const phrasesCategory = 'phrases_category';
   static const emergency = 'emergency';
   static const profile = 'profile';
+  static const feedback = 'feedback';
   // Modal
   static const modalCorrection = 'modal_correction';
   static const modalFilter = 'modal_filter';
