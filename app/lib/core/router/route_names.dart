@@ -31,4 +31,5 @@ class RouteNames {
   // Onboarding
   static const onboarding = 'onboarding';
   static const privacyConsent = 'privacy_consent';
+  static const onboardingComplete = 'onboarding_complete';
 }

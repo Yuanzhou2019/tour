@@ -5,6 +5,7 @@ import 'package:path_provider_platform_interface/path_provider_platform_interfac
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'package:sightour/app.dart';
 import 'package:sightour/core/di/injection.dart';
+import 'package:sightour/features/onboarding/domain/repositories/onboarding_repository.dart';
 
 class _FakePathProvider extends PathProviderPlatform with MockPlatformInterfaceMixin {
   @override
@@ -21,6 +22,8 @@ void main() {
     Hive.init(testPath);
     await Hive.openBox('prefs');
     await configureDependencies();
+    // Skip onboarding redirect for the legacy widget test.
+    await getIt<OnboardingRepository>().markCompleted();
   });
 
   testWidgets('SightourApp launches with Prepare tab and Coming Soon content',

@@ -3,18 +3,46 @@ import 'package:go_router/go_router.dart';
 
 import '../../features/discover/presentation/pages/discover_page.dart';
 import '../../features/map/presentation/pages/map_page.dart';
+import '../../features/onboarding/domain/repositories/onboarding_repository.dart';
+import '../../features/onboarding/presentation/pages/onboarding_flow_page.dart';
+import '../../features/onboarding/presentation/pages/privacy_consent_page.dart';
 import '../../features/prepare/presentation/pages/prepare_page.dart';
 import '../../features/tools/presentation/pages/tools_page.dart';
 import '../../features/you/presentation/pages/you_page.dart';
 import '../../shared/pages/coming_soon_page.dart';
 import '../../shared/pages/not_found_page.dart';
+import '../di/injection.dart';
 import 'main_shell.dart';
+import 'route_guards.dart';
 import 'route_names.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/prepare',
   debugLogDiagnostics: true,
+  redirect: (ctx, state) => onboardingRedirect(ctx, state),
   routes: <RouteBase>[
+    GoRoute(
+      path: '/onboarding',
+      name: RouteNames.onboarding,
+      builder: (_, __) => const OnboardingFlowPage(),
+      routes: [
+        GoRoute(
+          path: 'privacy',
+          name: RouteNames.privacyConsent,
+          builder: (_, __) => const PrivacyConsentPage(),
+        ),
+        GoRoute(
+          path: 'complete',
+          name: RouteNames.onboardingComplete,
+          builder: (_, state) {
+            // Side effect: mark completed
+            final repo = getIt<OnboardingRepository>();
+            repo.markCompleted();
+            return const _OnboardingCompletePage();
+          },
+        ),
+      ],
+    ),
     ShellRoute(
       builder: (context, state, child) => MainShell(child: child),
       routes: <RouteBase>[
@@ -38,7 +66,8 @@ final appRouter = GoRouter(
             GoRoute(
               path: 'offline',
               name: RouteNames.offlineDownloads,
-              builder: (_, __) => const ComingSoonPage(title: 'Offline downloads'),
+              builder: (_, __) =>
+                  const ComingSoonPage(title: 'Offline downloads'),
             ),
           ],
         ),
@@ -178,3 +207,18 @@ final appRouter = GoRouter(
   ],
   errorBuilder: (_, state) => NotFoundPage(error: state.error),
 );
+
+class _OnboardingCompletePage extends StatelessWidget {
+  const _OnboardingCompletePage();
+
+  @override
+  Widget build(BuildContext context) {
+    // 短暂展示后跳到 /prepare
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.go('/prepare');
+    });
+    return const Scaffold(
+      body: Center(child: CircularProgressIndicator()),
+    );
+  }
+}
