@@ -1,0 +1,55 @@
+# ===== Flutter / Dart =====
+**/Pods/
+**/.symlinks/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
+**/*.iml
+**/*.lock-info
+**/ios/Flutter/Generated.xcconfig
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral/
+**/windows/flutter/ephemeral/
+**/.idea/
+
+# ===== Node / npm =====
+**/node_modules/
+**/dist/
+**/.next/
+**/out/
+**/.env
+**/.env.*
+!**/.env.example
+**/*.log
+**/coverage/
+
+# ===== Java / JVM =====
+**/*.class
+**/*.jar
+**/hs_err_pid*
+**/replay_pid*
+
+# ===== IDE =====
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ===== Project-specific =====
+# 阶段三 PGC 内容不进入 git（P0 阶段不写入）
+content-ops/**/*.csv
+content-ops/**/*.xlsx
+
+# 阶段四之前的临时设计稿
+prototype/explorations/

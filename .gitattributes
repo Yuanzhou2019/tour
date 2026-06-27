@@ -1,0 +1,33 @@
+* text=auto eol=lf
+
+# 强制 LF（开发工具跨平台时换行统一）
+*.dart        eol=lf
+*.ts          eol=lf
+*.tsx         eol=lf
+*.js          eol=lf
+*.jsx         eol=lf
+*.json        eol=lf
+*.yml         eol=lf
+*.yaml        eol=lf
+*.md          eol=lf
+*.arb         eol=lf
+*.css         eol=lf
+*.scss        eol=lf
+*.html        eol=lf
+*.sh          eol=lf
+
+# 二进制
+*.png         binary
+*.jpg         binary
+*.jpeg        binary
+*.gif         binary
+*.ico         binary
+*.webp        binary
+*.woff        binary
+*.woff2       binary
+*.ttf         binary
+*.otf         binary
+*.pdf         binary
+*.zip         binary
+*.tar         binary
+*.gz          binary
