@@ -1,0 +1,32 @@
+{
+  "appTitle": "Sightour",
+
+  "tabPrepare": "行前",
+  "tabMap": "地图",
+  "tabDiscover": "发现",
+  "tabTools": "工具",
+  "tabYou": "我的",
+
+  "commonConfirm": "确认",
+  "commonCancel": "取消",
+  "commonRetry": "重试",
+  "commonError": "出错了",
+  "commonLoading": "加载中…",
+  "commonComingSoon": "敬请期待",
+  "commonOffline": "离线模式",
+
+  "prepareTitle": "行前准备 · {nationality}",
+  "@prepareTitle": {
+    "placeholders": { "nationality": { "type": "String" } }
+  },
+
+  "mapTitle": "地图",
+  "mapSearchHint": "搜索地点、地址、交通",
+
+  "discoverTitle": "发现上海",
+  "toolsTitle": "工具",
+  "youTitle": "我的",
+
+  "policyVisaFree": "30 天免签入境",
+  "policyTransit": "240 小时过境免签"
+}

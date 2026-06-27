@@ -1,0 +1,32 @@
+{
+  "appTitle": "Sightour",
+
+  "tabPrepare": "Prepare",
+  "tabMap": "Map",
+  "tabDiscover": "Discover",
+  "tabTools": "Tools",
+  "tabYou": "You",
+
+  "commonConfirm": "Confirm",
+  "commonCancel": "Cancel",
+  "commonRetry": "Try again",
+  "commonError": "Something went wrong",
+  "commonLoading": "Loading…",
+  "commonComingSoon": "Coming soon",
+  "commonOffline": "You're offline",
+
+  "prepareTitle": "Prepare · {nationality}",
+  "@prepareTitle": {
+    "placeholders": { "nationality": { "type": "String" } }
+  },
+
+  "mapTitle": "Map",
+  "mapSearchHint": "Search places, addresses, transit",
+
+  "discoverTitle": "Discover Shanghai",
+  "toolsTitle": "Tools",
+  "youTitle": "You",
+
+  "policyVisaFree": "30-day visa-free entry",
+  "policyTransit": "240-hour visa-free transit"
+}
