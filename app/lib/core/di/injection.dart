@@ -1,9 +1,13 @@
 import 'package:get_it/get_it.dart';
+import 'package:injectable/injectable.dart';
 
-/// Global service locator. See [Architecture Spec §3.5].
-final GetIt getIt = GetIt.instance;
+import 'injection.config.dart';
 
-Future<void> configureDependencies() async {
-  // TODO(stage-1): register blocs, repositories, datasources, services
-  // TODO(stage-1): @injectableInit will replace this with generated config
-}
+final getIt = GetIt.instance;
+
+@InjectableInit(
+  initializerName: 'init',
+  preferRelativeImports: true,
+  asExtension: true,
+)
+Future<void> configureDependencies() async => getIt.init();

@@ -1,11 +1,34 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:hive_ce/hive.dart';
+import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'package:sightour/app.dart';
+import 'package:sightour/core/di/injection.dart';
+
+class _FakePathProvider extends PathProviderPlatform with MockPlatformInterfaceMixin {
+  @override
+  Future<String?> getApplicationDocumentsPath() async => '.dart_test/app_docs_widget';
+  @override
+  Future<String?> getTemporaryPath() async => '.dart_test/tmp_widget';
+}
 
 void main() {
-  testWidgets('SightourApp renders scaffold ready text on home route',
-      (WidgetTester tester) async {
+  setUpAll(() async {
+    PathProviderPlatform.instance = _FakePathProvider();
+    Hive.init('.dart_test/hive_widget');
+    await configureDependencies();
+  });
+
+  testWidgets('SightourApp launches with Prepare tab and Coming Soon content',
+      (tester) async {
     await tester.pumpWidget(const SightourApp());
-    await tester.pump(); // Let FutureBuilder complete
-    expect(find.text('Sightour scaffold ready'), findsOneWidget);
+    await tester.pump();
+    // Prepare title from AppLocalizations
+    expect(find.text('Prepare · US'), findsOneWidget);
+    // Coming soon body
+    expect(find.text('Coming soon'), findsOneWidget);
+    // Bottom nav with 5 tabs
+    expect(find.byType(BottomNavigationBar), findsOneWidget);
   });
 }

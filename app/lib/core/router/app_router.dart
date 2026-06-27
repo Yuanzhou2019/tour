@@ -1,16 +1,180 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../features/onboarding/presentation/pages/home_page.dart';
+import '../../features/discover/presentation/pages/discover_page.dart';
+import '../../features/map/presentation/pages/map_page.dart';
+import '../../features/prepare/presentation/pages/prepare_page.dart';
+import '../../features/tools/presentation/pages/tools_page.dart';
+import '../../features/you/presentation/pages/you_page.dart';
+import '../../shared/pages/coming_soon_page.dart';
+import '../../shared/pages/not_found_page.dart';
+import 'main_shell.dart';
+import 'route_names.dart';
 
 final appRouter = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/prepare',
+  debugLogDiagnostics: true,
   routes: <RouteBase>[
+    ShellRoute(
+      builder: (context, state, child) => MainShell(child: child),
+      routes: <RouteBase>[
+        GoRoute(
+          path: '/prepare',
+          name: RouteNames.prepare,
+          builder: (_, __) => const PreparePage(),
+          routes: <RouteBase>[
+            GoRoute(
+              path: 'policy/:id',
+              name: RouteNames.policyDetail,
+              builder: (_, state) => ComingSoonPage(
+                title: 'Policy · ${state.pathParameters['id']}',
+              ),
+            ),
+            GoRoute(
+              path: 'checklist',
+              name: RouteNames.checklist,
+              builder: (_, __) => const ComingSoonPage(title: 'Checklist'),
+            ),
+            GoRoute(
+              path: 'offline',
+              name: RouteNames.offlineDownloads,
+              builder: (_, __) => const ComingSoonPage(title: 'Offline downloads'),
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/map',
+          name: RouteNames.map,
+          builder: (_, __) => const MapPage(),
+          routes: <RouteBase>[
+            GoRoute(
+              path: 'poi/:id',
+              name: RouteNames.poiDetail,
+              builder: (_, state) => ComingSoonPage(
+                title: 'POI · ${state.pathParameters['id']}',
+              ),
+              routes: <RouteBase>[
+                GoRoute(
+                  path: 'reputation',
+                  name: RouteNames.poiReputation,
+                  builder: (_, state) => ComingSoonPage(
+                    title: 'Reputation · ${state.pathParameters['id']}',
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/discover',
+          name: RouteNames.discover,
+          builder: (_, __) => const DiscoverPage(),
+          routes: <RouteBase>[
+            GoRoute(
+              path: ':category',
+              name: RouteNames.rankCategory,
+              builder: (_, state) => ComingSoonPage(
+                title: 'Rank · ${state.pathParameters['category']}',
+              ),
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/tools',
+          name: RouteNames.tools,
+          builder: (_, __) => const ToolsPage(),
+          routes: <RouteBase>[
+            GoRoute(
+              path: 'fx',
+              name: RouteNames.fxConverter,
+              builder: (_, __) => const ComingSoonPage(title: 'FX converter'),
+            ),
+            GoRoute(
+              path: 'phrases',
+              name: RouteNames.phrasesIndex,
+              builder: (_, __) => const ComingSoonPage(title: 'Phrases'),
+              routes: <RouteBase>[
+                GoRoute(
+                  path: ':category',
+                  name: RouteNames.phrasesCategory,
+                  builder: (_, state) => ComingSoonPage(
+                    title: 'Phrases · ${state.pathParameters['category']}',
+                  ),
+                ),
+              ],
+            ),
+            GoRoute(
+              path: 'emergency',
+              name: RouteNames.emergency,
+              builder: (_, __) => const ComingSoonPage(title: 'Emergency'),
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/you',
+          name: RouteNames.you,
+          builder: (_, __) => const YouPage(),
+        ),
+      ],
+    ),
+
+    // Modal
     GoRoute(
-      path: '/',
-      name: 'home',
-      builder: (BuildContext context, GoRouterState state) =>
-          const HomePage(),
+      path: '/modal/correction',
+      name: RouteNames.modalCorrection,
+      pageBuilder: (_, state) => MaterialPage(
+        fullscreenDialog: true,
+        child: ComingSoonPage(
+          title: 'Correction${state.uri.queryParameters['poiId'] != null ? ' · ${state.uri.queryParameters['poiId']}' : ''}',
+        ),
+      ),
+    ),
+    GoRoute(
+      path: '/modal/filter',
+      name: RouteNames.modalFilter,
+      pageBuilder: (_, __) => const MaterialPage(
+        fullscreenDialog: true,
+        child: ComingSoonPage(title: 'Filter'),
+      ),
+    ),
+    GoRoute(
+      path: '/modal/country',
+      name: RouteNames.modalCountry,
+      pageBuilder: (_, __) => const MaterialPage(
+        fullscreenDialog: true,
+        child: ComingSoonPage(title: 'Country'),
+      ),
+    ),
+    GoRoute(
+      path: '/modal/language',
+      name: RouteNames.modalLanguage,
+      pageBuilder: (_, __) => const MaterialPage(
+        fullscreenDialog: true,
+        child: ComingSoonPage(title: 'Language'),
+      ),
+    ),
+
+    // Full
+    GoRoute(
+      path: '/full/privacy',
+      name: RouteNames.privacy,
+      builder: (_, __) => const ComingSoonPage(title: 'Privacy policy'),
+    ),
+    GoRoute(
+      path: '/full/about',
+      name: RouteNames.about,
+      builder: (_, __) => const ComingSoonPage(title: 'About'),
+    ),
+    GoRoute(
+      path: '/full/maintenance',
+      name: RouteNames.maintenance,
+      builder: (_, __) => const ComingSoonPage(title: 'Maintenance'),
+    ),
+    GoRoute(
+      path: '/full/not-found',
+      name: RouteNames.notFound,
+      builder: (_, __) => const NotFoundPage(),
     ),
   ],
+  errorBuilder: (_, state) => NotFoundPage(error: state.error),
 );
