@@ -165,4 +165,43 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get privacyEnter => '进入 Sightour';
+
+  @override
+  String get youProfileAnonymousId => '设备 ID';
+
+  @override
+  String get youPreferences => '偏好设置';
+
+  @override
+  String get youFeedback => '发送反馈';
+
+  @override
+  String get youPreferencesComingSoon => '偏好设置（敬请期待）';
+
+  @override
+  String get feedbackTitle => '发送反馈';
+
+  @override
+  String get feedbackTypeLabel => '这是什么类型？';
+
+  @override
+  String get feedbackMessageLabel => '详细说明';
+
+  @override
+  String get feedbackMessageHint => '告诉我们发生了什么，或你想看到什么。（最少 10 字）';
+
+  @override
+  String get feedbackSubmit => '发送';
+
+  @override
+  String get feedbackSubmitting => '发送中…';
+
+  @override
+  String get feedbackSuccess => '感谢！我们已收到你的反馈。';
+
+  @override
+  String get feedbackErrorTitle => '发送失败';
+
+  @override
+  String get feedbackRetry => '重试';
 }

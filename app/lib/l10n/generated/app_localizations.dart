@@ -409,6 +409,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter Sightour'**
   String get privacyEnter;
+
+  /// No description provided for @youProfileAnonymousId.
+  ///
+  /// In en, this message translates to:
+  /// **'Device ID'**
+  String get youProfileAnonymousId;
+
+  /// No description provided for @youPreferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences'**
+  String get youPreferences;
+
+  /// No description provided for @youFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Send feedback'**
+  String get youFeedback;
+
+  /// No description provided for @youPreferencesComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences (coming soon)'**
+  String get youPreferencesComingSoon;
+
+  /// No description provided for @feedbackTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Send feedback'**
+  String get feedbackTitle;
+
+  /// No description provided for @feedbackTypeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'What is this about?'**
+  String get feedbackTypeLabel;
+
+  /// No description provided for @feedbackMessageLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us more'**
+  String get feedbackMessageLabel;
+
+  /// No description provided for @feedbackMessageHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Share what happened, or what you\'d like to see. (min 10 chars)'**
+  String get feedbackMessageHint;
+
+  /// No description provided for @feedbackSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get feedbackSubmit;
+
+  /// No description provided for @feedbackSubmitting.
+  ///
+  /// In en, this message translates to:
+  /// **'Sending…'**
+  String get feedbackSubmitting;
+
+  /// No description provided for @feedbackSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks! We received your feedback.'**
+  String get feedbackSuccess;
+
+  /// No description provided for @feedbackErrorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not send'**
+  String get feedbackErrorTitle;
+
+  /// No description provided for @feedbackRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get feedbackRetry;
 }
 
 class _AppLocalizationsDelegate

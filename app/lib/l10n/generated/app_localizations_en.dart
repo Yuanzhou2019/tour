@@ -177,4 +177,44 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacyEnter => 'Enter Sightour';
+
+  @override
+  String get youProfileAnonymousId => 'Device ID';
+
+  @override
+  String get youPreferences => 'Preferences';
+
+  @override
+  String get youFeedback => 'Send feedback';
+
+  @override
+  String get youPreferencesComingSoon => 'Preferences (coming soon)';
+
+  @override
+  String get feedbackTitle => 'Send feedback';
+
+  @override
+  String get feedbackTypeLabel => 'What is this about?';
+
+  @override
+  String get feedbackMessageLabel => 'Tell us more';
+
+  @override
+  String get feedbackMessageHint =>
+      'Share what happened, or what you\'d like to see. (min 10 chars)';
+
+  @override
+  String get feedbackSubmit => 'Send';
+
+  @override
+  String get feedbackSubmitting => 'Sending…';
+
+  @override
+  String get feedbackSuccess => 'Thanks! We received your feedback.';
+
+  @override
+  String get feedbackErrorTitle => 'Could not send';
+
+  @override
+  String get feedbackRetry => 'Try again';
 }

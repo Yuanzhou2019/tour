@@ -63,5 +63,20 @@
   "privacyPoint6": "阅读完整隐私政策",
   "privacyAgree": "我已阅读并同意隐私政策",
   "privacyTermsAgree": "我同意服务条款",
-  "privacyEnter": "进入 Sightour"
+  "privacyEnter": "进入 Sightour",
+
+  "youProfileAnonymousId": "设备 ID",
+  "youPreferences": "偏好设置",
+  "youFeedback": "发送反馈",
+  "youPreferencesComingSoon": "偏好设置（敬请期待）",
+
+  "feedbackTitle": "发送反馈",
+  "feedbackTypeLabel": "这是什么类型？",
+  "feedbackMessageLabel": "详细说明",
+  "feedbackMessageHint": "告诉我们发生了什么，或你想看到什么。（最少 10 字）",
+  "feedbackSubmit": "发送",
+  "feedbackSubmitting": "发送中…",
+  "feedbackSuccess": "感谢！我们已收到你的反馈。",
+  "feedbackErrorTitle": "发送失败",
+  "feedbackRetry": "重试"
 }

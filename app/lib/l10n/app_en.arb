@@ -63,5 +63,20 @@
   "privacyPoint6": "Read the full privacy policy",
   "privacyAgree": "I have read and agree to the privacy policy",
   "privacyTermsAgree": "I agree to the terms of service",
-  "privacyEnter": "Enter Sightour"
+  "privacyEnter": "Enter Sightour",
+
+  "youProfileAnonymousId": "Device ID",
+  "youPreferences": "Preferences",
+  "youFeedback": "Send feedback",
+  "youPreferencesComingSoon": "Preferences (coming soon)",
+
+  "feedbackTitle": "Send feedback",
+  "feedbackTypeLabel": "What is this about?",
+  "feedbackMessageLabel": "Tell us more",
+  "feedbackMessageHint": "Share what happened, or what you'd like to see. (min 10 chars)",
+  "feedbackSubmit": "Send",
+  "feedbackSubmitting": "Sending…",
+  "feedbackSuccess": "Thanks! We received your feedback.",
+  "feedbackErrorTitle": "Could not send",
+  "feedbackRetry": "Try again"
 }
