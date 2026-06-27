@@ -16,7 +16,10 @@ class _FakePathProvider extends PathProviderPlatform with MockPlatformInterfaceM
 void main() {
   setUpAll(() async {
     PathProviderPlatform.instance = _FakePathProvider();
-    Hive.init('.dart_test/hive_widget');
+    final testPath =
+        '.dart_test/hive_widget_${DateTime.now().microsecondsSinceEpoch}';
+    Hive.init(testPath);
+    await Hive.openBox('prefs');
     await configureDependencies();
   });
 
@@ -24,11 +27,8 @@ void main() {
       (tester) async {
     await tester.pumpWidget(const SightourApp());
     await tester.pump();
-    // Prepare title from AppLocalizations
     expect(find.text('Prepare · US'), findsOneWidget);
-    // Coming soon body
     expect(find.text('Coming soon'), findsOneWidget);
-    // Bottom nav with 5 tabs
     expect(find.byType(BottomNavigationBar), findsOneWidget);
   });
 }
