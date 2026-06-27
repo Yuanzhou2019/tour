@@ -51,9 +51,9 @@ dependencies:
   package_info_plus: ^10.2.0
   shared_preferences: ^2.3.0
 
-  # 地图（高德）
-  amap_flutter_map: ^3.0.0
-  amap_flutter_location: ^3.0.0
+  # 地图（高德，阶段三启用）
+  # amap_flutter_map: ^3.0.0
+  # amap_flutter_location: ^3.0.0
 
   # UI
   cached_network_image: ^3.4.0
