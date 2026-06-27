@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:sightour/core/theme/app_theme.dart';
+import 'package:sightour/core/theme/app_colors.dart';
 
 /// Placeholder home page for Stage 0 scaffold.
 ///
