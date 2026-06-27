@@ -176,6 +176,18 @@ abstract class AppLocalizations {
   /// **'You\'re offline'**
   String get commonOffline;
 
+  /// No description provided for @commonNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get commonNext;
+
+  /// No description provided for @commonGetStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Get started'**
+  String get commonGetStarted;
+
   /// No description provided for @prepareTitle.
   ///
   /// In en, this message translates to:
@@ -223,6 +235,180 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'240-hour visa-free transit'**
   String get policyTransit;
+
+  /// No description provided for @onboardingWelcomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Sightour'**
+  String get onboardingWelcomeTitle;
+
+  /// No description provided for @onboardingWelcomeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your private guide to Shanghai. Built for visitors, no account needed.'**
+  String get onboardingWelcomeSubtitle;
+
+  /// No description provided for @onboardingFeaturesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Everything you need, in one place'**
+  String get onboardingFeaturesTitle;
+
+  /// No description provided for @onboardingFeaturesPrepareTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prepare before you fly'**
+  String get onboardingFeaturesPrepareTitle;
+
+  /// No description provided for @onboardingFeaturesPrepareDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Visa, currency, weather — answered in 30 seconds for your passport.'**
+  String get onboardingFeaturesPrepareDesc;
+
+  /// No description provided for @onboardingFeaturesMapTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Map that respects you'**
+  String get onboardingFeaturesMapTitle;
+
+  /// No description provided for @onboardingFeaturesMapDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap an attraction, get an honest read from local visitors.'**
+  String get onboardingFeaturesMapDesc;
+
+  /// No description provided for @onboardingFeaturesDiscoverTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover what\'s actually good'**
+  String get onboardingFeaturesDiscoverTitle;
+
+  /// No description provided for @onboardingFeaturesDiscoverDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Curated lists — not SEO-spam rankings.'**
+  String get onboardingFeaturesDiscoverDesc;
+
+  /// No description provided for @onboardingFeaturesToolsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools that work offline'**
+  String get onboardingFeaturesToolsTitle;
+
+  /// No description provided for @onboardingFeaturesToolsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Phrases, FX, emergency numbers — when Wi-Fi is dead.'**
+  String get onboardingFeaturesToolsDesc;
+
+  /// No description provided for @onboardingSettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick setup'**
+  String get onboardingSettingsTitle;
+
+  /// No description provided for @onboardingSettingsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ll tailor Sightour to you. You can change any of this later.'**
+  String get onboardingSettingsSubtitle;
+
+  /// No description provided for @onboardingSettingsLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get onboardingSettingsLanguage;
+
+  /// No description provided for @onboardingSettingsTheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get onboardingSettingsTheme;
+
+  /// No description provided for @onboardingSettingsCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Your passport country'**
+  String get onboardingSettingsCountry;
+
+  /// No description provided for @onboardingSettingsUnit.
+  ///
+  /// In en, this message translates to:
+  /// **'Units'**
+  String get onboardingSettingsUnit;
+
+  /// No description provided for @onboardingSettingsCountryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your country'**
+  String get onboardingSettingsCountryHint;
+
+  /// No description provided for @privacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy & terms'**
+  String get privacyTitle;
+
+  /// No description provided for @privacyIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Sightour is built for visitors. Here\'s what we do — and don\'t do — with your data.'**
+  String get privacyIntro;
+
+  /// No description provided for @privacyPoint1.
+  ///
+  /// In en, this message translates to:
+  /// **'No account, no login, no email required.'**
+  String get privacyPoint1;
+
+  /// No description provided for @privacyPoint2.
+  ///
+  /// In en, this message translates to:
+  /// **'An anonymous device ID is generated to remember your settings. Nothing else.'**
+  String get privacyPoint2;
+
+  /// No description provided for @privacyPoint3.
+  ///
+  /// In en, this message translates to:
+  /// **'Your checklist and favorites are stored on this device only.'**
+  String get privacyPoint3;
+
+  /// No description provided for @privacyPoint4.
+  ///
+  /// In en, this message translates to:
+  /// **'You choose whether error reports include your location.'**
+  String get privacyPoint4;
+
+  /// No description provided for @privacyPoint5.
+  ///
+  /// In en, this message translates to:
+  /// **'Correction submissions are anonymous unless you sign them.'**
+  String get privacyPoint5;
+
+  /// No description provided for @privacyPoint6.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the full privacy policy'**
+  String get privacyPoint6;
+
+  /// No description provided for @privacyAgree.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read and agree to the privacy policy'**
+  String get privacyAgree;
+
+  /// No description provided for @privacyTermsAgree.
+  ///
+  /// In en, this message translates to:
+  /// **'I agree to the terms of service'**
+  String get privacyTermsAgree;
+
+  /// No description provided for @privacyEnter.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Sightour'**
+  String get privacyEnter;
 }
 
 class _AppLocalizationsDelegate

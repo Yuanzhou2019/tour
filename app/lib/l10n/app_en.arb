@@ -14,6 +14,8 @@
   "commonLoading": "Loading…",
   "commonComingSoon": "Coming soon",
   "commonOffline": "You're offline",
+  "commonNext": "Next",
+  "commonGetStarted": "Get started",
 
   "prepareTitle": "Prepare · {nationality}",
   "@prepareTitle": {
@@ -28,5 +30,38 @@
   "youTitle": "You",
 
   "policyVisaFree": "30-day visa-free entry",
-  "policyTransit": "240-hour visa-free transit"
+  "policyTransit": "240-hour visa-free transit",
+
+  "onboardingWelcomeTitle": "Welcome to Sightour",
+  "onboardingWelcomeSubtitle": "Your private guide to Shanghai. Built for visitors, no account needed.",
+
+  "onboardingFeaturesTitle": "Everything you need, in one place",
+  "onboardingFeaturesPrepareTitle": "Prepare before you fly",
+  "onboardingFeaturesPrepareDesc": "Visa, currency, weather — answered in 30 seconds for your passport.",
+  "onboardingFeaturesMapTitle": "Map that respects you",
+  "onboardingFeaturesMapDesc": "Tap an attraction, get an honest read from local visitors.",
+  "onboardingFeaturesDiscoverTitle": "Discover what's actually good",
+  "onboardingFeaturesDiscoverDesc": "Curated lists — not SEO-spam rankings.",
+  "onboardingFeaturesToolsTitle": "Tools that work offline",
+  "onboardingFeaturesToolsDesc": "Phrases, FX, emergency numbers — when Wi-Fi is dead.",
+
+  "onboardingSettingsTitle": "Quick setup",
+  "onboardingSettingsSubtitle": "We'll tailor Sightour to you. You can change any of this later.",
+  "onboardingSettingsLanguage": "Language",
+  "onboardingSettingsTheme": "Appearance",
+  "onboardingSettingsCountry": "Your passport country",
+  "onboardingSettingsUnit": "Units",
+  "onboardingSettingsCountryHint": "Select your country",
+
+  "privacyTitle": "Privacy & terms",
+  "privacyIntro": "Sightour is built for visitors. Here's what we do — and don't do — with your data.",
+  "privacyPoint1": "No account, no login, no email required.",
+  "privacyPoint2": "An anonymous device ID is generated to remember your settings. Nothing else.",
+  "privacyPoint3": "Your checklist and favorites are stored on this device only.",
+  "privacyPoint4": "You choose whether error reports include your location.",
+  "privacyPoint5": "Correction submissions are anonymous unless you sign them.",
+  "privacyPoint6": "Read the full privacy policy",
+  "privacyAgree": "I have read and agree to the privacy policy",
+  "privacyTermsAgree": "I agree to the terms of service",
+  "privacyEnter": "Enter Sightour"
 }
