@@ -59,16 +59,129 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get prepareSectionPolicies => 'What you need to know';
+
+  @override
+  String get prepareSectionChecklist => 'Pre-arrival checklist';
+
+  @override
+  String get prepareSectionDownloads => 'Offline downloads';
+
+  @override
+  String prepareNoPolicies(String country) {
+    return 'No policy info for $country yet';
+  }
+
+  @override
+  String get prepareDownloadToast => 'Download will start soon';
+
+  @override
+  String get prepareOfflineShanghai => 'Shanghai core pack';
+
+  @override
+  String get prepareOfflineShanghaiDesc => '12 MB · maps + phrases + emergency';
+
+  @override
+  String get prepareChecklistPassport => 'Passport valid 6+ months';
+
+  @override
+  String get prepareChecklistCash => 'Cash on hand (¥2000+)';
+
+  @override
+  String get prepareChecklistEmergency => 'Emergency contacts saved';
+
+  @override
+  String get prepareChecklistOffline => 'Offline pack downloaded';
+
+  @override
   String get mapTitle => 'Map';
 
   @override
   String get mapSearchHint => 'Search places, addresses, transit';
 
   @override
+  String get mapCategoryAll => 'All';
+
+  @override
+  String get mapCategoryAttraction => 'Sights';
+
+  @override
+  String get mapCategoryDining => 'Eat';
+
+  @override
+  String get mapCategoryLodging => 'Stay';
+
+  @override
+  String get mapCategoryShopping => 'Shop';
+
+  @override
+  String get mapEmpty => 'No results in this area';
+
+  @override
+  String mapDistanceAway(String km) {
+    return '$km km away';
+  }
+
+  @override
   String get discoverTitle => 'Discover Shanghai';
 
   @override
+  String get discoverTabCurated => 'Curated';
+
+  @override
+  String get discoverTabAuthentic => 'Authentic';
+
+  @override
+  String get discoverTabHeadsUp => 'Heads-up';
+
+  @override
+  String get discoverEmpty => 'Nothing here yet';
+
+  @override
   String get toolsTitle => 'Tools';
+
+  @override
+  String get toolsFxTitle => 'Live currency';
+
+  @override
+  String get toolsFxFrom => 'From';
+
+  @override
+  String get toolsFxTo => 'To';
+
+  @override
+  String get toolsFxAmount => 'Amount';
+
+  @override
+  String toolsFxRate(String from, String rate, String to) {
+    return '1 $from = $rate $to';
+  }
+
+  @override
+  String get toolsAllTools => 'All tools';
+
+  @override
+  String toolsComingSoon(String tool) {
+    return '$tool is coming soon';
+  }
+
+  @override
+  String get toolsToolPhrases => 'Phrase book';
+
+  @override
+  String get toolsToolEmergency => 'Emergency contacts';
+
+  @override
+  String get toolsToolUnits => 'Unit converter';
+
+  @override
+  String get toolsToolTimezone => 'Time zone';
+
+  @override
+  String get toolsToolOffline => 'Offline pack';
+
+  @override
+  String get toolsToolTranslate => 'Translate assistant';
 
   @override
   String get youTitle => 'You';

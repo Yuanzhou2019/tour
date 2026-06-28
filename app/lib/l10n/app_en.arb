@@ -21,12 +21,65 @@
   "@prepareTitle": {
     "placeholders": { "nationality": { "type": "String" } }
   },
+  "prepareSectionPolicies": "What you need to know",
+  "prepareSectionChecklist": "Pre-arrival checklist",
+  "prepareSectionDownloads": "Offline downloads",
+  "prepareNoPolicies": "No policy info for {country} yet",
+  "@prepareNoPolicies": {
+    "placeholders": { "country": { "type": "String" } }
+  },
+  "prepareDownloadToast": "Download will start soon",
+  "prepareOfflineShanghai": "Shanghai core pack",
+  "prepareOfflineShanghaiDesc": "12 MB · maps + phrases + emergency",
+  "prepareChecklistPassport": "Passport valid 6+ months",
+  "prepareChecklistCash": "Cash on hand (¥2000+)",
+  "prepareChecklistEmergency": "Emergency contacts saved",
+  "prepareChecklistOffline": "Offline pack downloaded",
 
   "mapTitle": "Map",
   "mapSearchHint": "Search places, addresses, transit",
+  "mapCategoryAll": "All",
+  "mapCategoryAttraction": "Sights",
+  "mapCategoryDining": "Eat",
+  "mapCategoryLodging": "Stay",
+  "mapCategoryShopping": "Shop",
+  "mapEmpty": "No results in this area",
+  "mapDistanceAway": "{km} km away",
+  "@mapDistanceAway": {
+    "placeholders": { "km": { "type": "String" } }
+  },
 
   "discoverTitle": "Discover Shanghai",
+  "discoverTabCurated": "Curated",
+  "discoverTabAuthentic": "Authentic",
+  "discoverTabHeadsUp": "Heads-up",
+  "discoverEmpty": "Nothing here yet",
+
   "toolsTitle": "Tools",
+  "toolsFxTitle": "Live currency",
+  "toolsFxFrom": "From",
+  "toolsFxTo": "To",
+  "toolsFxAmount": "Amount",
+  "toolsFxRate": "1 {from} = {rate} {to}",
+  "@toolsFxRate": {
+    "placeholders": {
+      "from": { "type": "String" },
+      "rate": { "type": "String" },
+      "to": { "type": "String" }
+    }
+  },
+  "toolsAllTools": "All tools",
+  "toolsComingSoon": "{tool} is coming soon",
+  "@toolsComingSoon": {
+    "placeholders": { "tool": { "type": "String" } }
+  },
+  "toolsToolPhrases": "Phrase book",
+  "toolsToolEmergency": "Emergency contacts",
+  "toolsToolUnits": "Unit converter",
+  "toolsToolTimezone": "Time zone",
+  "toolsToolOffline": "Offline pack",
+  "toolsToolTranslate": "Translate assistant",
+
   "youTitle": "You",
 
   "policyVisaFree": "30-day visa-free entry",

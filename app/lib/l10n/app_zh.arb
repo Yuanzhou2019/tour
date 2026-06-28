@@ -21,12 +21,65 @@
   "@prepareTitle": {
     "placeholders": { "nationality": { "type": "String" } }
   },
+  "prepareSectionPolicies": "你需要知道",
+  "prepareSectionChecklist": "行前清单",
+  "prepareSectionDownloads": "离线下载",
+  "prepareNoPolicies": "暂无 {country} 的政策信息",
+  "@prepareNoPolicies": {
+    "placeholders": { "country": { "type": "String" } }
+  },
+  "prepareDownloadToast": "下载即将开始",
+  "prepareOfflineShanghai": "上海核心包",
+  "prepareOfflineShanghaiDesc": "12 MB · 地图 + 短语 + 紧急联系",
+  "prepareChecklistPassport": "护照有效期 6 个月以上",
+  "prepareChecklistCash": "随身现金（¥2000+）",
+  "prepareChecklistEmergency": "已保存紧急联系方式",
+  "prepareChecklistOffline": "已下载离线包",
 
   "mapTitle": "地图",
   "mapSearchHint": "搜索地点、地址、交通",
+  "mapCategoryAll": "全部",
+  "mapCategoryAttraction": "景点",
+  "mapCategoryDining": "美食",
+  "mapCategoryLodging": "住宿",
+  "mapCategoryShopping": "购物",
+  "mapEmpty": "该区域暂无结果",
+  "mapDistanceAway": "距离 {km} 公里",
+  "@mapDistanceAway": {
+    "placeholders": { "km": { "type": "String" } }
+  },
 
   "discoverTitle": "发现上海",
+  "discoverTabCurated": "精选",
+  "discoverTabAuthentic": "本地",
+  "discoverTabHeadsUp": "提醒",
+  "discoverEmpty": "暂无内容",
+
   "toolsTitle": "工具",
+  "toolsFxTitle": "实时汇率",
+  "toolsFxFrom": "从",
+  "toolsFxTo": "到",
+  "toolsFxAmount": "金额",
+  "toolsFxRate": "1 {from} = {rate} {to}",
+  "@toolsFxRate": {
+    "placeholders": {
+      "from": { "type": "String" },
+      "rate": { "type": "String" },
+      "to": { "type": "String" }
+    }
+  },
+  "toolsAllTools": "全部工具",
+  "toolsComingSoon": "{tool} 即将推出",
+  "@toolsComingSoon": {
+    "placeholders": { "tool": { "type": "String" } }
+  },
+  "toolsToolPhrases": "常用短语",
+  "toolsToolEmergency": "紧急联系",
+  "toolsToolUnits": "单位换算",
+  "toolsToolTimezone": "时区",
+  "toolsToolOffline": "离线包",
+  "toolsToolTranslate": "翻译助手",
+
   "youTitle": "我的",
 
   "policyVisaFree": "30 天免签入境",

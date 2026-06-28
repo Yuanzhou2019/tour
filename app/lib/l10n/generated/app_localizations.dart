@@ -194,6 +194,72 @@ abstract class AppLocalizations {
   /// **'Prepare · {nationality}'**
   String prepareTitle(String nationality);
 
+  /// No description provided for @prepareSectionPolicies.
+  ///
+  /// In en, this message translates to:
+  /// **'What you need to know'**
+  String get prepareSectionPolicies;
+
+  /// No description provided for @prepareSectionChecklist.
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-arrival checklist'**
+  String get prepareSectionChecklist;
+
+  /// No description provided for @prepareSectionDownloads.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline downloads'**
+  String get prepareSectionDownloads;
+
+  /// No description provided for @prepareNoPolicies.
+  ///
+  /// In en, this message translates to:
+  /// **'No policy info for {country} yet'**
+  String prepareNoPolicies(String country);
+
+  /// No description provided for @prepareDownloadToast.
+  ///
+  /// In en, this message translates to:
+  /// **'Download will start soon'**
+  String get prepareDownloadToast;
+
+  /// No description provided for @prepareOfflineShanghai.
+  ///
+  /// In en, this message translates to:
+  /// **'Shanghai core pack'**
+  String get prepareOfflineShanghai;
+
+  /// No description provided for @prepareOfflineShanghaiDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'12 MB · maps + phrases + emergency'**
+  String get prepareOfflineShanghaiDesc;
+
+  /// No description provided for @prepareChecklistPassport.
+  ///
+  /// In en, this message translates to:
+  /// **'Passport valid 6+ months'**
+  String get prepareChecklistPassport;
+
+  /// No description provided for @prepareChecklistCash.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash on hand (¥2000+)'**
+  String get prepareChecklistCash;
+
+  /// No description provided for @prepareChecklistEmergency.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency contacts saved'**
+  String get prepareChecklistEmergency;
+
+  /// No description provided for @prepareChecklistOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline pack downloaded'**
+  String get prepareChecklistOffline;
+
   /// No description provided for @mapTitle.
   ///
   /// In en, this message translates to:
@@ -206,17 +272,161 @@ abstract class AppLocalizations {
   /// **'Search places, addresses, transit'**
   String get mapSearchHint;
 
+  /// No description provided for @mapCategoryAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get mapCategoryAll;
+
+  /// No description provided for @mapCategoryAttraction.
+  ///
+  /// In en, this message translates to:
+  /// **'Sights'**
+  String get mapCategoryAttraction;
+
+  /// No description provided for @mapCategoryDining.
+  ///
+  /// In en, this message translates to:
+  /// **'Eat'**
+  String get mapCategoryDining;
+
+  /// No description provided for @mapCategoryLodging.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay'**
+  String get mapCategoryLodging;
+
+  /// No description provided for @mapCategoryShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shop'**
+  String get mapCategoryShopping;
+
+  /// No description provided for @mapEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No results in this area'**
+  String get mapEmpty;
+
+  /// No description provided for @mapDistanceAway.
+  ///
+  /// In en, this message translates to:
+  /// **'{km} km away'**
+  String mapDistanceAway(String km);
+
   /// No description provided for @discoverTitle.
   ///
   /// In en, this message translates to:
   /// **'Discover Shanghai'**
   String get discoverTitle;
 
+  /// No description provided for @discoverTabCurated.
+  ///
+  /// In en, this message translates to:
+  /// **'Curated'**
+  String get discoverTabCurated;
+
+  /// No description provided for @discoverTabAuthentic.
+  ///
+  /// In en, this message translates to:
+  /// **'Authentic'**
+  String get discoverTabAuthentic;
+
+  /// No description provided for @discoverTabHeadsUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Heads-up'**
+  String get discoverTabHeadsUp;
+
+  /// No description provided for @discoverEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing here yet'**
+  String get discoverEmpty;
+
   /// No description provided for @toolsTitle.
   ///
   /// In en, this message translates to:
   /// **'Tools'**
   String get toolsTitle;
+
+  /// No description provided for @toolsFxTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Live currency'**
+  String get toolsFxTitle;
+
+  /// No description provided for @toolsFxFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'From'**
+  String get toolsFxFrom;
+
+  /// No description provided for @toolsFxTo.
+  ///
+  /// In en, this message translates to:
+  /// **'To'**
+  String get toolsFxTo;
+
+  /// No description provided for @toolsFxAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get toolsFxAmount;
+
+  /// No description provided for @toolsFxRate.
+  ///
+  /// In en, this message translates to:
+  /// **'1 {from} = {rate} {to}'**
+  String toolsFxRate(String from, String rate, String to);
+
+  /// No description provided for @toolsAllTools.
+  ///
+  /// In en, this message translates to:
+  /// **'All tools'**
+  String get toolsAllTools;
+
+  /// No description provided for @toolsComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'{tool} is coming soon'**
+  String toolsComingSoon(String tool);
+
+  /// No description provided for @toolsToolPhrases.
+  ///
+  /// In en, this message translates to:
+  /// **'Phrase book'**
+  String get toolsToolPhrases;
+
+  /// No description provided for @toolsToolEmergency.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency contacts'**
+  String get toolsToolEmergency;
+
+  /// No description provided for @toolsToolUnits.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit converter'**
+  String get toolsToolUnits;
+
+  /// No description provided for @toolsToolTimezone.
+  ///
+  /// In en, this message translates to:
+  /// **'Time zone'**
+  String get toolsToolTimezone;
+
+  /// No description provided for @toolsToolOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline pack'**
+  String get toolsToolOffline;
+
+  /// No description provided for @toolsToolTranslate.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate assistant'**
+  String get toolsToolTranslate;
 
   /// No description provided for @youTitle.
   ///

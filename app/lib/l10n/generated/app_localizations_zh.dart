@@ -59,16 +59,129 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get prepareSectionPolicies => '你需要知道';
+
+  @override
+  String get prepareSectionChecklist => '行前清单';
+
+  @override
+  String get prepareSectionDownloads => '离线下载';
+
+  @override
+  String prepareNoPolicies(String country) {
+    return '暂无 $country 的政策信息';
+  }
+
+  @override
+  String get prepareDownloadToast => '下载即将开始';
+
+  @override
+  String get prepareOfflineShanghai => '上海核心包';
+
+  @override
+  String get prepareOfflineShanghaiDesc => '12 MB · 地图 + 短语 + 紧急联系';
+
+  @override
+  String get prepareChecklistPassport => '护照有效期 6 个月以上';
+
+  @override
+  String get prepareChecklistCash => '随身现金（¥2000+）';
+
+  @override
+  String get prepareChecklistEmergency => '已保存紧急联系方式';
+
+  @override
+  String get prepareChecklistOffline => '已下载离线包';
+
+  @override
   String get mapTitle => '地图';
 
   @override
   String get mapSearchHint => '搜索地点、地址、交通';
 
   @override
+  String get mapCategoryAll => '全部';
+
+  @override
+  String get mapCategoryAttraction => '景点';
+
+  @override
+  String get mapCategoryDining => '美食';
+
+  @override
+  String get mapCategoryLodging => '住宿';
+
+  @override
+  String get mapCategoryShopping => '购物';
+
+  @override
+  String get mapEmpty => '该区域暂无结果';
+
+  @override
+  String mapDistanceAway(String km) {
+    return '距离 $km 公里';
+  }
+
+  @override
   String get discoverTitle => '发现上海';
 
   @override
+  String get discoverTabCurated => '精选';
+
+  @override
+  String get discoverTabAuthentic => '本地';
+
+  @override
+  String get discoverTabHeadsUp => '提醒';
+
+  @override
+  String get discoverEmpty => '暂无内容';
+
+  @override
   String get toolsTitle => '工具';
+
+  @override
+  String get toolsFxTitle => '实时汇率';
+
+  @override
+  String get toolsFxFrom => '从';
+
+  @override
+  String get toolsFxTo => '到';
+
+  @override
+  String get toolsFxAmount => '金额';
+
+  @override
+  String toolsFxRate(String from, String rate, String to) {
+    return '1 $from = $rate $to';
+  }
+
+  @override
+  String get toolsAllTools => '全部工具';
+
+  @override
+  String toolsComingSoon(String tool) {
+    return '$tool 即将推出';
+  }
+
+  @override
+  String get toolsToolPhrases => '常用短语';
+
+  @override
+  String get toolsToolEmergency => '紧急联系';
+
+  @override
+  String get toolsToolUnits => '单位换算';
+
+  @override
+  String get toolsToolTimezone => '时区';
+
+  @override
+  String get toolsToolOffline => '离线包';
+
+  @override
+  String get toolsToolTranslate => '翻译助手';
 
   @override
   String get youTitle => '我的';
