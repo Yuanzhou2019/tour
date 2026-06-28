@@ -9,6 +9,7 @@ import '../mock_data.dart';
 class MockInterceptor extends Interceptor {
   static const _endpointKeys = <String>{
     'GET /policies',
+    'GET /checklists',
     'GET /pois/search',
     'GET /discover/curated',
     'GET /discover/authentic',
