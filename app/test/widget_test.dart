@@ -41,14 +41,18 @@ void main() {
     await configureDependencies();
     // Skip onboarding redirect for the legacy widget test.
     await getIt<OnboardingRepository>().markCompleted();
-    if (!getIt.isRegistered<PrepareHomeCubit>()) {
-      getIt.registerFactory<PrepareHomeCubit>(
-        () => PrepareHomeCubit(
-          const _NoopPolicyRepo(),
-          const _NoopChecklistRepo(),
-        ),
-      );
+    // Always override the real PrepareHomeCubit with a sync no-op so the
+    // legacy widget test renders the page immediately without waiting on
+    // the (mocked) dio requests to resolve.
+    if (getIt.isRegistered<PrepareHomeCubit>()) {
+      await getIt.unregister<PrepareHomeCubit>();
     }
+    getIt.registerFactory<PrepareHomeCubit>(
+      () => PrepareHomeCubit(
+        const _NoopPolicyRepo(),
+        const _NoopChecklistRepo(),
+      ),
+    );
   });
 
   testWidgets('SightourApp launches with Prepare tab and real content',
