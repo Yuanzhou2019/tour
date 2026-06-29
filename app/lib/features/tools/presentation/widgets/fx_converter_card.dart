@@ -4,7 +4,7 @@ import 'package:sightour/core/theme/app_colors.dart';
 import 'package:sightour/core/theme/app_radius.dart';
 import 'package:sightour/core/theme/app_spacing.dart';
 import 'package:sightour/core/theme/app_text_styles.dart';
-import 'package:sightour/features/tools/presentation/cubit/fx_converter_cubit.dart';
+import '../cubit/fx_converter_cubit.dart';
 import 'package:sightour/shared/components/card.dart';
 
 class FxConverterCard extends StatefulWidget {

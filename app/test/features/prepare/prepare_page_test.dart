@@ -42,16 +42,16 @@ class _FakeChecklistRepo implements ChecklistRepository {
       ];
 }
 
-Widget _wrap() => MaterialApp(
-      locale: const Locale('en'),
-      localizationsDelegates: const [
+Widget _wrap() => const MaterialApp(
+      locale: Locale('en'),
+      localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const PreparePage(),
+      home: PreparePage(),
     );
 
 void main() {
@@ -59,14 +59,20 @@ void main() {
     PathProviderPlatform.instance = _FakePathProvider();
     Hive.init('.dart_test/hive_prepare_page_${DateTime.now().microsecondsSinceEpoch}');
     await Hive.openBox('prefs');
-    if (!getIt.isRegistered<PrepareHomeCubit>()) {
-      getIt.registerFactory<PrepareHomeCubit>(
-        () => PrepareHomeCubit(
-          const _FakePolicyRepo(),
-          const _FakeChecklistRepo(),
-        ),
-      );
+    // Ensure getIt is configured (auto-generated @injectable factories are
+    // registered here), then override PrepareHomeCubit with deterministic
+    // test doubles so the page renders synchronously without depending on
+    // MockInterceptor / dio timing.
+    await configureDependencies();
+    if (getIt.isRegistered<PrepareHomeCubit>()) {
+      await getIt.unregister<PrepareHomeCubit>();
     }
+    getIt.registerFactory<PrepareHomeCubit>(
+      () => PrepareHomeCubit(
+        const _FakePolicyRepo(),
+        const _FakeChecklistRepo(),
+      ),
+    );
   });
 
   testWidgets('renders all sections with seeded data', (tester) async {

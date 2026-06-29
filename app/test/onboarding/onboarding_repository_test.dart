@@ -6,6 +6,8 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'package:sightour/core/storage/hive_boxes.dart';
 import 'package:sightour/features/onboarding/data/repositories/onboarding_repository_impl.dart';
 import 'package:sightour/features/onboarding/domain/entities/country.dart';
+import 'package:sightour/features/onboarding/domain/entities/entry_city.dart';
+import 'package:sightour/features/onboarding/domain/entities/entry_reason.dart';
 import 'package:sightour/features/onboarding/domain/entities/unit_system.dart';
 import 'package:sightour/features/onboarding/domain/repositories/onboarding_repository.dart';
 
@@ -57,6 +59,8 @@ void main() {
       themeMode: ThemeMode.dark,
       country: Country.jp,
       unitSystem: UnitSystem.imperial,
+      entryReason: EntryReason.education,
+      entryCity: EntryCity.beijing,
     );
     await repo.saveFirstRunPreferences(original);
     final loaded = await repo.loadFirstRunPreferences();
@@ -64,6 +68,8 @@ void main() {
     expect(loaded.themeMode, ThemeMode.dark);
     expect(loaded.country, Country.jp);
     expect(loaded.unitSystem, UnitSystem.imperial);
+    expect(loaded.entryReason, EntryReason.education);
+    expect(loaded.entryCity, EntryCity.beijing);
   });
 
   test('loadFirstRunPreferences defaults when empty', () async {
@@ -73,5 +79,23 @@ void main() {
     expect(loaded.themeMode, ThemeMode.system);
     expect(loaded.country, Country.us);
     expect(loaded.unitSystem, UnitSystem.metric);
+    expect(loaded.entryReason, EntryReason.tourism);
+    expect(loaded.entryCity, EntryCity.shanghai);
+  });
+
+  test('loadFirstRunPreferences recovers EntryCity.other', () async {
+    final repo = OnboardingRepositoryImpl();
+    await repo.saveFirstRunPreferences(
+      const FirstRunPreferences(
+        locale: Locale('en'),
+        themeMode: ThemeMode.system,
+        country: Country.us,
+        unitSystem: UnitSystem.metric,
+        entryReason: EntryReason.business,
+        entryCity: EntryCity.other,
+      ),
+    );
+    final loaded = await repo.loadFirstRunPreferences();
+    expect(loaded.entryCity, EntryCity.other);
   });
 }

@@ -19,6 +19,7 @@ class RouteNames {
   static const emergency = 'emergency';
   static const profile = 'profile';
   static const feedback = 'feedback';
+  static const youSettings = 'you_settings';
   // Modal
   static const modalCorrection = 'modal_correction';
   static const modalFilter = 'modal_filter';

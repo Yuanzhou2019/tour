@@ -266,6 +266,12 @@ abstract class AppLocalizations {
   /// **'Map'**
   String get mapTitle;
 
+  /// No description provided for @mapPageSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore the city with confidence'**
+  String get mapPageSubtitle;
+
   /// No description provided for @mapSearchHint.
   ///
   /// In en, this message translates to:
@@ -349,6 +355,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tools'**
   String get toolsTitle;
+
+  /// No description provided for @toolsPageSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Everything works offline, even at the airport'**
+  String get toolsPageSubtitle;
 
   /// No description provided for @toolsFxTitle.
   ///
@@ -644,6 +656,60 @@ abstract class AppLocalizations {
   /// **'Preferences (coming soon)'**
   String get youPreferencesComingSoon;
 
+  /// No description provided for @youSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get youSettings;
+
+  /// No description provided for @youSettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get youSettingsTitle;
+
+  /// No description provided for @youSettingsLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get youSettingsLanguage;
+
+  /// No description provided for @youSettingsTheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get youSettingsTheme;
+
+  /// No description provided for @youSettingsThemeSystem.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get youSettingsThemeSystem;
+
+  /// No description provided for @youSettingsThemeLight.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get youSettingsThemeLight;
+
+  /// No description provided for @youSettingsThemeDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get youSettingsThemeDark;
+
+  /// No description provided for @youAboutTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get youAboutTitle;
+
+  /// No description provided for @youAboutVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Sightour v0.1.0'**
+  String get youAboutVersion;
+
   /// No description provided for @feedbackTitle.
   ///
   /// In en, this message translates to:
@@ -697,6 +763,324 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Try again'**
   String get feedbackRetry;
+
+  /// No description provided for @commonSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get commonSkip;
+
+  /// No description provided for @commonContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get commonContinue;
+
+  /// No description provided for @onboardingStepWelcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome'**
+  String get onboardingStepWelcome;
+
+  /// No description provided for @onboardingStepFeatures.
+  ///
+  /// In en, this message translates to:
+  /// **'Features'**
+  String get onboardingStepFeatures;
+
+  /// No description provided for @onboardingStepSetup.
+  ///
+  /// In en, this message translates to:
+  /// **'Setup'**
+  String get onboardingStepSetup;
+
+  /// No description provided for @onboardingStepHighlights.
+  ///
+  /// In en, this message translates to:
+  /// **'Highlights'**
+  String get onboardingStepHighlights;
+
+  /// No description provided for @onboardingStepPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy'**
+  String get onboardingStepPrivacy;
+
+  /// No description provided for @onboardingFeaturesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Visa, customs, embassies and\nlocal tips — offline'**
+  String get onboardingFeaturesSubtitle;
+
+  /// No description provided for @onboardingSettingsReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason for entry'**
+  String get onboardingSettingsReason;
+
+  /// No description provided for @onboardingSettingsCity.
+  ///
+  /// In en, this message translates to:
+  /// **'First-arrival city'**
+  String get onboardingSettingsCity;
+
+  /// No description provided for @onboardingSettingsUnits.
+  ///
+  /// In en, this message translates to:
+  /// **'Units'**
+  String get onboardingSettingsUnits;
+
+  /// No description provided for @onboardingSettingsCountryTap.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to change'**
+  String get onboardingSettingsCountryTap;
+
+  /// No description provided for @onboardingHighlightsShanghai.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover Shanghai'**
+  String get onboardingHighlightsShanghai;
+
+  /// No description provided for @onboardingHighlightsBeijing.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover Beijing'**
+  String get onboardingHighlightsBeijing;
+
+  /// No description provided for @onboardingHighlightsGuangzhou.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover Guangzhou'**
+  String get onboardingHighlightsGuangzhou;
+
+  /// No description provided for @onboardingHighlightsDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover your destination'**
+  String get onboardingHighlightsDefault;
+
+  /// No description provided for @onboardingHighlightsShanghaiTag.
+  ///
+  /// In en, this message translates to:
+  /// **'A vibrant blend of tradition and modernity awaits'**
+  String get onboardingHighlightsShanghaiTag;
+
+  /// No description provided for @onboardingHighlightsBeijingTag.
+  ///
+  /// In en, this message translates to:
+  /// **'Where ancient imperial grandeur meets modern vitality'**
+  String get onboardingHighlightsBeijingTag;
+
+  /// No description provided for @onboardingHighlightsGuangzhouTag.
+  ///
+  /// In en, this message translates to:
+  /// **'The culinary capital where rivers meet the sea'**
+  String get onboardingHighlightsGuangzhouTag;
+
+  /// No description provided for @onboardingHighlightsDefaultTag.
+  ///
+  /// In en, this message translates to:
+  /// **'Adventure begins with every step'**
+  String get onboardingHighlightsDefaultTag;
+
+  /// No description provided for @privacySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay in control.\nEverything works offline by design.'**
+  String get privacySubtitle;
+
+  /// No description provided for @privacyCardLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Location stays on your device — never leaves it'**
+  String get privacyCardLocation;
+
+  /// No description provided for @privacyCardAnonymous.
+  ///
+  /// In en, this message translates to:
+  /// **'Only an anonymous install ID for feedback deduplication'**
+  String get privacyCardAnonymous;
+
+  /// No description provided for @privacyCardLocal.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences stored locally: language, theme, country'**
+  String get privacyCardLocal;
+
+  /// No description provided for @privacyCardClear.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear all local data anytime from Settings'**
+  String get privacyCardClear;
+
+  /// No description provided for @privacyCardFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback reviewed by our moderation team'**
+  String get privacyCardFeedback;
+
+  /// No description provided for @privacyReadFull.
+  ///
+  /// In en, this message translates to:
+  /// **'Read full policy'**
+  String get privacyReadFull;
+
+  /// No description provided for @prepareViewCards.
+  ///
+  /// In en, this message translates to:
+  /// **'Cards 卡片'**
+  String get prepareViewCards;
+
+  /// No description provided for @prepareViewTimeline.
+  ///
+  /// In en, this message translates to:
+  /// **'Timeline 总览'**
+  String get prepareViewTimeline;
+
+  /// No description provided for @prepareSwitchCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch country'**
+  String get prepareSwitchCountry;
+
+  /// No description provided for @prepareSwitchReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch reason'**
+  String get prepareSwitchReason;
+
+  /// No description provided for @prepareSwitchCity.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch city'**
+  String get prepareSwitchCity;
+
+  /// No description provided for @youProfileTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get youProfileTitle;
+
+  /// No description provided for @youProfileIdLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'ID: {id}'**
+  String youProfileIdLabel(String id);
+
+  /// No description provided for @journeyBannerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your journey'**
+  String get journeyBannerSubtitle;
+
+  /// No description provided for @journeyBannerGreetingSH.
+  ///
+  /// In en, this message translates to:
+  /// **'Shanghai awaits'**
+  String get journeyBannerGreetingSH;
+
+  /// No description provided for @journeyBannerGreetingBJ.
+  ///
+  /// In en, this message translates to:
+  /// **'Beijing awaits'**
+  String get journeyBannerGreetingBJ;
+
+  /// No description provided for @journeyBannerGreetingGZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Guangzhou awaits'**
+  String get journeyBannerGreetingGZ;
+
+  /// No description provided for @journeyBannerGreetingDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'China awaits'**
+  String get journeyBannerGreetingDefault;
+
+  /// No description provided for @prepareChecklistDone.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} / {total} done'**
+  String prepareChecklistDone(int done, int total);
+
+  /// No description provided for @onboardingSettingsLanguageEn.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get onboardingSettingsLanguageEn;
+
+  /// No description provided for @onboardingSettingsThemeSystem.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get onboardingSettingsThemeSystem;
+
+  /// No description provided for @onboardingSettingsThemeLight.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get onboardingSettingsThemeLight;
+
+  /// No description provided for @onboardingSettingsThemeDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get onboardingSettingsThemeDark;
+
+  /// No description provided for @onboardingSettingsCountrySearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search country...'**
+  String get onboardingSettingsCountrySearchHint;
+
+  /// No description provided for @onboardingSettingsOtherCityNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Other cities are not yet covered in v1. We will still show the national-level policy (visa, customs, embassy) for your passport, but offline packs and city-specific POIs are only available for Beijing, Shanghai and Guangzhou.'**
+  String get onboardingSettingsOtherCityNotice;
+
+  /// No description provided for @privacyPolicyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicyTitle;
+
+  /// No description provided for @highlightsMustSee.
+  ///
+  /// In en, this message translates to:
+  /// **'Must See'**
+  String get highlightsMustSee;
+
+  /// No description provided for @highlightsFood.
+  ///
+  /// In en, this message translates to:
+  /// **'Food'**
+  String get highlightsFood;
+
+  /// No description provided for @highlightsCulture.
+  ///
+  /// In en, this message translates to:
+  /// **'Culture'**
+  String get highlightsCulture;
+
+  /// No description provided for @youPageSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your data, your device, your choice'**
+  String get youPageSubtitle;
+
+  /// No description provided for @youSettingsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Language, theme, and preferences'**
+  String get youSettingsSubtitle;
+
+  /// No description provided for @youFeedbackSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Help us improve Sightour'**
+  String get youFeedbackSubtitle;
 }
 
 class _AppLocalizationsDelegate

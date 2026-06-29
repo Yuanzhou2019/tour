@@ -40,6 +40,9 @@ class MapHomeState {
 class MapHomeCubit extends Cubit<MapHomeState> {
   MapHomeCubit(this._repo) : super(const MapHomeState());
 
+  /// Stage-2 mock factory: no repo needed, returns empty POI list.
+  factory MapHomeCubit.forMock() => MapHomeCubit(_NoopPoiRepo());
+
   final PoiRepository _repo;
 
   Future<void> load() async {
@@ -63,4 +66,9 @@ class MapHomeCubit extends Cubit<MapHomeState> {
   }
 
   void search() => load();
+}
+
+class _NoopPoiRepo implements PoiRepository {
+  @override
+  Future<List<Poi>> search({String? q, String? category}) async => const [];
 }

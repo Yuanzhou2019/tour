@@ -34,6 +34,14 @@ class AppColors {
   static const clay600 = Color(0xFFC2410C);
   static const clay50 = Color(0xFFFDF0E8);
 
+  // Warm (Primary palette — journey/vibe)
+  static const warmPrimary = Color(0xFFE8732A);
+  static const warmPrimaryDark = Color(0xFFC2571A);
+  static const warmPrimaryLight = Color(0xFFFFF2E8);
+  static const warmSecondary = Color(0xFFF4A261);
+  static const warmAccent = Color(0xFFF9C74F);
+  static const warmSurface = Color(0xFFFFFBFA);
+
   // Neutral
   static const ivory = Color(0xFFFAFAF7);
   static const white = Color(0xFFFFFFFF);

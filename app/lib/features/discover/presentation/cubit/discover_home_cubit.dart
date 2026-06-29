@@ -38,6 +38,10 @@ class DiscoverHomeState {
 class DiscoverHomeCubit extends Cubit<DiscoverHomeState> {
   DiscoverHomeCubit(this._repo) : super(const DiscoverHomeState());
 
+  /// Stage-2 mock factory: no repo needed.
+  factory DiscoverHomeCubit.forMock() =>
+      DiscoverHomeCubit(_NoopDiscoverRepo());
+
   final DiscoverRepository _repo;
 
   Future<void> selectTab(DiscoverTab t) async {
@@ -53,4 +57,13 @@ class DiscoverHomeCubit extends Cubit<DiscoverHomeState> {
       emit(state.copyWith(isLoading: false, error: e.toString()));
     }
   }
+}
+
+class _NoopDiscoverRepo implements DiscoverRepository {
+  @override
+  Future<List<DiscoverCard>> curated() async => const [];
+  @override
+  Future<List<DiscoverCard>> authentic() async => const [];
+  @override
+  Future<List<DiscoverCard>> headsUp() async => const [];
 }

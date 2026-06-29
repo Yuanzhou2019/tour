@@ -47,6 +47,10 @@ class FxConverterState {
 class FxConverterCubit extends Cubit<FxConverterState> {
   FxConverterCubit(this._repo) : super(const FxConverterState());
 
+  /// Stage-2 mock factory: no repo, returns a fake rate USD->CNY = 7.20.
+  factory FxConverterCubit.forMock() =>
+      FxConverterCubit(_NoopFxRepo());
+
   final FxRepository _repo;
 
   Future<void> load({String? from, String? to}) async {
@@ -62,4 +66,14 @@ class FxConverterCubit extends Cubit<FxConverterState> {
   }
 
   void setAmount(double v) => emit(state.copyWith(amount: v));
+}
+
+class _NoopFxRepo implements FxRepository {
+  @override
+  Future<FxRate> rate(String from, String to) async => FxRate(
+        from: from,
+        to: to,
+        rate: 7.20, // mock USD->CNY
+        updatedAt: DateTime.now(),
+      );
 }

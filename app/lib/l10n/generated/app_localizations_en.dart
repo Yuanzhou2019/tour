@@ -97,6 +97,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mapTitle => 'Map';
 
   @override
+  String get mapPageSubtitle => 'Explore the city with confidence';
+
+  @override
   String get mapSearchHint => 'Search places, addresses, transit';
 
   @override
@@ -139,6 +142,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get toolsTitle => 'Tools';
+
+  @override
+  String get toolsPageSubtitle =>
+      'Everything works offline, even at the airport';
 
   @override
   String get toolsFxTitle => 'Live currency';
@@ -304,6 +311,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String get youPreferencesComingSoon => 'Preferences (coming soon)';
 
   @override
+  String get youSettings => 'Settings';
+
+  @override
+  String get youSettingsTitle => 'Settings';
+
+  @override
+  String get youSettingsLanguage => 'Language';
+
+  @override
+  String get youSettingsTheme => 'Appearance';
+
+  @override
+  String get youSettingsThemeSystem => 'System';
+
+  @override
+  String get youSettingsThemeLight => 'Light';
+
+  @override
+  String get youSettingsThemeDark => 'Dark';
+
+  @override
+  String get youAboutTitle => 'About';
+
+  @override
+  String get youAboutVersion => 'Sightour v0.1.0';
+
+  @override
   String get feedbackTitle => 'Send feedback';
 
   @override
@@ -330,4 +364,177 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get feedbackRetry => 'Try again';
+
+  @override
+  String get commonSkip => 'Skip';
+
+  @override
+  String get commonContinue => 'Continue';
+
+  @override
+  String get onboardingStepWelcome => 'Welcome';
+
+  @override
+  String get onboardingStepFeatures => 'Features';
+
+  @override
+  String get onboardingStepSetup => 'Setup';
+
+  @override
+  String get onboardingStepHighlights => 'Highlights';
+
+  @override
+  String get onboardingStepPrivacy => 'Privacy';
+
+  @override
+  String get onboardingFeaturesSubtitle =>
+      'Visa, customs, embassies and\nlocal tips — offline';
+
+  @override
+  String get onboardingSettingsReason => 'Reason for entry';
+
+  @override
+  String get onboardingSettingsCity => 'First-arrival city';
+
+  @override
+  String get onboardingSettingsUnits => 'Units';
+
+  @override
+  String get onboardingSettingsCountryTap => 'Tap to change';
+
+  @override
+  String get onboardingHighlightsShanghai => 'Discover Shanghai';
+
+  @override
+  String get onboardingHighlightsBeijing => 'Discover Beijing';
+
+  @override
+  String get onboardingHighlightsGuangzhou => 'Discover Guangzhou';
+
+  @override
+  String get onboardingHighlightsDefault => 'Discover your destination';
+
+  @override
+  String get onboardingHighlightsShanghaiTag =>
+      'A vibrant blend of tradition and modernity awaits';
+
+  @override
+  String get onboardingHighlightsBeijingTag =>
+      'Where ancient imperial grandeur meets modern vitality';
+
+  @override
+  String get onboardingHighlightsGuangzhouTag =>
+      'The culinary capital where rivers meet the sea';
+
+  @override
+  String get onboardingHighlightsDefaultTag =>
+      'Adventure begins with every step';
+
+  @override
+  String get privacySubtitle =>
+      'Stay in control.\nEverything works offline by design.';
+
+  @override
+  String get privacyCardLocation =>
+      'Location stays on your device — never leaves it';
+
+  @override
+  String get privacyCardAnonymous =>
+      'Only an anonymous install ID for feedback deduplication';
+
+  @override
+  String get privacyCardLocal =>
+      'Preferences stored locally: language, theme, country';
+
+  @override
+  String get privacyCardClear => 'Clear all local data anytime from Settings';
+
+  @override
+  String get privacyCardFeedback => 'Feedback reviewed by our moderation team';
+
+  @override
+  String get privacyReadFull => 'Read full policy';
+
+  @override
+  String get prepareViewCards => 'Cards 卡片';
+
+  @override
+  String get prepareViewTimeline => 'Timeline 总览';
+
+  @override
+  String get prepareSwitchCountry => 'Switch country';
+
+  @override
+  String get prepareSwitchReason => 'Switch reason';
+
+  @override
+  String get prepareSwitchCity => 'Switch city';
+
+  @override
+  String get youProfileTitle => 'You';
+
+  @override
+  String youProfileIdLabel(String id) {
+    return 'ID: $id';
+  }
+
+  @override
+  String get journeyBannerSubtitle => 'Your journey';
+
+  @override
+  String get journeyBannerGreetingSH => 'Shanghai awaits';
+
+  @override
+  String get journeyBannerGreetingBJ => 'Beijing awaits';
+
+  @override
+  String get journeyBannerGreetingGZ => 'Guangzhou awaits';
+
+  @override
+  String get journeyBannerGreetingDefault => 'China awaits';
+
+  @override
+  String prepareChecklistDone(int done, int total) {
+    return '$done / $total done';
+  }
+
+  @override
+  String get onboardingSettingsLanguageEn => 'English';
+
+  @override
+  String get onboardingSettingsThemeSystem => 'System';
+
+  @override
+  String get onboardingSettingsThemeLight => 'Light';
+
+  @override
+  String get onboardingSettingsThemeDark => 'Dark';
+
+  @override
+  String get onboardingSettingsCountrySearchHint => 'Search country...';
+
+  @override
+  String get onboardingSettingsOtherCityNotice =>
+      'Other cities are not yet covered in v1. We will still show the national-level policy (visa, customs, embassy) for your passport, but offline packs and city-specific POIs are only available for Beijing, Shanghai and Guangzhou.';
+
+  @override
+  String get privacyPolicyTitle => 'Privacy Policy';
+
+  @override
+  String get highlightsMustSee => 'Must See';
+
+  @override
+  String get highlightsFood => 'Food';
+
+  @override
+  String get highlightsCulture => 'Culture';
+
+  @override
+  String get youPageSubtitle => 'Your data, your device, your choice';
+
+  @override
+  String get youSettingsSubtitle => 'Language, theme, and preferences';
+
+  @override
+  String get youFeedbackSubtitle => 'Help us improve Sightour';
 }

@@ -43,6 +43,13 @@ class PrepareHomeCubit extends Cubit<PrepareHomeState> {
   PrepareHomeCubit(this._policyRepo, this._checklistRepo)
       : super(const PrepareHomeState());
 
+  /// Convenience helper for tests: skip DI and use no-op repos that return
+  /// empty lists. Production code must use `getIt<PrepareHomeCubit>()` so
+  /// the real MockInterceptor-backed repositories are wired in.
+  // ignore: prefer_constructors_over_static_methods
+  static PrepareHomeCubit forMock() =>
+      PrepareHomeCubit(_NoopPolicyRepo(), _NoopChecklistRepo());
+
   final PolicyRepository _policyRepo;
   final ChecklistRepository _checklistRepo;
 
@@ -68,4 +75,14 @@ class PrepareHomeCubit extends Cubit<PrepareHomeState> {
         .toList();
     emit(state.copyWith(checklist: updated));
   }
+}
+
+class _NoopPolicyRepo implements PolicyRepository {
+  @override
+  Future<List<Policy>> fetchPolicies(String country) async => const [];
+}
+
+class _NoopChecklistRepo implements ChecklistRepository {
+  @override
+  Future<List<ChecklistItem>> fetchChecklist(String country) async => const [];
 }

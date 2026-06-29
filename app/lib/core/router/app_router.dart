@@ -10,6 +10,7 @@ import '../../features/onboarding/presentation/pages/privacy_consent_page.dart';
 import '../../features/prepare/presentation/pages/prepare_page.dart';
 import '../../features/tools/presentation/pages/tools_page.dart';
 import '../../features/you/presentation/pages/you_page.dart';
+import '../../features/you/presentation/pages/you_settings_page.dart';
 import '../../shared/pages/coming_soon_page.dart';
 import '../../shared/pages/not_found_page.dart';
 import '../di/injection.dart';
@@ -151,6 +152,14 @@ final appRouter = GoRouter(
               pageBuilder: (_, __) => const MaterialPage(
                 fullscreenDialog: true,
                 child: FeedbackFormPage(),
+              ),
+            ),
+            GoRoute(
+              path: 'settings',
+              name: RouteNames.youSettings,
+              pageBuilder: (_, __) => const MaterialPage(
+                fullscreenDialog: true,
+                child: YouSettingsPage(),
               ),
             ),
           ],

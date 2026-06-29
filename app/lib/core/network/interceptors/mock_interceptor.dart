@@ -19,14 +19,19 @@ class MockInterceptor extends Interceptor {
     'POST /corrections',
   };
 
-  /// 模拟离线（开发期切换用）
+  /// Simulate offline (dev-mode toggle).
   bool simulateOffline = false;
 
-  /// 错误率（0.0 - 1.0）
+  /// Error rate (0.0 - 1.0) for randomly failing requests.
   double errorRate = 0.0;
 
-  /// 模拟延迟（ms）
+  /// Simulated network latency in milliseconds.
   int simulatedDelayMs = 200;
+
+  /// Current locale tag (e.g. `en`, `zh`, `zh-CN`). Updated by the app
+  /// shell (typically from [LocaleCubit]) so the canned responses can be
+  /// returned in the user's chosen language. Defaults to `en`.
+  String locale = 'en';
 
   @override
   Future<void> onRequest(
@@ -64,7 +69,12 @@ class MockInterceptor extends Interceptor {
         Response(
           requestOptions: options,
           statusCode: 200,
-          data: MockData.emptyData,
+          data: MockData.responseFor(
+            options.method,
+            options.path,
+            options.queryParameters,
+            locale: locale,
+          ),
         ),
       );
     }

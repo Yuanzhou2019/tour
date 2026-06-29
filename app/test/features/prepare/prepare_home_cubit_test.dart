@@ -56,29 +56,49 @@ void main() {
     expect(c.state.error, isNull);
   });
 
-  test('load emits loaded state', () async {
+  test('load() returns US policy cards via mock interceptor', () async {
     final c = makeCubit();
     await c.load();
     expect(c.state.isLoading, false);
     expect(c.state.error, isNull);
-    expect(c.state.policies, isEmpty); // mock returns []
-    expect(c.state.checklist, isEmpty);
+    expect(c.state.policies, isNotEmpty);
+    expect(c.state.policies.first.id, 'us-visa-free-30d');
+    expect(c.state.checklist, isNotEmpty);
   });
 
-  test('load(country: "DE") updates country', () async {
+  test('load(country: "RU") switches to RU visa-required policy', () async {
     final c = makeCubit();
-    await c.load(country: 'DE');
-    expect(c.state.country, 'DE');
+    await c.load(country: 'RU');
+    expect(c.state.country, 'RU');
+    expect(c.state.policies.first.id, 'ru-visa-required');
+    // RU gets an extra checklist row for visa application lead time.
+    expect(
+      c.state.checklist.any((i) => i.id == 'visa-application'),
+      isTrue,
+    );
   });
 
-  test('toggleItem flips done', () async {
+  test('load(country: "XX") returns generic fallback policy', () async {
     final c = makeCubit();
-    // Inject one item manually to test toggle.
-    final current = c.state.checklist;
-    expect(current, isEmpty);
-    // Simulate that load returned one item by manipulating through cubit not possible,
-    // so we just verify no-throw when called with unknown id.
+    await c.load(country: 'XX');
+    expect(c.state.policies, hasLength(1));
+    expect(c.state.policies.first.id, 'fallback-generic');
+  });
+
+  test('toggleItem flips done state for known id', () async {
+    final c = makeCubit();
+    await c.load();
+    final firstId = c.state.checklist.first.id;
+    expect(c.state.checklist.first.done, isFalse);
+    c.toggleItem(firstId);
+    expect(c.state.checklist.first.done, isTrue);
+  });
+
+  test('toggleItem no-ops for unknown id', () async {
+    final c = makeCubit();
+    await c.load();
+    final before = c.state.checklist;
     c.toggleItem('does-not-exist');
-    expect(c.state.checklist, isEmpty);
+    expect(c.state.checklist, before);
   });
 }

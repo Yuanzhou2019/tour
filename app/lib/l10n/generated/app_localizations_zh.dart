@@ -97,6 +97,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get mapTitle => '地图';
 
   @override
+  String get mapPageSubtitle => '放心探索这座城市';
+
+  @override
   String get mapSearchHint => '搜索地点、地址、交通';
 
   @override
@@ -139,6 +142,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get toolsTitle => '工具';
+
+  @override
+  String get toolsPageSubtitle => '所有工具离线可用，机场也无忧';
 
   @override
   String get toolsFxTitle => '实时汇率';
@@ -292,6 +298,33 @@ class AppLocalizationsZh extends AppLocalizations {
   String get youPreferencesComingSoon => '偏好设置（敬请期待）';
 
   @override
+  String get youSettings => '设置';
+
+  @override
+  String get youSettingsTitle => '设置';
+
+  @override
+  String get youSettingsLanguage => '语言';
+
+  @override
+  String get youSettingsTheme => '外观';
+
+  @override
+  String get youSettingsThemeSystem => '跟随系统';
+
+  @override
+  String get youSettingsThemeLight => '浅色';
+
+  @override
+  String get youSettingsThemeDark => '深色';
+
+  @override
+  String get youAboutTitle => '关于';
+
+  @override
+  String get youAboutVersion => 'Sightour v0.1.0';
+
+  @override
   String get feedbackTitle => '发送反馈';
 
   @override
@@ -317,4 +350,168 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get feedbackRetry => '重试';
+
+  @override
+  String get commonSkip => '跳过';
+
+  @override
+  String get commonContinue => '继续';
+
+  @override
+  String get onboardingStepWelcome => '欢迎';
+
+  @override
+  String get onboardingStepFeatures => '功能';
+
+  @override
+  String get onboardingStepSetup => '设置';
+
+  @override
+  String get onboardingStepHighlights => '亮点';
+
+  @override
+  String get onboardingStepPrivacy => '隐私';
+
+  @override
+  String get onboardingFeaturesSubtitle => '签证、海关、大使馆和\n本地贴士 — 离线可用';
+
+  @override
+  String get onboardingSettingsReason => '入境原因';
+
+  @override
+  String get onboardingSettingsCity => '首次入境城市';
+
+  @override
+  String get onboardingSettingsUnits => '单位';
+
+  @override
+  String get onboardingSettingsCountryTap => '点击切换';
+
+  @override
+  String get onboardingHighlightsShanghai => '发现上海';
+
+  @override
+  String get onboardingHighlightsBeijing => '发现北京';
+
+  @override
+  String get onboardingHighlightsGuangzhou => '发现广州';
+
+  @override
+  String get onboardingHighlightsDefault => '发现你的目的地';
+
+  @override
+  String get onboardingHighlightsShanghaiTag => '传统与现代交融的活力之都';
+
+  @override
+  String get onboardingHighlightsBeijingTag => '千年帝都的皇家气韵与现代活力';
+
+  @override
+  String get onboardingHighlightsGuangzhouTag => '江河入海的美食之都';
+
+  @override
+  String get onboardingHighlightsDefaultTag => '每一步都是新的探索';
+
+  @override
+  String get privacySubtitle => '完全掌控。\n一切设计为离线可用。';
+
+  @override
+  String get privacyCardLocation => '定位数据仅存于设备 — 绝不会上传';
+
+  @override
+  String get privacyCardAnonymous => '仅用匿名安装 ID 去重反馈';
+
+  @override
+  String get privacyCardLocal => '偏好设置保存在本地：语言、主题、国家';
+
+  @override
+  String get privacyCardClear => '随时在设置中清除所有本地数据';
+
+  @override
+  String get privacyCardFeedback => '反馈由我们的审核团队处理';
+
+  @override
+  String get privacyReadFull => '阅读完整政策';
+
+  @override
+  String get prepareViewCards => '卡片';
+
+  @override
+  String get prepareViewTimeline => '总览';
+
+  @override
+  String get prepareSwitchCountry => '切换国家';
+
+  @override
+  String get prepareSwitchReason => '切换原因';
+
+  @override
+  String get prepareSwitchCity => '切换城市';
+
+  @override
+  String get youProfileTitle => '我的';
+
+  @override
+  String youProfileIdLabel(String id) {
+    return 'ID: $id';
+  }
+
+  @override
+  String get journeyBannerSubtitle => '你的旅程';
+
+  @override
+  String get journeyBannerGreetingSH => '期待你的上海之旅';
+
+  @override
+  String get journeyBannerGreetingBJ => '期待你的北京之旅';
+
+  @override
+  String get journeyBannerGreetingGZ => '期待你的广州之旅';
+
+  @override
+  String get journeyBannerGreetingDefault => '期待你的中国之旅';
+
+  @override
+  String prepareChecklistDone(int done, int total) {
+    return '$done / $total 已完成';
+  }
+
+  @override
+  String get onboardingSettingsLanguageEn => 'English';
+
+  @override
+  String get onboardingSettingsThemeSystem => '跟随系统';
+
+  @override
+  String get onboardingSettingsThemeLight => '浅色';
+
+  @override
+  String get onboardingSettingsThemeDark => '深色';
+
+  @override
+  String get onboardingSettingsCountrySearchHint => '搜索国家…';
+
+  @override
+  String get onboardingSettingsOtherCityNotice =>
+      '其他城市 v1 尚未覆盖。我们仍会针对你的护照展示国家级政策（签证、海关、大使馆），但离线包和城市专属 POI 仅支持北京、上海、广州。';
+
+  @override
+  String get privacyPolicyTitle => '隐私政策';
+
+  @override
+  String get highlightsMustSee => '必看景点';
+
+  @override
+  String get highlightsFood => '美食';
+
+  @override
+  String get highlightsCulture => '文化';
+
+  @override
+  String get youPageSubtitle => '你的数据，你的设备，你的选择';
+
+  @override
+  String get youSettingsSubtitle => '语言、外观与偏好';
+
+  @override
+  String get youFeedbackSubtitle => '帮助我们做得更好';
 }

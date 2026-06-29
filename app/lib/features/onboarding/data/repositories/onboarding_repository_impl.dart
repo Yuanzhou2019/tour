@@ -3,6 +3,8 @@ import 'package:hive_ce/hive.dart';
 import 'package:injectable/injectable.dart';
 import '../../../../core/storage/hive_boxes.dart';
 import '../../domain/entities/country.dart';
+import '../../domain/entities/entry_city.dart';
+import '../../domain/entities/entry_reason.dart';
 import '../../domain/entities/unit_system.dart';
 import '../../domain/repositories/onboarding_repository.dart';
 
@@ -13,6 +15,8 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
   static const _kTheme = 'first_run_theme';
   static const _kCountry = 'first_run_country';
   static const _kUnit = 'first_run_unit';
+  static const _kEntryReason = 'first_run_entry_reason';
+  static const _kEntryCity = 'first_run_entry_city';
 
   Box get _box => Hive.box(HiveBoxes.prefs);
 
@@ -34,6 +38,14 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
         _box.get(_kCountry, defaultValue: Country.us.iso2) as String;
     final unitName =
         _box.get(_kUnit, defaultValue: UnitSystem.metric.name) as String;
+    final reasonId = _box.get(
+      _kEntryReason,
+      defaultValue: EntryReason.tourism.id,
+    ) as String;
+    final cityId = _box.get(
+      _kEntryCity,
+      defaultValue: EntryCity.shanghai.id,
+    ) as String;
     return FirstRunPreferences(
       locale: Locale(localeCode),
       themeMode: ThemeMode.values.byName(themeName),
@@ -42,6 +54,14 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
         orElse: () => Country.us,
       ),
       unitSystem: UnitSystem.values.byName(unitName),
+      entryReason: EntryReason.values.firstWhere(
+        (r) => r.id == reasonId,
+        orElse: () => EntryReason.tourism,
+      ),
+      entryCity: EntryCity.values.firstWhere(
+        (c) => c.id == cityId,
+        orElse: () => EntryCity.shanghai,
+      ),
     );
   }
 
@@ -51,5 +71,7 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
     await _box.put(_kTheme, prefs.themeMode.name);
     await _box.put(_kCountry, prefs.country.iso2);
     await _box.put(_kUnit, prefs.unitSystem.name);
+    await _box.put(_kEntryReason, prefs.entryReason.id);
+    await _box.put(_kEntryCity, prefs.entryCity.id);
   }
 }
