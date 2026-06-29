@@ -19,13 +19,17 @@ class MockInterceptor extends Interceptor {
     'POST /corrections',
   };
 
-  /// Simulate offline (dev-mode toggle).
+  /// When false, the interceptor passes every request through to the real
+  /// backend. Controlled by `--dart-define=USE_MOCK=false`.
+  bool enabled = true;
+
+  /// Simulate offline (dev-mode toggle). Only effective when [enabled].
   bool simulateOffline = false;
 
   /// Error rate (0.0 - 1.0) for randomly failing requests.
   double errorRate = 0.0;
 
-  /// Simulated network latency in milliseconds.
+  /// Simulated network latency in milliseconds. Only effective when [enabled].
   int simulatedDelayMs = 200;
 
   /// Current locale tag (e.g. `en`, `zh`, `zh-CN`). Updated by the app
@@ -38,6 +42,10 @@ class MockInterceptor extends Interceptor {
     RequestOptions options,
     RequestInterceptorHandler handler,
   ) async {
+    if (!enabled) {
+      return handler.next(options);
+    }
+
     if (simulateOffline) {
       return handler.reject(
         DioException(

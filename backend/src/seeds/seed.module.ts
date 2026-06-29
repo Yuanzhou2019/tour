@@ -11,6 +11,7 @@ import { Rank } from '../modules/discover/entities/rank.entity';
 import { EmergencyContact } from '../modules/tools/entities/emergency-contact.entity';
 import { Phrase } from '../modules/tools/entities/phrase.entity';
 import { FxRate } from '../modules/tools/entities/fx-rate.entity';
+import { AdminUser } from '../modules/auth/entities/admin-user.entity';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { FxRate } from '../modules/tools/entities/fx-rate.entity';
       Policy, Checklist, Poi, PoiTag, PoiReputation,
       DiscoverCard, Rank,
       EmergencyContact, Phrase, FxRate,
+      AdminUser,
     ]),
   ],
   providers: [SeedService],

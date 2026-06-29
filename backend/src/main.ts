@@ -1,15 +1,17 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { NestExpressApplication } from '@nestjs/platform-express';
 import helmet from 'helmet';
 import * as compression from 'compression';
+import { join } from 'path';
 
 import { AppModule } from './app.module';
 
 async function bootstrap(): Promise<void> {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  app.use(helmet());
+  app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
   app.use(compression());
   app.enableCors({
     origin: true,
@@ -24,9 +26,12 @@ async function bootstrap(): Promise<void> {
   );
   app.setGlobalPrefix('api/v1');
 
+  // Serve uploaded files
+  app.useStaticAssets(join(process.cwd(), 'uploads'), { prefix: '/uploads' });
+
   const config = new DocumentBuilder()
     .setTitle('Sightour API')
-    .setDescription('Sightour MVP backend (Stage 0 scaffold)')
+    .setDescription('Sightour MVP backend')
     .setVersion('0.1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
@@ -40,5 +45,7 @@ async function bootstrap(): Promise<void> {
   // eslint-disable-next-line no-console
   console.log(`Swagger docs at http://localhost:${port}/api/docs`);
 }
+
+void bootstrap();
 
 void bootstrap();

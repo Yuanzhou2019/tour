@@ -1,5 +1,6 @@
-import { Body, Controller, Get, Headers, Param, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Get, Headers, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { CorrectionService, CreateCorrectionDto } from './correction.service';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 @Controller('corrections')
 export class CorrectionController {
@@ -16,16 +17,19 @@ export class CorrectionController {
     return this.correctionService.create(anonymousId, dto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get()
   list() {
     return this.correctionService.listAll();
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.correctionService.findById(id);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Patch(':id')
   update(
     @Param('id') id: string,

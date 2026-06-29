@@ -1,37 +1,42 @@
 import { ProLayout } from '@ant-design/pro-components';
-import { Button } from 'antd';
-import { useAuthStore } from '../../store/authStore';
+import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 
-const menuRoute = {
+const route = {
   path: '/dashboard',
   routes: [
-    { path: '/dashboard', name: 'Overview' },
-    { path: '/dashboard/poi', name: 'POI Management' },
-    { path: '/dashboard/policy', name: 'Policy' },
-    { path: '/dashboard/rank', name: 'Ranks' },
-    { path: '/dashboard/correction', name: 'Corrections' },
+    { path: '/dashboard/poi', name: 'POI 管理' },
+    { path: '/dashboard/policy', name: '政策管理' },
+    { path: '/dashboard/checklist', name: '清单管理' },
+    { path: '/dashboard/correction', name: '纠错审核' },
+    { path: '/dashboard/discover', name: '发现卡片' },
+    { path: '/dashboard/rank', name: '榜单管理' },
+    { path: '/dashboard/emergency', name: '紧急联系' },
+    { path: '/dashboard/phrases', name: '常用语库' },
   ],
 };
 
 export default function DashboardPage() {
-  const clear = useAuthStore((s) => s.clear);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <ProLayout
-      title="Sightour Admin"
+      title="Sightour 管理后台"
       layout="mix"
-      location={{ pathname: '/dashboard' }}
-      route={menuRoute}
+      location={{ pathname: location.pathname }}
+      route={route}
       menu={{ type: 'group' }}
       token={{ bgLayout: '#f5f7fa' }}
+      menuItemRender={(item, dom) => (
+        <div
+          onClick={() => item.path && navigate(item.path)}
+          style={{ cursor: 'pointer' }}
+        >
+          {dom}
+        </div>
+      )}
     >
-      <div style={{ padding: 24 }}>
-        <h1>Sightour Admin · v0.1</h1>
-        <p>Stage 0 scaffold. Modules wired in Stage 3 (Task 34).</p>
-        <Button onClick={clear} danger>
-          Sign out
-        </Button>
-      </div>
+      <Outlet />
     </ProLayout>
   );
 }

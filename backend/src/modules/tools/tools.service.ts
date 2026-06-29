@@ -47,4 +47,38 @@ export class ToolsService {
   async listAllPhrases() {
     return { data: await this.phraseRepo.find({ order: { category: 'ASC', order: 'ASC' } }) };
   }
+
+  async createEmergency(dto: Partial<EmergencyContact>) {
+    const entity = this.emergencyRepo.create(dto);
+    return this.emergencyRepo.save(entity);
+  }
+
+  async updateEmergency(id: string, dto: Partial<EmergencyContact>) {
+    const result = await this.emergencyRepo.update(id, dto);
+    if (result.affected === 0) throw new NotFoundException(`EmergencyContact ${id} not found`);
+    return this.emergencyRepo.findOne({ where: { id } });
+  }
+
+  async deleteEmergency(id: string) {
+    const result = await this.emergencyRepo.delete(id);
+    if (result.affected === 0) throw new NotFoundException(`EmergencyContact ${id} not found`);
+    return { deleted: true };
+  }
+
+  async createPhrase(dto: Partial<Phrase>) {
+    const entity = this.phraseRepo.create(dto);
+    return this.phraseRepo.save(entity);
+  }
+
+  async updatePhrase(id: string, dto: Partial<Phrase>) {
+    const result = await this.phraseRepo.update(id, dto);
+    if (result.affected === 0) throw new NotFoundException(`Phrase ${id} not found`);
+    return this.phraseRepo.findOne({ where: { id } });
+  }
+
+  async deletePhrase(id: string) {
+    const result = await this.phraseRepo.delete(id);
+    if (result.affected === 0) throw new NotFoundException(`Phrase ${id} not found`);
+    return { deleted: true };
+  }
 }

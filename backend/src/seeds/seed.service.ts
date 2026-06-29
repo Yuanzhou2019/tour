@@ -14,6 +14,8 @@ import { Rank } from '../modules/discover/entities/rank.entity';
 import { EmergencyContact } from '../modules/tools/entities/emergency-contact.entity';
 import { Phrase } from '../modules/tools/entities/phrase.entity';
 import { FxRate } from '../modules/tools/entities/fx-rate.entity';
+import { AdminUser } from '../modules/auth/entities/admin-user.entity';
+import { AuthService } from '../modules/auth/auth.service';
 
 @Injectable()
 export class SeedService {
@@ -30,6 +32,7 @@ export class SeedService {
     @InjectRepository(EmergencyContact) private emergencyRepo: Repository<EmergencyContact>,
     @InjectRepository(Phrase) private phraseRepo: Repository<Phrase>,
     @InjectRepository(FxRate) private fxRepo: Repository<FxRate>,
+    @InjectRepository(AdminUser) private adminRepo: Repository<AdminUser>,
   ) {}
 
   async seedAll() {
@@ -43,22 +46,20 @@ export class SeedService {
     await this.upsert(this.rankRepo, 'ranks', path.join(seedsDir, 'ranks.json'));
     await this.upsert(this.phraseRepo, 'phrases', path.join(seedsDir, 'phrases.json'));
     await this.upsert(this.emergencyRepo, 'emergency', path.join(seedsDir, 'emergency.json'));
-    await this.upsert(this.fxRepo, 'fx-rates', path.join(seedsDir, 'fx-rates.json'));
+    await this.upsert(this.fxRepo, 'fx-rates', path.join(seedsDir, 'fx-rates.json'), ['fromCurrency', 'toCurrency']);
+    await this.seedAdminUser();
     this.logger.log('✅ PGC seed complete');
   }
 
-  private async upsert<T extends ObjectLiteral>(repo: Repository<T>, key: string, filePath: string) {
+  private async upsert<T extends ObjectLiteral>(repo: Repository<T>, key: string, filePath: string, conflictPaths?: string[]) {
     if (!fs.existsSync(filePath)) {
       this.logger.warn(`Seed file not found: ${filePath}`);
       return;
     }
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as T[];
     if (data.length === 0) return;
-    // 用 save() 实现 upsert：先清空再插入（开发期用，生产用 batch upsert）
-    // 用 TRUNCATE ... CASCADE 避免被外键约束的子表阻塞
-    await repo.query(`TRUNCATE TABLE "${repo.metadata.tableName}" CASCADE`);
     const processed = this.preprocessData(data, repo);
-    await repo.save(processed);
+    await repo.upsert(processed as any, conflictPaths ?? ['id']);
     this.logger.log(`✓ ${key}: ${processed.length} records`);
   }
 
@@ -87,5 +88,21 @@ export class SeedService {
       });
       return processed as T;
     });
+  }
+
+  /** 种子管理员账号（仅当 admin_users 表为空时插入） */
+  private async seedAdminUser() {
+    const count = await this.adminRepo.count();
+    if (count > 0) {
+      this.logger.log('✓ admin_users: already seeded, skipping');
+      return;
+    }
+    const admin = this.adminRepo.create({
+      username: 'admin',
+      passwordHash: AuthService.hashPassword('sightour2026'),
+      role: 'admin',
+    });
+    await this.adminRepo.save(admin);
+    this.logger.log('✓ admin_users: 1 record (username=admin, password=sightour2026)');
   }
 }

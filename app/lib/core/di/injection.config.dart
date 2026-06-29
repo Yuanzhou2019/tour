@@ -51,9 +51,20 @@ import '../../features/tools/domain/repositories/fx_repository.dart' as _i457;
 import '../../features/tools/domain/repositories/tools_repository.dart'
     as _i590;
 import '../../features/tools/presentation/cubit/fx_converter_cubit.dart'
-    as _i516;
-import '../../features/tools/presentation/cubit/tools_home_cubit.dart' as _i318;
-import '../i18n/locale_cubit.dart' as _i734;
+      as _i516;
+  import '../../features/tools/presentation/cubit/tools_home_cubit.dart' as _i318;
+  import '../../features/poi/data/repositories/poi_repository_impl.dart' as _i1060;
+  import '../../features/poi/domain/repositories/poi_repository.dart' as _i1061;
+  import '../../features/poi/presentation/cubit/poi_detail_cubit.dart' as _i1062;
+  import '../../features/emergency/data/repositories/emergency_repository_impl.dart'
+      as _i1063;
+  import '../../features/emergency/domain/repositories/emergency_repository.dart'
+      as _i1064;
+  import '../../features/phrases/data/repositories/phrases_repository_impl.dart'
+      as _i1065;
+  import '../../features/phrases/domain/repositories/phrases_repository.dart'
+      as _i1066;
+  import '../i18n/locale_cubit.dart' as _i734;
 import '../network/dio_client.dart' as _i667;
 import '../network/interceptors/auth_interceptor.dart' as _i745;
 import '../network/interceptors/error_interceptor.dart' as _i511;
@@ -119,6 +130,14 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i710.MapHomeCubit(gh<_i170.PoiRepository>()));
     gh.factory<_i1025.DiscoverHomeCubit>(
         () => _i1025.DiscoverHomeCubit(gh<_i302.DiscoverRepository>()));
+    gh.lazySingleton<_i1061.PoiRepository>(
+        () => _i1060.PoiRepositoryImpl(gh<_i667.DioClient>()));
+    gh.lazySingleton<_i1064.EmergencyRepository>(
+        () => _i1063.EmergencyRepositoryImpl(gh<_i667.DioClient>()));
+    gh.lazySingleton<_i1066.PhrasesRepository>(
+        () => _i1065.PhrasesRepositoryImpl(gh<_i667.DioClient>()));
+    gh.factory<_i1062.PoiDetailCubit>(
+        () => _i1062.PoiDetailCubit(gh<_i1061.PoiRepository>()));
     return this;
   }
 }

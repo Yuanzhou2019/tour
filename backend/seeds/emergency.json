@@ -58,5 +58,35 @@
     "phone": "021-5257-4766",
     "addressZh": "上海市延安西路 2299 号上海世贸商城 8 楼",
     "addressEn": "8F Shanghai Mart, 2299 Yan'an West Road, Shanghai"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0007",
+    "country": "KR",
+    "type": "consulate",
+    "nameZh": "大韩民国驻上海总领事馆",
+    "nameEn": "Consulate General of the Republic of Korea in Shanghai",
+    "phone": "021-6295-5000",
+    "addressZh": "上海市长宁区万山路 60 号",
+    "addressEn": "60 Wanshan Road, Changning District, Shanghai"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0008",
+    "country": "*",
+    "type": "tourist_hotline",
+    "nameZh": "上海旅游服务热线",
+    "nameEn": "Shanghai Tourist Hotline",
+    "phone": "12301",
+    "addressZh": "全上海覆盖",
+    "addressEn": "Shanghai-wide coverage"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0009",
+    "country": "*",
+    "type": "tourist_hotline",
+    "nameZh": "上海市消费者投诉热线",
+    "nameEn": "Shanghai Consumer Complaint Hotline",
+    "phone": "12315",
+    "addressZh": "全上海覆盖",
+    "addressEn": "Shanghai-wide coverage"
   }
 ]

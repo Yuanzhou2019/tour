@@ -514,4 +514,157 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get youFeedbackSubtitle => '帮助我们做得更好';
+
+  @override
+  String get poiDetailTitle => '详情';
+
+  @override
+  String get poiDetailAddress => '地址';
+
+  @override
+  String get poiDetailContact => '联系方式';
+
+  @override
+  String get poiDetailHours => '营业时间';
+
+  @override
+  String get poiDetailNotAvailable => '暂无信息';
+
+  @override
+  String get poiDetailViewReputation => '查看口碑评分';
+
+  @override
+  String poiDetailScore(String score) {
+    return '评分: $score';
+  }
+
+  @override
+  String get poiDetailCleanliness => '国际友好服务';
+
+  @override
+  String get poiDetailLanguage => '语言支持';
+
+  @override
+  String get poiDetailPayment => '支付便利';
+
+  @override
+  String get poiDetailAuthentic => '地道体验';
+
+  @override
+  String get poiDetailValue => '性价比';
+
+  @override
+  String get poiDetailTips => '体验提示';
+
+  @override
+  String get poiDetailVerified => '官方认证';
+
+  @override
+  String get policyDetailTitle => '政策详情';
+
+  @override
+  String get policyDetailSource => '来源';
+
+  @override
+  String get checklistTitle => '行前清单';
+
+  @override
+  String get checklistEmpty => '暂无符合条件的清单';
+
+  @override
+  String get rankTitle => '榜单';
+
+  @override
+  String get rankEmpty => '暂无榜单';
+
+  @override
+  String get fxTitle => '汇率换算';
+
+  @override
+  String get fxSubtitle => '实时汇率';
+
+  @override
+  String get unitConverterTitle => '单位换算';
+
+  @override
+  String get unitConverterKm => '公里';
+
+  @override
+  String get unitConverterMi => '英里';
+
+  @override
+  String get unitConverterC => '摄氏度';
+
+  @override
+  String get unitConverterF => '华氏度';
+
+  @override
+  String get timezoneTitle => '时区';
+
+  @override
+  String get timezoneChina => '中国标准时间';
+
+  @override
+  String get timezoneCST => 'CST (UTC+8)';
+
+  @override
+  String get emergencyTitle => '紧急联系方式';
+
+  @override
+  String get emergencyPolice => '警察';
+
+  @override
+  String get emergencyMedical => '急救';
+
+  @override
+  String get emergencyFire => '火警';
+
+  @override
+  String get emergencyConsulate => '领事馆';
+
+  @override
+  String get emergencyTouristHotline => '旅游热线';
+
+  @override
+  String get emergencyEmpty => '暂无紧急联系信息';
+
+  @override
+  String get phrasesTitle => '常用短语';
+
+  @override
+  String get phrasesCategoryCustoms => '海关';
+
+  @override
+  String get phrasesCategoryTaxi => '打车';
+
+  @override
+  String get phrasesCategoryDining => '就餐';
+
+  @override
+  String get phrasesCategoryMedical => '就医';
+
+  @override
+  String get phrasesCategoryEmergency => '紧急';
+
+  @override
+  String get phrasesCategoryShopping => '购物';
+
+  @override
+  String get phrasesEmpty => '该分类暂无短语';
+
+  @override
+  String get aboutTitle => '关于 Sightour';
+
+  @override
+  String get aboutVersion => 'Sightour v0.1.0';
+
+  @override
+  String get aboutDescription =>
+      '你在中国旅行的私人向导。无需注册账号。\n\nSightour 是一个开源的、社区驱动的旅行助手，专注为来华国际游客提供诚实、精选的信息。';
+
+  @override
+  String get privacyFullTitle => '隐私政策';
+
+  @override
+  String get privacyFullContent => '隐私政策全文即将上线。';
 }

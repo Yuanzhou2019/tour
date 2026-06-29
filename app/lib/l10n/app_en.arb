@@ -205,5 +205,67 @@
 
   "youPageSubtitle": "Your data, your device, your choice",
   "youSettingsSubtitle": "Language, theme, and preferences",
-  "youFeedbackSubtitle": "Help us improve Sightour"
+  "youFeedbackSubtitle": "Help us improve Sightour",
+
+  "poiDetailTitle": "Details",
+  "poiDetailAddress": "Address",
+  "poiDetailContact": "Contact",
+  "poiDetailHours": "Open hours",
+  "poiDetailNotAvailable": "Not available",
+  "poiDetailViewReputation": "View reputation",
+  "poiDetailScore": "Score: {score}",
+  "@poiDetailScore": { "placeholders": { "score": { "type": "String" } } },
+  "poiDetailCleanliness": "Foreign-friendly service",
+  "poiDetailLanguage": "Language support",
+  "poiDetailPayment": "Payment ease",
+  "poiDetailAuthentic": "Authenticity",
+  "poiDetailValue": "Value for money",
+  "poiDetailTips": "Experience tips",
+  "poiDetailVerified": "Officially verified",
+
+  "policyDetailTitle": "Policy detail",
+  "policyDetailSource": "Source",
+
+  "checklistTitle": "Pre-arrival checklist",
+  "checklistEmpty": "No checklist items for your selection",
+
+  "rankTitle": "Rankings",
+  "rankEmpty": "No rankings yet",
+
+  "fxTitle": "Currency converter",
+  "fxSubtitle": "Live exchange rates",
+
+  "unitConverterTitle": "Unit converter",
+  "unitConverterKm": "Kilometers",
+  "unitConverterMi": "Miles",
+  "unitConverterC": "Celsius",
+  "unitConverterF": "Fahrenheit",
+
+  "timezoneTitle": "Time zones",
+  "timezoneChina": "China Standard Time",
+  "timezoneCST": "CST (UTC+8)",
+
+  "emergencyTitle": "Emergency contacts",
+  "emergencyPolice": "Police",
+  "emergencyMedical": "Medical",
+  "emergencyFire": "Fire",
+  "emergencyConsulate": "Consulate",
+  "emergencyTouristHotline": "Tourist hotline",
+  "emergencyEmpty": "No emergency contacts available",
+
+  "phrasesTitle": "Phrase book",
+  "phrasesCategoryCustoms": "Customs",
+  "phrasesCategoryTaxi": "Taxi",
+  "phrasesCategoryDining": "Dining",
+  "phrasesCategoryMedical": "Medical",
+  "phrasesCategoryEmergency": "Emergency",
+  "phrasesCategoryShopping": "Shopping",
+  "phrasesEmpty": "No phrases in this category",
+
+  "aboutTitle": "About Sightour",
+  "aboutVersion": "Sightour v0.1.0",
+  "aboutDescription": "Your private guide to China. Built for visitors, no account needed.\n\nSightour is an open-source, community-driven travel companion focused on providing honest, curated information for international travellers visiting China.",
+
+  "privacyFullTitle": "Privacy Policy",
+  "privacyFullContent": "Privacy policy full text coming soon."
 }

@@ -11,6 +11,7 @@ import { Phrase } from '../modules/tools/entities/phrase.entity';
 import { FxRate } from '../modules/tools/entities/fx-rate.entity';
 import { Correction } from '../modules/correction/entities/correction.entity';
 import { User } from '../modules/user/entities/user.entity';
+import { AdminUser } from '../modules/auth/entities/admin-user.entity';
 
 export const buildTypeOrmConfig = (): TypeOrmModuleOptions => ({
   type: 'postgres',
@@ -32,6 +33,7 @@ export const buildTypeOrmConfig = (): TypeOrmModuleOptions => ({
     FxRate,
     Correction,
     User,
+    AdminUser,
   ],
   synchronize: process.env.NODE_ENV !== 'production',
   logging: process.env.NODE_ENV === 'development' ? ['error', 'warn'] : false,

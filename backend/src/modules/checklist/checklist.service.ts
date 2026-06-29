@@ -1,7 +1,12 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Checklist } from './entities/checklist.entity';
+import { Checklist, ChecklistItem } from './entities/checklist.entity';
+
+export interface ToggleItemDto {
+  itemId: string;
+  checked: boolean;
+}
 
 @Injectable()
 export class ChecklistService {
@@ -24,5 +29,34 @@ export class ChecklistService {
     const checklist = await this.checklistRepo.findOne({ where: { id } });
     if (!checklist) throw new NotFoundException(`Checklist ${id} not found`);
     return checklist;
+  }
+
+  async toggleItem(id: string, dto: ToggleItemDto) {
+    const checklist = await this.checklistRepo.findOne({ where: { id } });
+    if (!checklist) throw new NotFoundException(`Checklist ${id} not found`);
+
+    const items: ChecklistItem[] = checklist.items.map((item) =>
+      item.id === dto.itemId ? { ...item, checked: dto.checked } : item,
+    );
+
+    await this.checklistRepo.update(id, { items } as any);
+    return { ...checklist, items };
+  }
+
+  async create(dto: Partial<Checklist>) {
+    const entity = this.checklistRepo.create(dto);
+    return this.checklistRepo.save(entity);
+  }
+
+  async update(id: string, dto: Partial<Checklist>) {
+    const result = await this.checklistRepo.update(id, dto);
+    if (result.affected === 0) throw new NotFoundException(`Checklist ${id} not found`);
+    return this.findById(id);
+  }
+
+  async delete(id: string) {
+    const result = await this.checklistRepo.delete(id);
+    if (result.affected === 0) throw new NotFoundException(`Checklist ${id} not found`);
+    return { deleted: true };
   }
 }

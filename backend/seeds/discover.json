@@ -164,5 +164,64 @@
       "00000000-0000-0000-0000-00000000000e"
     ],
     "order": 4
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000007000d",
+    "category": "curated",
+    "titleZh": "上海天际线之旅",
+    "titleEn": "Shanghai Skyline Tour",
+    "summaryZh": "从三个高度俯瞰上海：上海中心 546m → 东方明珠 259m → 外滩地面",
+    "summaryEn": "See Shanghai from three heights: Shanghai Tower 546m → Pearl Tower 259m → Bund ground level",
+    "imageUrl": "https://images.sightour.example/discover/cur-4.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000010",
+      "00000000-0000-0000-0000-000000000003",
+      "00000000-0000-0000-0000-000000000001"
+    ],
+    "order": 5
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000007000e",
+    "category": "authentic",
+    "titleZh": "小笼包地图",
+    "titleEn": "Xiaolongbao Map",
+    "summaryZh": "从百年老字号到米其林星级，6 家必试上海小笼",
+    "summaryEn": "From century-old shops to Michelin stars, 6 must-try xiaolongbao in Shanghai",
+    "imageUrl": "https://images.sightour.example/discover/auth-4.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000014",
+      "00000000-0000-0000-0000-000000000013",
+      "00000000-0000-0000-0000-00000000000b"
+    ],
+    "order": 5
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070010",
+    "category": "curated",
+    "titleZh": "上海 72 小时 · 美国游客版",
+    "titleEn": "72 Hours in Shanghai · American Traveler's Cut",
+    "summaryZh": "为美国游客定制的三天完美行程：外滩 → 城市规划馆 → M50 → 西岸 → 法租界 → Mr & Mrs Bund",
+    "summaryEn": "A perfect 3-day itinerary for Americans: Bund → Urban Planning Museum → M50 → West Bund → French Concession → Mr & Mrs Bund",
+    "imageUrl": "https://images.sightour.example/discover/cur-5.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000001",
+      "00000000-0000-0000-0000-000000000017",
+      "00000000-0000-0000-0000-000000000016",
+      "00000000-0000-0000-0000-000000000015",
+      "00000000-0000-0000-0000-000000000007",
+      "00000000-0000-0000-0000-000000000018"
+    ],
+    "order": 6
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070011",
+    "category": "heads_up",
+    "titleZh": "美国游客小费与支付须知",
+    "titleEn": "Tipping & Payment Tips for Americans",
+    "summaryZh": "中国没有小费文化，不需要加 15–20%。请阅读支付宝外卡绑定教程",
+    "summaryEn": "No tipping culture in China — skip the 15–20%. Read our Alipay foreign card setup guide",
+    "imageUrl": "https://images.sightour.example/discover/hu-4.jpg",
+    "relatedPoiIds": [],
+    "order": 5
   }
 ]

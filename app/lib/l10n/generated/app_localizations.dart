@@ -1081,6 +1081,306 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Help us improve Sightour'**
   String get youFeedbackSubtitle;
+
+  /// No description provided for @poiDetailTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get poiDetailTitle;
+
+  /// No description provided for @poiDetailAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Address'**
+  String get poiDetailAddress;
+
+  /// No description provided for @poiDetailContact.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get poiDetailContact;
+
+  /// No description provided for @poiDetailHours.
+  ///
+  /// In en, this message translates to:
+  /// **'Open hours'**
+  String get poiDetailHours;
+
+  /// No description provided for @poiDetailNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Not available'**
+  String get poiDetailNotAvailable;
+
+  /// No description provided for @poiDetailViewReputation.
+  ///
+  /// In en, this message translates to:
+  /// **'View reputation'**
+  String get poiDetailViewReputation;
+
+  /// No description provided for @poiDetailScore.
+  ///
+  /// In en, this message translates to:
+  /// **'Score: {score}'**
+  String poiDetailScore(String score);
+
+  /// No description provided for @poiDetailCleanliness.
+  ///
+  /// In en, this message translates to:
+  /// **'Foreign-friendly service'**
+  String get poiDetailCleanliness;
+
+  /// No description provided for @poiDetailLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language support'**
+  String get poiDetailLanguage;
+
+  /// No description provided for @poiDetailPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment ease'**
+  String get poiDetailPayment;
+
+  /// No description provided for @poiDetailAuthentic.
+  ///
+  /// In en, this message translates to:
+  /// **'Authenticity'**
+  String get poiDetailAuthentic;
+
+  /// No description provided for @poiDetailValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Value for money'**
+  String get poiDetailValue;
+
+  /// No description provided for @poiDetailTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience tips'**
+  String get poiDetailTips;
+
+  /// No description provided for @poiDetailVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Officially verified'**
+  String get poiDetailVerified;
+
+  /// No description provided for @policyDetailTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Policy detail'**
+  String get policyDetailTitle;
+
+  /// No description provided for @policyDetailSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get policyDetailSource;
+
+  /// No description provided for @checklistTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-arrival checklist'**
+  String get checklistTitle;
+
+  /// No description provided for @checklistEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No checklist items for your selection'**
+  String get checklistEmpty;
+
+  /// No description provided for @rankTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rankings'**
+  String get rankTitle;
+
+  /// No description provided for @rankEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No rankings yet'**
+  String get rankEmpty;
+
+  /// No description provided for @fxTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Currency converter'**
+  String get fxTitle;
+
+  /// No description provided for @fxSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Live exchange rates'**
+  String get fxSubtitle;
+
+  /// No description provided for @unitConverterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit converter'**
+  String get unitConverterTitle;
+
+  /// No description provided for @unitConverterKm.
+  ///
+  /// In en, this message translates to:
+  /// **'Kilometers'**
+  String get unitConverterKm;
+
+  /// No description provided for @unitConverterMi.
+  ///
+  /// In en, this message translates to:
+  /// **'Miles'**
+  String get unitConverterMi;
+
+  /// No description provided for @unitConverterC.
+  ///
+  /// In en, this message translates to:
+  /// **'Celsius'**
+  String get unitConverterC;
+
+  /// No description provided for @unitConverterF.
+  ///
+  /// In en, this message translates to:
+  /// **'Fahrenheit'**
+  String get unitConverterF;
+
+  /// No description provided for @timezoneTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Time zones'**
+  String get timezoneTitle;
+
+  /// No description provided for @timezoneChina.
+  ///
+  /// In en, this message translates to:
+  /// **'China Standard Time'**
+  String get timezoneChina;
+
+  /// No description provided for @timezoneCST.
+  ///
+  /// In en, this message translates to:
+  /// **'CST (UTC+8)'**
+  String get timezoneCST;
+
+  /// No description provided for @emergencyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency contacts'**
+  String get emergencyTitle;
+
+  /// No description provided for @emergencyPolice.
+  ///
+  /// In en, this message translates to:
+  /// **'Police'**
+  String get emergencyPolice;
+
+  /// No description provided for @emergencyMedical.
+  ///
+  /// In en, this message translates to:
+  /// **'Medical'**
+  String get emergencyMedical;
+
+  /// No description provided for @emergencyFire.
+  ///
+  /// In en, this message translates to:
+  /// **'Fire'**
+  String get emergencyFire;
+
+  /// No description provided for @emergencyConsulate.
+  ///
+  /// In en, this message translates to:
+  /// **'Consulate'**
+  String get emergencyConsulate;
+
+  /// No description provided for @emergencyTouristHotline.
+  ///
+  /// In en, this message translates to:
+  /// **'Tourist hotline'**
+  String get emergencyTouristHotline;
+
+  /// No description provided for @emergencyEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No emergency contacts available'**
+  String get emergencyEmpty;
+
+  /// No description provided for @phrasesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Phrase book'**
+  String get phrasesTitle;
+
+  /// No description provided for @phrasesCategoryCustoms.
+  ///
+  /// In en, this message translates to:
+  /// **'Customs'**
+  String get phrasesCategoryCustoms;
+
+  /// No description provided for @phrasesCategoryTaxi.
+  ///
+  /// In en, this message translates to:
+  /// **'Taxi'**
+  String get phrasesCategoryTaxi;
+
+  /// No description provided for @phrasesCategoryDining.
+  ///
+  /// In en, this message translates to:
+  /// **'Dining'**
+  String get phrasesCategoryDining;
+
+  /// No description provided for @phrasesCategoryMedical.
+  ///
+  /// In en, this message translates to:
+  /// **'Medical'**
+  String get phrasesCategoryMedical;
+
+  /// No description provided for @phrasesCategoryEmergency.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency'**
+  String get phrasesCategoryEmergency;
+
+  /// No description provided for @phrasesCategoryShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping'**
+  String get phrasesCategoryShopping;
+
+  /// No description provided for @phrasesEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No phrases in this category'**
+  String get phrasesEmpty;
+
+  /// No description provided for @aboutTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'About Sightour'**
+  String get aboutTitle;
+
+  /// No description provided for @aboutVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Sightour v0.1.0'**
+  String get aboutVersion;
+
+  /// No description provided for @aboutDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your private guide to China. Built for visitors, no account needed.\n\nSightour is an open-source, community-driven travel companion focused on providing honest, curated information for international travellers visiting China.'**
+  String get aboutDescription;
+
+  /// No description provided for @privacyFullTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyFullTitle;
+
+  /// No description provided for @privacyFullContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy policy full text coming soon.'**
+  String get privacyFullContent;
 }
 
 class _AppLocalizationsDelegate

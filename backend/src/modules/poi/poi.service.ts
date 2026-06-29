@@ -40,4 +40,21 @@ export class PoiService {
     if (!rep) throw new NotFoundException(`Reputation for ${poiId} not found`);
     return rep;
   }
+
+  async create(dto: Partial<Poi>) {
+    const entity = this.poiRepo.create(dto);
+    return this.poiRepo.save(entity);
+  }
+
+  async update(id: string, dto: Partial<Poi>) {
+    const result = await this.poiRepo.update(id, dto);
+    if (result.affected === 0) throw new NotFoundException(`Poi ${id} not found`);
+    return this.findById(id);
+  }
+
+  async delete(id: string) {
+    const result = await this.poiRepo.delete(id);
+    if (result.affected === 0) throw new NotFoundException(`Poi ${id} not found`);
+    return { deleted: true };
+  }
 }

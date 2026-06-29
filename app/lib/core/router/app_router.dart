@@ -2,13 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/discover/presentation/pages/discover_page.dart';
+import '../../features/discover/presentation/pages/rank_category_page.dart';
+import '../../features/emergency/presentation/pages/emergency_page.dart';
 import '../../features/feedback/presentation/pages/feedback_form_page.dart';
 import '../../features/map/presentation/pages/map_page.dart';
 import '../../features/onboarding/domain/repositories/onboarding_repository.dart';
 import '../../features/onboarding/presentation/pages/onboarding_flow_page.dart';
 import '../../features/onboarding/presentation/pages/privacy_consent_page.dart';
+import '../../features/phrases/presentation/pages/phrases_category_page.dart';
+import '../../features/phrases/presentation/pages/phrases_index_page.dart';
+import '../../features/poi/presentation/pages/poi_detail_page.dart';
+import '../../features/poi/presentation/pages/poi_reputation_page.dart';
+import '../../features/prepare/presentation/pages/checklist_page.dart';
+import '../../features/prepare/presentation/pages/policy_detail_page.dart';
 import '../../features/prepare/presentation/pages/prepare_page.dart';
+import '../../features/tools/presentation/pages/fx_page.dart';
+import '../../features/tools/presentation/pages/timezone_page.dart';
 import '../../features/tools/presentation/pages/tools_page.dart';
+import '../../features/tools/presentation/pages/unit_converter_page.dart';
+import '../../features/you/presentation/pages/about_page.dart';
+import '../../features/you/presentation/pages/privacy_full_page.dart';
 import '../../features/you/presentation/pages/you_page.dart';
 import '../../features/you/presentation/pages/you_settings_page.dart';
 import '../../shared/pages/coming_soon_page.dart';
@@ -37,7 +50,6 @@ final appRouter = GoRouter(
           path: 'complete',
           name: RouteNames.onboardingComplete,
           builder: (_, state) {
-            // Side effect: mark completed
             final repo = getIt<OnboardingRepository>();
             repo.markCompleted();
             return const _OnboardingCompletePage();
@@ -56,14 +68,14 @@ final appRouter = GoRouter(
             GoRoute(
               path: 'policy/:id',
               name: RouteNames.policyDetail,
-              builder: (_, state) => ComingSoonPage(
-                title: 'Policy · ${state.pathParameters['id']}',
+              builder: (_, state) => PolicyDetailPage(
+                policyId: state.pathParameters['id']!,
               ),
             ),
             GoRoute(
               path: 'checklist',
               name: RouteNames.checklist,
-              builder: (_, __) => const ComingSoonPage(title: 'Checklist'),
+              builder: (_, __) => const ChecklistPage(country: 'US'),
             ),
             GoRoute(
               path: 'offline',
@@ -81,15 +93,15 @@ final appRouter = GoRouter(
             GoRoute(
               path: 'poi/:id',
               name: RouteNames.poiDetail,
-              builder: (_, state) => ComingSoonPage(
-                title: 'POI · ${state.pathParameters['id']}',
+              builder: (_, state) => PoiDetailPage(
+                poiId: state.pathParameters['id']!,
               ),
               routes: <RouteBase>[
                 GoRoute(
                   path: 'reputation',
                   name: RouteNames.poiReputation,
-                  builder: (_, state) => ComingSoonPage(
-                    title: 'Reputation · ${state.pathParameters['id']}',
+                  builder: (_, state) => PoiReputationPage(
+                    poiId: state.pathParameters['id']!,
                   ),
                 ),
               ],
@@ -104,8 +116,8 @@ final appRouter = GoRouter(
             GoRoute(
               path: ':category',
               name: RouteNames.rankCategory,
-              builder: (_, state) => ComingSoonPage(
-                title: 'Rank · ${state.pathParameters['category']}',
+              builder: (_, state) => RankCategoryPage(
+                category: state.pathParameters['category']!,
               ),
             ),
           ],
@@ -118,18 +130,18 @@ final appRouter = GoRouter(
             GoRoute(
               path: 'fx',
               name: RouteNames.fxConverter,
-              builder: (_, __) => const ComingSoonPage(title: 'FX converter'),
+              builder: (_, __) => const FxPage(),
             ),
             GoRoute(
               path: 'phrases',
               name: RouteNames.phrasesIndex,
-              builder: (_, __) => const ComingSoonPage(title: 'Phrases'),
+              builder: (_, __) => const PhrasesIndexPage(),
               routes: <RouteBase>[
                 GoRoute(
                   path: ':category',
                   name: RouteNames.phrasesCategory,
-                  builder: (_, state) => ComingSoonPage(
-                    title: 'Phrases · ${state.pathParameters['category']}',
+                  builder: (_, state) => PhrasesCategoryPage(
+                    category: state.pathParameters['category']!,
                   ),
                 ),
               ],
@@ -137,7 +149,7 @@ final appRouter = GoRouter(
             GoRoute(
               path: 'emergency',
               name: RouteNames.emergency,
-              builder: (_, __) => const ComingSoonPage(title: 'Emergency'),
+              builder: (_, __) => const EmergencyPage(),
             ),
           ],
         ),
@@ -166,7 +178,6 @@ final appRouter = GoRouter(
         ),
       ],
     ),
-
     // Modal
     GoRoute(
       path: '/modal/correction',
@@ -202,17 +213,16 @@ final appRouter = GoRouter(
         child: ComingSoonPage(title: 'Language'),
       ),
     ),
-
     // Full
     GoRoute(
       path: '/full/privacy',
       name: RouteNames.privacy,
-      builder: (_, __) => const ComingSoonPage(title: 'Privacy policy'),
+      builder: (_, __) => const PrivacyFullPage(),
     ),
     GoRoute(
       path: '/full/about',
       name: RouteNames.about,
-      builder: (_, __) => const ComingSoonPage(title: 'About'),
+      builder: (_, __) => const AboutPage(),
     ),
     GoRoute(
       path: '/full/maintenance',
@@ -233,7 +243,6 @@ class _OnboardingCompletePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 短暂展示后跳到 /prepare
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.go('/prepare');
     });

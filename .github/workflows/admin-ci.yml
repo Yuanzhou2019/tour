@@ -31,7 +31,7 @@ jobs:
 
       - name: Lint
         working-directory: admin
-        run: npm run lint || true   # TODO(stage-1): enable strict lint
+        run: npm run lint
 
       - name: Build
         working-directory: admin

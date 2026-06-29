@@ -1,5 +1,6 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { DiscoverService } from './discover.service';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 @Controller('discover')
 export class DiscoverController {
@@ -19,6 +20,24 @@ export class DiscoverController {
   headsUp() {
     return this.discoverService.getCategory('heads_up');
   }
+
+  @UseGuards(JwtAuthGuard)
+  @Post()
+  createCard(@Body() dto: any) {
+    return this.discoverService.createCard(dto);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Patch(':id')
+  updateCard(@Param('id') id: string, @Body() dto: any) {
+    return this.discoverService.updateCard(id, dto);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Delete(':id')
+  deleteCard(@Param('id') id: string) {
+    return this.discoverService.deleteCard(id);
+  }
 }
 
 @Controller('ranks')
@@ -33,5 +52,23 @@ export class RankController {
   @Get(':category/:rankId')
   detail(@Param('category') category: string, @Param('rankId') rankId: string) {
     return this.discoverService.getRankById(category, rankId);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Post()
+  createRank(@Body() dto: any) {
+    return this.discoverService.createRank(dto);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Patch(':id')
+  updateRank(@Param('id') id: string, @Body() dto: any) {
+    return this.discoverService.updateRank(id, dto);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Delete(':id')
+  deleteRank(@Param('id') id: string) {
+    return this.discoverService.deleteRank(id);
   }
 }

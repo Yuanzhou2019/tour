@@ -34,4 +34,38 @@ export class DiscoverService {
     if (!rank) throw new NotFoundException(`Rank ${rankId} in ${category} not found`);
     return rank;
   }
+
+  async createCard(dto: Partial<DiscoverCard>) {
+    const entity = this.cardRepo.create(dto);
+    return this.cardRepo.save(entity);
+  }
+
+  async updateCard(id: string, dto: Partial<DiscoverCard>) {
+    const result = await this.cardRepo.update(id, dto);
+    if (result.affected === 0) throw new NotFoundException(`DiscoverCard ${id} not found`);
+    return this.cardRepo.findOne({ where: { id } });
+  }
+
+  async deleteCard(id: string) {
+    const result = await this.cardRepo.delete(id);
+    if (result.affected === 0) throw new NotFoundException(`DiscoverCard ${id} not found`);
+    return { deleted: true };
+  }
+
+  async createRank(dto: Partial<Rank>) {
+    const entity = this.rankRepo.create(dto);
+    return this.rankRepo.save(entity);
+  }
+
+  async updateRank(id: string, dto: Partial<Rank>) {
+    const result = await this.rankRepo.update(id, dto);
+    if (result.affected === 0) throw new NotFoundException(`Rank ${id} not found`);
+    return this.rankRepo.findOne({ where: { id } });
+  }
+
+  async deleteRank(id: string) {
+    const result = await this.rankRepo.delete(id);
+    if (result.affected === 0) throw new NotFoundException(`Rank ${id} not found`);
+    return { deleted: true };
+  }
 }

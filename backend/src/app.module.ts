@@ -15,6 +15,8 @@ import { UserModule } from './modules/user/user.module';
 import { ContentPackModule } from './modules/content-pack/content-pack.module';
 import { DiscoverModule } from './modules/discover/discover.module';
 import { ToolsModule } from './modules/tools/tools.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { UploadModule } from './modules/upload/upload.module';
 import { SeedModule } from './seeds/seed.module';
 import { AnonymousIdInterceptor } from './common/interceptors/anonymous-id.interceptor';
 
@@ -35,6 +37,8 @@ import { AnonymousIdInterceptor } from './common/interceptors/anonymous-id.inter
     ContentPackModule,
     DiscoverModule,
     ToolsModule,
+    AuthModule,
+    UploadModule,
     SeedModule,
   ],
   providers: [

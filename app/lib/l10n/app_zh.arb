@@ -205,5 +205,67 @@
 
   "youPageSubtitle": "你的数据，你的设备，你的选择",
   "youSettingsSubtitle": "语言、外观与偏好",
-  "youFeedbackSubtitle": "帮助我们做得更好"
+  "youFeedbackSubtitle": "帮助我们做得更好",
+
+  "poiDetailTitle": "详情",
+  "poiDetailAddress": "地址",
+  "poiDetailContact": "联系方式",
+  "poiDetailHours": "营业时间",
+  "poiDetailNotAvailable": "暂无信息",
+  "poiDetailViewReputation": "查看口碑评分",
+  "poiDetailScore": "评分: {score}",
+  "@poiDetailScore": { "placeholders": { "score": { "type": "String" } } },
+  "poiDetailCleanliness": "国际友好服务",
+  "poiDetailLanguage": "语言支持",
+  "poiDetailPayment": "支付便利",
+  "poiDetailAuthentic": "地道体验",
+  "poiDetailValue": "性价比",
+  "poiDetailTips": "体验提示",
+  "poiDetailVerified": "官方认证",
+
+  "policyDetailTitle": "政策详情",
+  "policyDetailSource": "来源",
+
+  "checklistTitle": "行前清单",
+  "checklistEmpty": "暂无符合条件的清单",
+
+  "rankTitle": "榜单",
+  "rankEmpty": "暂无榜单",
+
+  "fxTitle": "汇率换算",
+  "fxSubtitle": "实时汇率",
+
+  "unitConverterTitle": "单位换算",
+  "unitConverterKm": "公里",
+  "unitConverterMi": "英里",
+  "unitConverterC": "摄氏度",
+  "unitConverterF": "华氏度",
+
+  "timezoneTitle": "时区",
+  "timezoneChina": "中国标准时间",
+  "timezoneCST": "CST (UTC+8)",
+
+  "emergencyTitle": "紧急联系方式",
+  "emergencyPolice": "警察",
+  "emergencyMedical": "急救",
+  "emergencyFire": "火警",
+  "emergencyConsulate": "领事馆",
+  "emergencyTouristHotline": "旅游热线",
+  "emergencyEmpty": "暂无紧急联系信息",
+
+  "phrasesTitle": "常用短语",
+  "phrasesCategoryCustoms": "海关",
+  "phrasesCategoryTaxi": "打车",
+  "phrasesCategoryDining": "就餐",
+  "phrasesCategoryMedical": "就医",
+  "phrasesCategoryEmergency": "紧急",
+  "phrasesCategoryShopping": "购物",
+  "phrasesEmpty": "该分类暂无短语",
+
+  "aboutTitle": "关于 Sightour",
+  "aboutVersion": "Sightour v0.1.0",
+  "aboutDescription": "你在中国旅行的私人向导。无需注册账号。\n\nSightour 是一个开源的、社区驱动的旅行助手，专注为来华国际游客提供诚实、精选的信息。",
+
+  "privacyFullTitle": "隐私政策",
+  "privacyFullContent": "隐私政策全文即将上线。"
 }

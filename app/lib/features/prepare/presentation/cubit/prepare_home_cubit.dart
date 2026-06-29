@@ -80,6 +80,10 @@ class PrepareHomeCubit extends Cubit<PrepareHomeState> {
 class _NoopPolicyRepo implements PolicyRepository {
   @override
   Future<List<Policy>> fetchPolicies(String country) async => const [];
+
+  @override
+  Future<Policy> fetchPolicyById(String id) async =>
+      Policy(id: '', title: '', description: '', source: '', country: '');
 }
 
 class _NoopChecklistRepo implements ChecklistRepository {

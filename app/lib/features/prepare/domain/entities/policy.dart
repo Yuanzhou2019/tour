@@ -5,6 +5,8 @@ class Policy {
     required this.description,
     required this.source,
     required this.country,
+    this.category,
+    this.reason,
   });
 
   final String id;
@@ -12,14 +14,23 @@ class Policy {
   final String description;
   final String source;
   final String country;
+  final String? category;
+  final String? reason;
 
-  factory Policy.fromJson(Map<String, dynamic> json) => Policy(
-        id: json['id'] as String,
-        title: json['title'] as String,
-        description: json['description'] as String? ?? '',
-        source: json['source'] as String? ?? '',
-        country: json['country'] as String? ?? '',
-      );
+  factory Policy.fromJson(Map<String, dynamic> json) {
+    final title = (json['titleEn'] as String?) ?? (json['title'] as String?) ?? '';
+    final description = (json['contentEn'] as String?) ?? (json['contentZh'] as String?) ?? '';
+    final source = (json['sourceName'] as String?) ?? (json['source'] as String?) ?? '';
+    return Policy(
+      id: (json['id'] as String?) ?? '',
+      title: title,
+      description: description,
+      source: source,
+      country: (json['country'] as String?) ?? '',
+      category: json['category'] as String?,
+      reason: json['reason'] as String?,
+    );
+  }
 
   Policy copyWith({
     String? id,
@@ -27,6 +38,8 @@ class Policy {
     String? description,
     String? source,
     String? country,
+    String? category,
+    String? reason,
   }) =>
       Policy(
         id: id ?? this.id,
@@ -34,6 +47,8 @@ class Policy {
         description: description ?? this.description,
         source: source ?? this.source,
         country: country ?? this.country,
+        category: category ?? this.category,
+        reason: reason ?? this.reason,
       );
 
   @override

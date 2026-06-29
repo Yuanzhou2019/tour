@@ -537,4 +537,157 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get youFeedbackSubtitle => 'Help us improve Sightour';
+
+  @override
+  String get poiDetailTitle => 'Details';
+
+  @override
+  String get poiDetailAddress => 'Address';
+
+  @override
+  String get poiDetailContact => 'Contact';
+
+  @override
+  String get poiDetailHours => 'Open hours';
+
+  @override
+  String get poiDetailNotAvailable => 'Not available';
+
+  @override
+  String get poiDetailViewReputation => 'View reputation';
+
+  @override
+  String poiDetailScore(String score) {
+    return 'Score: $score';
+  }
+
+  @override
+  String get poiDetailCleanliness => 'Foreign-friendly service';
+
+  @override
+  String get poiDetailLanguage => 'Language support';
+
+  @override
+  String get poiDetailPayment => 'Payment ease';
+
+  @override
+  String get poiDetailAuthentic => 'Authenticity';
+
+  @override
+  String get poiDetailValue => 'Value for money';
+
+  @override
+  String get poiDetailTips => 'Experience tips';
+
+  @override
+  String get poiDetailVerified => 'Officially verified';
+
+  @override
+  String get policyDetailTitle => 'Policy detail';
+
+  @override
+  String get policyDetailSource => 'Source';
+
+  @override
+  String get checklistTitle => 'Pre-arrival checklist';
+
+  @override
+  String get checklistEmpty => 'No checklist items for your selection';
+
+  @override
+  String get rankTitle => 'Rankings';
+
+  @override
+  String get rankEmpty => 'No rankings yet';
+
+  @override
+  String get fxTitle => 'Currency converter';
+
+  @override
+  String get fxSubtitle => 'Live exchange rates';
+
+  @override
+  String get unitConverterTitle => 'Unit converter';
+
+  @override
+  String get unitConverterKm => 'Kilometers';
+
+  @override
+  String get unitConverterMi => 'Miles';
+
+  @override
+  String get unitConverterC => 'Celsius';
+
+  @override
+  String get unitConverterF => 'Fahrenheit';
+
+  @override
+  String get timezoneTitle => 'Time zones';
+
+  @override
+  String get timezoneChina => 'China Standard Time';
+
+  @override
+  String get timezoneCST => 'CST (UTC+8)';
+
+  @override
+  String get emergencyTitle => 'Emergency contacts';
+
+  @override
+  String get emergencyPolice => 'Police';
+
+  @override
+  String get emergencyMedical => 'Medical';
+
+  @override
+  String get emergencyFire => 'Fire';
+
+  @override
+  String get emergencyConsulate => 'Consulate';
+
+  @override
+  String get emergencyTouristHotline => 'Tourist hotline';
+
+  @override
+  String get emergencyEmpty => 'No emergency contacts available';
+
+  @override
+  String get phrasesTitle => 'Phrase book';
+
+  @override
+  String get phrasesCategoryCustoms => 'Customs';
+
+  @override
+  String get phrasesCategoryTaxi => 'Taxi';
+
+  @override
+  String get phrasesCategoryDining => 'Dining';
+
+  @override
+  String get phrasesCategoryMedical => 'Medical';
+
+  @override
+  String get phrasesCategoryEmergency => 'Emergency';
+
+  @override
+  String get phrasesCategoryShopping => 'Shopping';
+
+  @override
+  String get phrasesEmpty => 'No phrases in this category';
+
+  @override
+  String get aboutTitle => 'About Sightour';
+
+  @override
+  String get aboutVersion => 'Sightour v0.1.0';
+
+  @override
+  String get aboutDescription =>
+      'Your private guide to China. Built for visitors, no account needed.\n\nSightour is an open-source, community-driven travel companion focused on providing honest, curated information for international travellers visiting China.';
+
+  @override
+  String get privacyFullTitle => 'Privacy Policy';
+
+  @override
+  String get privacyFullContent => 'Privacy policy full text coming soon.';
 }

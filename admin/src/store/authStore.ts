@@ -1,11 +1,17 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { User } from '../types';
+import type { AdminUser } from '../types';
+
+export interface AuthData {
+  user: AdminUser;
+  accessToken: string;
+}
 
 interface AuthState {
-  user: User | null;
+  user: AdminUser | null;
+  accessToken: string | null;
   isAuthed: boolean;
-  setAuth: (user: User) => void;
+  setAuth: (data: AuthData) => void;
   clear: () => void;
 }
 
@@ -13,12 +19,12 @@ export const useAuthStore = create<AuthState>()(
   persist(
     (set) => ({
       user: null,
+      accessToken: null,
       isAuthed: false,
-      setAuth: (user: User) => set({ user, isAuthed: true }),
-      clear: () => set({ user: null, isAuthed: false }),
+      setAuth: ({ user, accessToken }: AuthData) =>
+        set({ user, accessToken, isAuthed: true }),
+      clear: () => set({ user: null, accessToken: null, isAuthed: false }),
     }),
-    {
-      name: 'sightour-admin-auth',
-    },
+    { name: 'sightour-admin-auth' },
   ),
 );

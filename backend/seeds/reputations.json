@@ -313,5 +313,194 @@
       "Today at Apple sessions are free, but book 7 days ahead.",
       "Apple Vision Pro demos need 1-day advance reservation."
     ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050010",
+    "poiId": "00000000-0000-0000-0000-000000000010",
+    "overallScore": 4.7,
+    "foreignFriendly": 4.6,
+    "languageSupport": 4.5,
+    "paymentEase": 4.3,
+    "authenticity": 4.2,
+    "value": 4.0,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "提前在官网购票比现场便宜 ¥30，且免排队。",
+      "日落时段（16:30–18:00）门票最抢手，建议提前 3 天预约。",
+      "119 层有咖啡厅，比 118 层观光厅人少且风景同样绝佳。"
+    ],
+    "experienceTipsEn": [
+      "Buy tickets online 3 days ahead — ¥30 cheaper than on-site and you skip the queue.",
+      "Sunset slots (16:30–18:00) sell out fastest — book early.",
+      "The café on floor 119 has fewer crowds and equally stunning views compared to the 118th-floor observatory."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050011",
+    "poiId": "00000000-0000-0000-0000-000000000011",
+    "overallScore": 4.5,
+    "foreignFriendly": 4.8,
+    "languageSupport": 4.7,
+    "paymentEase": 4.5,
+    "authenticity": 3.6,
+    "value": 3.5,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "周一至周四人最少，热门项目排队不超过 20 分钟。",
+      "下载上海迪士尼度假区 App 领 FastPass，入园后立即扫码抢热门项目。",
+      "可自带食物入园（但玻璃容器和自热食品除外）。"
+    ],
+    "experienceTipsEn": [
+      "Monday–Thursday has the shortest queues (under 20 min for most rides).",
+      "Download the official app and grab FastPass for top rides the moment you enter.",
+      "You can bring your own food (no glass containers or self-heating meals)."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050012",
+    "poiId": "00000000-0000-0000-0000-000000000012",
+    "overallScore": 4.3,
+    "foreignFriendly": 3.6,
+    "languageSupport": 3.0,
+    "paymentEase": 3.8,
+    "authenticity": 4.9,
+    "value": 4.8,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "寺内素面 ¥15 一碗，只在午市供应（11:00–13:00），强烈推荐。",
+      "龙华塔不可攀登，但外观在日落时极美。",
+      "农历新年和清明节人潮特别大，建议避开。"
+    ],
+    "experienceTipsEn": [
+      "The temple's vegetarian noodles (¥15) are legendary but only served 11:00–13:00 — don't miss them.",
+      "You can't climb the pagoda but it looks stunning at sunset.",
+      "Avoid Chinese New Year and Qingming Festival — extremely crowded."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050013",
+    "poiId": "00000000-0000-0000-0000-000000000013",
+    "overallScore": 4.6,
+    "foreignFriendly": 4.8,
+    "languageSupport": 4.9,
+    "paymentEase": 4.7,
+    "authenticity": 4.0,
+    "value": 3.8,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "松露小笼每天限量 50 份，建议提前电话预约。",
+      "蛋炒饭是隐藏王牌，粒粒分明。",
+      "接受所有主流外币卡，无需准备人民币现金。"
+    ],
+    "experienceTipsEn": [
+      "Truffle xiaolongbao are limited to 50 servings/day — call ahead to reserve.",
+      "The egg fried rice is a sleeper hit — perfectly textured.",
+      "All major foreign credit cards accepted — no need for CNY cash."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050014",
+    "poiId": "00000000-0000-0000-0000-000000000014",
+    "overallScore": 4.3,
+    "foreignFriendly": 3.4,
+    "languageSupport": 3.0,
+    "paymentEase": 3.5,
+    "authenticity": 4.9,
+    "value": 4.6,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "一楼外卖与二楼堂食菜单不同，外卖更本地化更实惠。",
+      "注意烫嘴！正确吃法：先咬一小口皮，把汤汁吸出来再吃。",
+      "只有中文菜单，但可指图点餐。"
+    ],
+    "experienceTipsEn": [
+      "Ground floor takeaway and upstairs dine-in have different menus — takeaway is cheaper and more local.",
+      "Don't burn your mouth! Proper technique: bite a tiny hole, slurp the soup, then eat.",
+      "Chinese-only menu, but you can point at photos to order."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050015",
+    "poiId": "00000000-0000-0000-0000-000000000015",
+    "overallScore": 4.7,
+    "foreignFriendly": 4.9,
+    "languageSupport": 5.0,
+    "paymentEase": 4.5,
+    "authenticity": 4.6,
+    "value": 4.4,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "与蓬皮杜五年合作期间（2019–2024，后延长），展览质量达到国际一线水平。",
+      "美术馆附设咖啡厅有英文菜单和免费 Wi-Fi，适合下午茶休憩。",
+      "周一闭馆，建议周中下午来访（闭馆 2 小时前入馆人最少）。"
+    ],
+    "experienceTipsEn": [
+      "During the five-year Pompidou partnership, exhibitions match top international museums. Fully bilingual throughout.",
+      "The museum café has English menus, free Wi-Fi, and river views — perfect afternoon break spot.",
+      "Closed Mondays. Visit mid-week late afternoon (enter 2 hours before closing for the fewest crowds)."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050016",
+    "poiId": "00000000-0000-0000-0000-000000000016",
+    "overallScore": 4.4,
+    "foreignFriendly": 4.7,
+    "languageSupport": 4.5,
+    "paymentEase": 4.0,
+    "authenticity": 4.6,
+    "value": 4.8,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "多数画廊可直接进入不收门票，只有特展可能收费。",
+      "Café Dan 是上海外籍艺术家群体的非正式聚集地，周末下午非常热闹。",
+      "摄影爱好者：园区内到处是工业风墙壁和涂鸦，极适合出片。"
+    ],
+    "experienceTipsEn": [
+      "Most galleries are free to enter — only special exhibitions may charge.",
+      "Café Dan is the unofficial expat artist hangout — buzzing on weekend afternoons.",
+      "Photographers: the whole complex is an Instagram goldmine of industrial walls and graffiti."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050017",
+    "poiId": "00000000-0000-0000-0000-000000000017",
+    "overallScore": 4.5,
+    "foreignFriendly": 4.8,
+    "languageSupport": 4.9,
+    "paymentEase": 4.3,
+    "authenticity": 4.2,
+    "value": 4.7,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "全馆中英双语，语音导览器 ¥20 包含中文/英语/日语/韩语。",
+      "建议第一天来上海就来，作为了解城市的「第一站」。参观约 2 小时。",
+      "地下一层有免费的上海 2035 规划展示片，每 15 分钟放映一次。"
+    ],
+    "experienceTipsEn": [
+      "100% bilingual exhibits. Audio guides (¥20) available in EN/CN/JP/KR.",
+      "Make this your first stop in Shanghai — the best way to understand the city. Budget ~2 hours.",
+      "The basement theater shows a free 15-min film about Shanghai's 2035 master plan, running every 15 minutes."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050018",
+    "poiId": "00000000-0000-0000-0000-000000000018",
+    "overallScore": 4.7,
+    "foreignFriendly": 5.0,
+    "languageSupport": 5.0,
+    "paymentEase": 4.8,
+    "authenticity": 4.0,
+    "value": 3.6,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "周日 Brunch ¥388/人含无限续杯香槟，需提前 1 周预订。",
+      "靠窗景观位每晚 18:00 外滩亮灯，建议预订 17:45 开始的位子看灯光秀。",
+      "接受所有主流信用卡。主厨 Paul Pairet 的 Ultraviolet 获米其林三星。"
+    ],
+    "experienceTipsEn": [
+      "Sunday brunch (¥388/person, free-flow Champagne) — book at least one week ahead.",
+      "Bund-facing window seats: the skyline lights up at 18:00. Book for 17:45 to catch the switch-on.",
+      "All major credit cards accepted. Chef Paul Pairet also runs Ultraviolet, Shanghai's only 3-Michelin-star restaurant."
+    ]
   }
 ]

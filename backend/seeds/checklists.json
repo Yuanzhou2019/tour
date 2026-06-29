@@ -455,6 +455,197 @@
     ]
   },
   {
+    "id": "00000000-0000-0000-0000-000000040007",
+    "country": "KR",
+    "reason": "tourism",
+    "city": "SH",
+    "titleZh": "韩国游客 · 上海入境清单",
+    "titleEn": "Korean tourist · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "여권 유효기간이 입국일 기준 6개월 이상 남았는지 확인",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "6개월 미만이면 입국이 거부될 수 있습니다.",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "왕복/출국 항공권 증빙 준비",
+        "titleEn": "Have proof of onward/return ticket",
+        "detailZh": "출력본 또는 스마트폰 저장본을 준비하세요.",
+        "detailEn": "Keep a printed or mobile copy.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "k-eta-check",
+        "titleZh": "중국 무비자 입국 가능 여부 사전 확인 (한국 여권 소지자)",
+        "titleEn": "Verify visa-free eligibility for ROK passport holders",
+        "detailZh": "2024년 11월부터 한국 일반여권 소지자는 최대 15일 무비자 입국이 가능합니다 (2025년 12월까지).",
+        "detailEn": "Since Nov 2024, ROK ordinary passport holders can enter visa-free for up to 15 days (until Dec 2025).",
+        "officialUrl": "https://www.mfa.gov.cn/",
+        "order": 3
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "호텔 주소 중국어로 저장 — 택시 기사에게 보여주세요",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "스크린샷 추천.",
+        "detailEn": "Screenshot it for offline use.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "의료 후송 포함 여행자 보험 가입 (권장)",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "보장 금액 한화 1억원 이상 권장.",
+        "detailEn": "Recommended coverage: at least KRW 100,000,000.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "출발 전 첫 입국 도시의 오프라인 데이터 팩 다운로드",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "Sightour 앱의 '마이 → 오프라인 팩'에서 다운로드 가능.",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "처음 24시간을 위한 소액 위안화 현금(500~1000위안) 소지",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "모바일 결제 앱 설정 전까지 현금이 필요합니다.",
+        "detailEn": "Cash is needed before you set up mobile payment apps.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "phrases-saved",
+        "titleZh": "도구 → 자주 쓰는 표현에서 10개 이상 저장",
+        "titleEn": "Save at least 10 emergency phrases in Tools → Phrase book",
+        "detailZh": "택시, 식사, 길 묻기, 긴급 상황 등을 포함하세요.",
+        "detailEn": "Cover scenarios like taxi, dining, asking directions, and emergency.",
+        "officialUrl": null,
+        "order": 8
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "주상하이 대한민국 총영사관 긴급 연락처를 휴대폰 홈 화면에 저장",
+        "titleEn": "Save the ROK Consulate emergency number to your phone home screen",
+        "detailZh": "주상하이 총영사관 24시간 긴급전화 021-6295-5000.",
+        "detailEn": "ROK Consulate General Shanghai 24/7 emergency: 021-6295-5000.",
+        "officialUrl": "https://overseas.mofa.go.kr/cn-shanghai-ko/index.do",
+        "order": 9
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "도착 후: 호텔이 24시간 이내에 숙박 정보를 현지 파출소에 등록했는지 확인",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "호텔에서 자동으로 처리합니다.",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 10
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000040008",
+    "country": "KR",
+    "reason": "business",
+    "city": "SH",
+    "titleZh": "韩国商务访客 · 上海入境清单",
+    "titleEn": "Korean business visitor · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "여권 유효기간이 입국일 기준 6개월 이상 남았는지 확인",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "6개월 미만이면 입국이 거부될 수 있습니다.",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "왕복/출국 항공권 증빙 준비",
+        "titleEn": "Have proof of onward/return ticket",
+        "detailZh": "출력본 또는 스마트폰 저장본을 준비하세요.",
+        "detailEn": "Keep a printed or mobile copy.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "business-invitation",
+        "titleZh": "중국 파트너사의 초청장 지참",
+        "titleEn": "Bring a business invitation letter from your Chinese partner",
+        "detailZh": "회의명, 일시, 장소, 초청자 정보 포함.",
+        "detailEn": "Should include meeting name, date, venue, and inviting party information.",
+        "officialUrl": null,
+        "order": 3
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "호텔 주소 중국어로 저장 — 택시 기사에게 보여주세요",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "스크린샷 추천.",
+        "detailEn": "Screenshot it for offline use.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "의료 후송 포함 여행자 보험 가입 (권장)",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "보장 금액 한화 1억원 이상 권장.",
+        "detailEn": "Recommended coverage: at least KRW 100,000,000.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "출발 전 첫 입국 도시의 오프라인 데이터 팩 다운로드",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "Sightour 앱의 '마이 → 오프라인 팩'에서 다운로드 가능.",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "처음 24시간을 위한 소액 위안화 현금(500~1000위안) 소지",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "법인 카드는 소규모 상점에서 사용 불가능할 수 있습니다.",
+        "detailEn": "Corporate cards are not always accepted at small vendors.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "주상하이 대한민국 총영사관 긴급 연락처를 휴대폰 홈 화면에 저장",
+        "titleEn": "Save the ROK Consulate emergency number to your phone home screen",
+        "detailZh": "주상하이 총영사관 24시간 긴급전화 021-6295-5000.",
+        "detailEn": "ROK Consulate General Shanghai 24/7 emergency: 021-6295-5000.",
+        "officialUrl": "https://overseas.mofa.go.kr/cn-shanghai-ko/index.do",
+        "order": 8
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "도착 후: 호텔이 24시간 이내에 숙박 정보를 현지 파출소에 등록했는지 확인",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "호텔에서 자동으로 처리합니다.",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 9
+      }
+    ]
+  },
+  {
     "id": "00000000-0000-0000-0000-000000040006",
     "country": "JP",
     "reason": "business",

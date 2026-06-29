@@ -8,6 +8,7 @@ export interface ChecklistItem {
   detailEn?: string;
   officialUrl?: string;
   order: number;
+  checked?: boolean;
 }
 
 @Entity('checklists')

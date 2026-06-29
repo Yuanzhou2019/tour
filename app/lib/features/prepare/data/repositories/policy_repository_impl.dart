@@ -20,4 +20,12 @@ class PolicyRepositoryImpl implements PolicyRepository {
         .map((e) => Policy.fromJson(e as Map<String, dynamic>))
         .toList();
   }
+
+  @override
+  Future<Policy> fetchPolicyById(String id) async {
+    final response = await _dioClient.dio.get('/policies/$id');
+    final data = response.data['data'] as Map<String, dynamic>? ??
+        response.data as Map<String, dynamic>;
+    return Policy.fromJson(data);
+  }
 }

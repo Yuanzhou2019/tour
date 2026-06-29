@@ -4,17 +4,15 @@ import type { ApiError } from '../types';
 const http: AxiosInstance = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:3000/api/v1',
   timeout: 15_000,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  headers: { 'Content-Type': 'application/json' },
 });
 
 http.interceptors.request.use((config) => {
   const raw = localStorage.getItem('sightour-admin-auth');
   if (raw) {
     try {
-      const parsed = JSON.parse(raw) as { state: { user: { token: string } | null } };
-      const token = parsed.state?.user?.token;
+      const parsed = JSON.parse(raw) as { state: { accessToken: string } };
+      const token = parsed.state?.accessToken;
       if (token && config.headers) {
         config.headers.Authorization = `Bearer ${token}`;
       }

@@ -269,5 +269,171 @@
     ],
     "descriptionZh": "位于国金中心商场一层的苹果直营店，可现场体验 iPhone / Mac / Apple Vision Pro 等全系产品。提供 Today at Apple 免费课程。",
     "descriptionEn": "Apple's flagship Pudong store inside IFC Mall. Try the full iPhone / Mac / Apple Vision Pro lineup and free Today at Apple sessions."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000010",
+    "nameZh": "上海中心大厦",
+    "nameEn": "Shanghai Tower",
+    "addressZh": "上海市浦东新区陆家嘴银城中路 501 号",
+    "addressEn": "501 Yincheng Road (M), Lujiazui, Pudong New Area, Shanghai",
+    "lat": 31.2352,
+    "lng": 121.5016,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-2065-6999",
+    "openHours": "08:30–22:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/shanghai-tower.jpg",
+      "https://images.sightour.example/poi/shanghai-tower-night.jpg"
+    ],
+    "descriptionZh": "中国第一高楼（632 米），世界第二高。118 层「上海之巅」观光厅可从 546 米高度俯瞰整个上海。建议预订日落时段门票，一次看到白天、黄昏和夜景。",
+    "descriptionEn": "China's tallest (632m) and world's second-tallest building. The 'Top of Shanghai' observatory on floor 118 offers panoramic views from 546m. Book a sunset slot to see day, dusk and night in one visit."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000011",
+    "nameZh": "上海迪士尼度假区",
+    "nameEn": "Shanghai Disney Resort",
+    "addressZh": "上海市浦东新区川沙镇黄赵路 310 号",
+    "addressEn": "310 Huangzhao Road, Chuansha Town, Pudong New Area, Shanghai",
+    "lat": 31.1450,
+    "lng": 121.6570,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-3158-0000",
+    "openHours": "08:30–21:30（视季节调整）",
+    "imageUrls": [
+      "https://images.sightour.example/poi/disney-sh.jpg"
+    ],
+    "descriptionZh": "中国大陆首座迪士尼乐园，包含七大主题园区。建议下载官方 App 实时查看排队时间，工作日入园人数明显少于周末。下载官方 App 可领取快速通行证。",
+    "descriptionEn": "Mainland China's first Disney park with seven themed lands. Download the official app for real-time wait times and FastPass access. Weekday visits are significantly quieter than weekends."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000012",
+    "nameZh": "龙华寺",
+    "nameEn": "Longhua Temple (龙华寺)",
+    "addressZh": "上海市徐汇区龙华路 2853 号",
+    "addressEn": "2853 Longhua Road, Xuhui District, Shanghai",
+    "lat": 31.1780,
+    "lng": 121.4520,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-6456-9999",
+    "openHours": "07:00–16:30",
+    "imageUrls": [
+      "https://images.sightour.example/poi/longhua-temple.jpg"
+    ],
+    "descriptionZh": "上海历史最悠久的佛教寺院（始建于三国 242 年），以 7 层龙华塔闻名。每年农历三月初三有龙华庙会，素面在本地人中口碑极高。门票 ¥10。",
+    "descriptionEn": "Shanghai's oldest Buddhist temple (242 AD), renowned for its seven-story pagoda. The annual temple fair on the 3rd day of the 3rd lunar month is a local tradition. Its vegetarian noodles are beloved by locals. Entry ¥10."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000013",
+    "nameZh": "鼎泰丰（上海商城店）",
+    "nameEn": "Din Tai Fung (Shanghai Centre)",
+    "addressZh": "上海市静安区南京西路 1376 号上海商城 1 楼",
+    "addressEn": "1F Shanghai Centre, 1376 Nanjing West Road, Jing'an District, Shanghai",
+    "lat": 31.2280,
+    "lng": 121.4490,
+    "category": "dining",
+    "city": "SH",
+    "contact": "+86-21-6289-2828",
+    "openHours": "11:00–14:30, 17:00–21:30",
+    "imageUrls": [
+      "https://images.sightour.example/poi/dintaifung.jpg"
+    ],
+    "descriptionZh": "米其林一星小笼包专门店，全球连锁但上海本店品质稳定。招牌：蟹粉小笼、松露小笼、蛋炒饭。英文菜单完善，接受外卡。人均 ¥200。",
+    "descriptionEn": "Michelin-starred Taiwanese soup dumpling house with reliably high quality at the Shanghai flagship. Must-try: crab-roe and truffle xiaolongbao, egg fried rice. Full English menu, foreign cards accepted. ~¥200 pp."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000014",
+    "nameZh": "南翔馒头店（豫园总店）",
+    "nameEn": "Nanxiang Steamed Bun (Yu Garden flagship)",
+    "addressZh": "上海市黄浦区豫园老街 87 号",
+    "addressEn": "87 Yuyuan Old Street, Huangpu District, Shanghai",
+    "lat": 31.2270,
+    "lng": 121.4890,
+    "category": "dining",
+    "city": "SH",
+    "contact": "+86-21-6355-4206",
+    "openHours": "07:30–20:30",
+    "imageUrls": [
+      "https://images.sightour.example/poi/nanxiang.jpg"
+    ],
+    "descriptionZh": "上海小笼包发源地，创办于 1900 年。一楼外卖窗口实惠（鲜肉 ¥15/笼），二楼堂食环境更好。周末排队极长，建议工作日上午前往。",
+    "descriptionEn": "The birthplace of Shanghai's xiaolongbao (est. 1900). Ground-floor takeaway is budget-friendly (pork ¥15/steamer), upstairs offers sit-down service. Massive queues on weekends — go on a weekday morning."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000015",
+    "nameZh": "西岸美术馆",
+    "nameEn": "West Bund Museum (西岸美术馆)",
+    "addressZh": "上海市徐汇区龙腾大道 2600 号",
+    "addressEn": "2600 Longteng Avenue, Xuhui District, Shanghai",
+    "lat": 31.1730,
+    "lng": 121.4639,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-3352-3377",
+    "openHours": "周二至周日 10:00–17:00（周一闭馆）",
+    "imageUrls": [
+      "https://images.sightour.example/poi/west-bund.jpg",
+      "https://images.sightour.example/poi/west-bund-river.jpg"
+    ],
+    "descriptionZh": "由 David Chipperfield 设计，与巴黎蓬皮杜中心合作运营。全英文导览、双语标签、国际水准的当代艺术展。坐落于黄浦江西岸，户外滨江步道可散步直通龙美术馆。美国游客评分极高。",
+    "descriptionEn": "Designed by David Chipperfield in partnership with the Centre Pompidou Paris. Full English tours, bilingual labels, and world-class contemporary art. Set on the West Bund riverfront promenade — walk to the Long Museum afterwards. Extremely popular with American visitors."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000016",
+    "nameZh": "M50 创意园",
+    "nameEn": "M50 Art District (M50 创意园)",
+    "addressZh": "上海市普陀区莫干山路 50 号",
+    "addressEn": "50 Moganshan Road, Putuo District, Shanghai",
+    "lat": 31.2480,
+    "lng": 121.4460,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-6266-7122",
+    "openHours": "10:00–18:00（多数画廊）",
+    "imageUrls": [
+      "https://images.sightour.example/poi/m50.jpg",
+      "https://images.sightour.example/poi/m50-gallery.jpg"
+    ],
+    "descriptionZh": "由旧纺织厂改造的当代艺术区，60+ 画廊与工作室。画廊主多数会说英语，开幕式常有免费酒水。推荐 Café Dan 的外国友人社交氛围。免费入园，建议下午 2 点后前往（上午多画廊未开门）。",
+    "descriptionEn": "A former textile mill turned contemporary art district with 60+ galleries and studios. Most gallerists speak English, and openings often have free drinks. Café Dan is the expat social hub inside. Free entry — go after 2pm (many galleries open late)."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000017",
+    "nameZh": "上海城市规划展示馆",
+    "nameEn": "Shanghai Urban Planning Exhibition Center",
+    "addressZh": "上海市静安区南京西路 1857 号",
+    "addressEn": "1857 Nanjing West Road, Jing'an District, Shanghai",
+    "lat": 31.2280,
+    "lng": 121.4620,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-6318-4477",
+    "openHours": "周二至周日 09:00–17:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/urban-planning.jpg"
+    ],
+    "descriptionZh": "了解上海如何从渔村变成全球都市的最佳场所。三楼有令人震撼的 1:500 比例上海全城模型，占地 600 平方米。所有展板中英双语，配有英文语音导览 ¥20。常被美国游客称为「最被低估的上海景点」。",
+    "descriptionEn": "The best place to understand how Shanghai went from fishing village to global megacity. The jaw-dropping 1:500 scale model of the entire city (600 sqm) is on the 3rd floor. All exhibits are bilingual, with English audio guides available for ¥20. Often called 'Shanghai's most underrated attraction' by American visitors."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000018",
+    "nameZh": "Mr & Mrs Bund (外滩夫妇)",
+    "nameEn": "Mr & Mrs Bund",
+    "addressZh": "上海市黄浦区中山东一路 18 号外滩 18 号 6 楼",
+    "addressEn": "6F Bund 18, 18 Zhongshan East 1st Road, Huangpu District, Shanghai",
+    "lat": 31.2390,
+    "lng": 121.4870,
+    "category": "dining",
+    "city": "SH",
+    "contact": "+86-21-6323-9898",
+    "openHours": "11:30–14:30, 18:00–22:30（周五六延至 02:00）",
+    "imageUrls": [
+      "https://images.sightour.example/poi/mr-mrs-bund.jpg",
+      "https://images.sightour.example/poi/mr-mrs-bund-view.jpg"
+    ],
+    "descriptionZh": "由法国名厨 Paul Pairet 主理的现代法餐，外滩正中心景观位。营业时间凌晨 2 点为外滩商圈最晚，适合夜生活。全英文服务无障碍。周日 Brunch 套餐 ¥388/人，免费续杯香槟，深受美国人与欧洲人喜爱。",
+    "descriptionEn": "Modern French dining by chef Paul Pairet, with prime Bund-view seating. Open till 2am on weekends — the latest kitchen on the Bund. Fully English-speaking service. The Sunday brunch (¥388/person, free-flow Champagne) is legendary among Americans and Europeans in Shanghai."
   }
 ]

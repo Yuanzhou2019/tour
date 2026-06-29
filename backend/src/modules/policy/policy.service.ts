@@ -25,4 +25,21 @@ export class PolicyService {
     if (!policy) throw new NotFoundException(`Policy ${id} not found`);
     return policy;
   }
+
+  async create(dto: Partial<Policy>) {
+    const entity = this.policyRepo.create(dto);
+    return this.policyRepo.save(entity);
+  }
+
+  async update(id: string, dto: Partial<Policy>) {
+    const result = await this.policyRepo.update(id, dto);
+    if (result.affected === 0) throw new NotFoundException(`Policy ${id} not found`);
+    return this.findById(id);
+  }
+
+  async delete(id: string) {
+    const result = await this.policyRepo.delete(id);
+    if (result.affected === 0) throw new NotFoundException(`Policy ${id} not found`);
+    return { deleted: true };
+  }
 }
