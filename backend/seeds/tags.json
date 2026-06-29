@@ -1,0 +1,58 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000060001",
+    "tagKey": "accepts_foreign_card",
+    "category": "positive",
+    "labelZh": "支持外卡支付",
+    "labelEn": "Accepts foreign credit cards"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000060002",
+    "tagKey": "english_menu",
+    "category": "positive",
+    "labelZh": "提供英文菜单",
+    "labelEn": "English menu available"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000060003",
+    "tagKey": "english_speaking_staff",
+    "category": "positive",
+    "labelZh": "有英语服务员",
+    "labelEn": "English-speaking staff"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000060004",
+    "tagKey": "alipay_supported",
+    "category": "positive",
+    "labelZh": "支持支付宝",
+    "labelEn": "Alipay accepted"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000060005",
+    "tagKey": "wechat_pay_supported",
+    "category": "positive",
+    "labelZh": "支持微信支付",
+    "labelEn": "WeChat Pay accepted"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000060006",
+    "tagKey": "cash_only",
+    "category": "warning",
+    "labelZh": "仅收现金",
+    "labelEn": "Cash only"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000060007",
+    "tagKey": "tourist_trap",
+    "category": "warning",
+    "labelZh": "游客陷阱（溢价明显）",
+    "labelEn": "Tourist-trap pricing"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000060008",
+    "tagKey": "long_queue",
+    "category": "warning",
+    "labelZh": "高峰需长时排队",
+    "labelEn": "Long peak-hour queues"
+  }
+]

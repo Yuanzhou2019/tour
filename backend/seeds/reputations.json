@@ -1,0 +1,317 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000050001",
+    "poiId": "00000000-0000-0000-0000-000000000001",
+    "overallScore": 4.7,
+    "foreignFriendly": 4.6,
+    "languageSupport": 4.4,
+    "paymentEase": 4.0,
+    "authenticity": 4.8,
+    "value": 4.7,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "建议日落前 30 分钟到达，正对陆家嘴的机位最出片。",
+      "周末与节假日人潮密集，可考虑工作日傍晚前往。",
+      "外滩观景台无需门票，附近便利店可买瓶装水。"
+    ],
+    "experienceTipsEn": [
+      "Arrive 30 minutes before sunset for the best Lujiazui skyline shots.",
+      "Weekends and Chinese holidays are very crowded — prefer weekday evenings.",
+      "The waterfront promenade is free; convenience stores nearby sell water."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050002",
+    "poiId": "00000000-0000-0000-0000-000000000002",
+    "overallScore": 4.4,
+    "foreignFriendly": 4.0,
+    "languageSupport": 3.6,
+    "paymentEase": 3.8,
+    "authenticity": 4.7,
+    "value": 4.2,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "售票处可使用支付宝 / 微信支付，但仅 ¥50 现金更稳妥。",
+      "园内导览牌有英文，但建议下载一份离线语音讲解。",
+      "周一闭园，安排行程时务必避开。"
+    ],
+    "experienceTipsEn": [
+      "Tickets accept Alipay / WeChat Pay, but ¥50 cash is safer at the booth.",
+      "On-site signs include English, but a downloaded audio guide helps.",
+      "Closed on Mondays — plan around this."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050003",
+    "poiId": "00000000-0000-0000-0000-000000000003",
+    "overallScore": 4.1,
+    "foreignFriendly": 4.2,
+    "languageSupport": 4.0,
+    "paymentEase": 4.0,
+    "authenticity": 3.6,
+    "value": 3.8,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "建议工作日前往，周末排队可达 60 分钟。",
+      "票价 ¥160–¥220，傍晚登塔可以一次看到日景与夜景。",
+      "透明观光廊有体重限制，请提前了解。"
+    ],
+    "experienceTipsEn": [
+      "Weekdays are far less crowded; weekend queues can hit 60 minutes.",
+      "Tickets range ¥160–¥220 — visit at sunset for day and night views in one trip.",
+      "The glass skywalk has a weight limit; check before booking."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050004",
+    "poiId": "00000000-0000-0000-0000-000000000004",
+    "overallScore": 4.2,
+    "foreignFriendly": 4.3,
+    "languageSupport": 4.0,
+    "paymentEase": 4.5,
+    "authenticity": 3.8,
+    "value": 4.0,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "全长步行需 1.5 小时，建议穿舒适的鞋子。",
+      "建议从人民广场出发向东走到外滩，可以一次性体验历史与现代。",
+      "夜间有观光小火车，单程 ¥50。"
+    ],
+    "experienceTipsEn": [
+      "Walking the full stretch takes ~1.5 hours — wear comfortable shoes.",
+      "Start at People's Square and head east to the Bund for history + skyline in one walk.",
+      "A tourist tram runs at night for ¥50 one-way."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050005",
+    "poiId": "00000000-0000-0000-0000-000000000005",
+    "overallScore": 4.3,
+    "foreignFriendly": 4.5,
+    "languageSupport": 4.6,
+    "paymentEase": 4.4,
+    "authenticity": 3.9,
+    "value": 3.6,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "餐厅多数提供英文菜单，但小馆子只有中文菜单。",
+      "建议提前预约，尤其是周末晚餐。",
+      "新天地南里停车较贵，可搭乘地铁 10/13 号线新天地站。"
+    ],
+    "experienceTipsEn": [
+      "Most restaurants have English menus, smaller spots are Chinese-only.",
+      "Reservations recommended, especially for weekend dinner.",
+      "Parking is expensive — take Metro Line 10/13 to Xintiandi station."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050006",
+    "poiId": "00000000-0000-0000-0000-000000000006",
+    "overallScore": 4.5,
+    "foreignFriendly": 4.4,
+    "languageSupport": 3.8,
+    "paymentEase": 4.0,
+    "authenticity": 4.6,
+    "value": 4.3,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "巷弄非常狭窄，错峰前往比较舒适。",
+      "部分咖啡店只收现金或微信支付，备少量现金。",
+      "下午 5 点后人流会增加，建议上午或傍晚 7 点后。"
+    ],
+    "experienceTipsEn": [
+      "Lanes are very narrow — visit off-peak for a more relaxed stroll.",
+      "Some cafés are cash / WeChat only — keep small bills handy.",
+      "Crowds pick up after 5pm; mornings or after 7pm are quieter."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050007",
+    "poiId": "00000000-0000-0000-0000-000000000007",
+    "overallScore": 4.6,
+    "foreignFriendly": 4.5,
+    "languageSupport": 4.0,
+    "paymentEase": 4.0,
+    "authenticity": 4.7,
+    "value": 4.7,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "建议从武康大楼开始，沿武康路—安福路—五原路步行约 2 小时。",
+      "沿途咖啡店和买手店较多，可随时休息。",
+      "梧桐落叶季节（11 月底—12 月）景色最佳。"
+    ],
+    "experienceTipsEn": [
+      "Start at the Wukang Mansion and walk Wukang → Anfu → Wuyuan Rd (~2h).",
+      "Plenty of cafés and boutiques along the way for rest stops.",
+      "Late November to December is the most photogenic season (plane-tree leaves)."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050008",
+    "poiId": "00000000-0000-0000-0000-000000000008",
+    "overallScore": 4.4,
+    "foreignFriendly": 4.2,
+    "languageSupport": 3.8,
+    "paymentEase": 4.0,
+    "authenticity": 4.6,
+    "value": 4.3,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "门票 ¥50，建议现金。",
+      "早晨 8 点前往可避开人潮并闻到香火气息。",
+      "地铁 2/7 号线静安寺站 6 号出口直达。"
+    ],
+    "experienceTipsEn": [
+      "Entrance fee ¥50, cash recommended.",
+      "Arrive around 8am to avoid crowds and enjoy the incense atmosphere.",
+      "Direct access via Metro Line 2/7 Jing'an Temple station exit 6."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000050009",
+    "poiId": "00000000-0000-0000-0000-000000000009",
+    "overallScore": 4.6,
+    "foreignFriendly": 4.5,
+    "languageSupport": 4.6,
+    "paymentEase": 4.0,
+    "authenticity": 4.6,
+    "value": 4.8,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "免费开放，但需提前 1–7 天在官网或小程序预约。",
+      "每周一闭馆，安排行程时务必避开。",
+      "馆内提供中英日韩四种语言的语音导览。"
+    ],
+    "experienceTipsEn": [
+      "Free entry, but reserve 1–7 days ahead on the official site or mini-program.",
+      "Closed on Mondays — keep this in mind when planning.",
+      "Audio guides are available in Chinese, English, Japanese, and Korean."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000005000a",
+    "poiId": "00000000-0000-0000-0000-00000000000a",
+    "overallScore": 4.5,
+    "foreignFriendly": 4.4,
+    "languageSupport": 4.2,
+    "paymentEase": 4.0,
+    "authenticity": 4.7,
+    "value": 3.9,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "招牌菜：缅甸茶叶沙拉、香茅烤鱼、酸笋牛肉。",
+      "建议提前 1 天预约，靠窗景观位更佳。",
+      "素食选项丰富，注明 vegan 即可。"
+    ],
+    "experienceTipsEn": [
+      "Must-try: Burmese tea-leaf salad, lemongrass-grilled fish, bamboo-beef curry.",
+      "Book a day ahead and request a window seat for the best atmosphere.",
+      "Good vegan options — just ask."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000005000b",
+    "poiId": "00000000-0000-0000-0000-00000000000b",
+    "overallScore": 4.4,
+    "foreignFriendly": 3.8,
+    "languageSupport": 3.2,
+    "paymentEase": 3.8,
+    "authenticity": 4.8,
+    "value": 4.7,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "招牌：蟹粉鲜肉汤包、鲜肉汤包、虾仁汤包。",
+      "建议工作日上午 10 点前往，避开排队高峰。",
+      "没有英文菜单，但柜台有图示可指。"
+    ],
+    "experienceTipsEn": [
+      "Must-try: crab-roe pork, classic pork, and shrimp xiaolongbao.",
+      "Visit on weekday mornings around 10am to skip the queue.",
+      "No English menu, but the counter has photos you can point at."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000005000c",
+    "poiId": "00000000-0000-0000-0000-00000000000c",
+    "overallScore": 4.7,
+    "foreignFriendly": 4.7,
+    "languageSupport": 4.8,
+    "paymentEase": 4.6,
+    "authenticity": 4.2,
+    "value": 3.6,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "外滩最佳景观位房型需提前 1 个月预订。",
+      "下午茶需提前预约，套餐 ¥588/人起。",
+      "可免费使用酒店劳斯莱斯接送服务（需提前 24 小时预约）。"
+    ],
+    "experienceTipsEn": [
+      "Book Bund-view rooms at least one month in advance.",
+      "Afternoon tea reservations required; set menu from ¥588 / person.",
+      "Complimentary Rolls-Royce transfers within city — book 24h ahead."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000005000d",
+    "poiId": "00000000-0000-0000-0000-00000000000d",
+    "overallScore": 4.8,
+    "foreignFriendly": 4.6,
+    "languageSupport": 4.5,
+    "paymentEase": 4.2,
+    "authenticity": 4.7,
+    "value": 3.4,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "距市中心 40 分钟车程，建议预订含晚餐套餐。",
+      "酒店可安排往返市区的接送服务。",
+      "10 月至次年 4 月的香樟林最美。"
+    ],
+    "experienceTipsEn": [
+      "About 40 min from city center — book a room with dinner included.",
+      "The hotel can arrange return transfers to downtown.",
+      "The camphor forest is most beautiful October through April."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000005000e",
+    "poiId": "00000000-0000-0000-0000-00000000000e",
+    "overallScore": 4.0,
+    "foreignFriendly": 4.2,
+    "languageSupport": 4.0,
+    "paymentEase": 4.6,
+    "authenticity": 3.4,
+    "value": 3.8,
+    "officialVerified": false,
+    "experienceTipsZh": [
+      "地铁 3/4/13 号线金沙江路站直达。",
+      "周日客流量大，建议工作日前往。",
+      "免费 Wi-Fi 覆盖全场。"
+    ],
+    "experienceTipsEn": [
+      "Direct access via Metro Lines 3 / 4 / 13 at Jinshajiang Road station.",
+      "Sunday afternoons are very busy — prefer weekdays.",
+      "Free Wi-Fi throughout."
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000005000f",
+    "poiId": "00000000-0000-0000-0000-00000000000f",
+    "overallScore": 4.3,
+    "foreignFriendly": 4.6,
+    "languageSupport": 4.7,
+    "paymentEase": 4.4,
+    "authenticity": 3.4,
+    "value": 3.8,
+    "officialVerified": true,
+    "experienceTipsZh": [
+      "店员全英文，沟通无障碍。",
+      "Today at Apple 课程免费，需提前 7 天预约。",
+      "Apple Vision Pro 体验需提前 1 天预约。"
+    ],
+    "experienceTipsEn": [
+      "Staff are fully bilingual — no language barrier.",
+      "Today at Apple sessions are free, but book 7 days ahead.",
+      "Apple Vision Pro demos need 1-day advance reservation."
+    ]
+  }
+]

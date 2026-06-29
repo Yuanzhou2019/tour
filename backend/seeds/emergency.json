@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-0000000a0001",
+    "country": "*",
+    "type": "police",
+    "nameZh": "报警电话（全国）",
+    "nameEn": "Police (national)",
+    "phone": "110",
+    "addressZh": "全境覆盖",
+    "addressEn": "Nationwide coverage"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0002",
+    "country": "*",
+    "type": "medical",
+    "nameZh": "急救电话（全国）",
+    "nameEn": "Ambulance (national)",
+    "phone": "120",
+    "addressZh": "全境覆盖",
+    "addressEn": "Nationwide coverage"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0003",
+    "country": "*",
+    "type": "fire",
+    "nameZh": "火警（全国）",
+    "nameEn": "Fire (national)",
+    "phone": "119",
+    "addressZh": "全境覆盖",
+    "addressEn": "Nationwide coverage"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0004",
+    "country": "US",
+    "type": "consulate",
+    "nameZh": "美国驻上海总领事馆",
+    "nameEn": "U.S. Consulate General Shanghai",
+    "phone": "021-8011-2400",
+    "addressZh": "上海市淮海中路 1469 号",
+    "addressEn": "1469 Huai Hai Road Central, Shanghai"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0005",
+    "country": "GB",
+    "type": "consulate",
+    "nameZh": "英国驻上海总领事馆",
+    "nameEn": "British Consulate General Shanghai",
+    "phone": "021-3279-2000",
+    "addressZh": "上海市南京西路 968 号花园广场 17 楼",
+    "addressEn": "17F Garden Square, 968 West Nanjing Road, Shanghai"
+  },
+  {
+    "id": "00000000-0000-0000-0000-0000000a0006",
+    "country": "JP",
+    "type": "consulate",
+    "nameZh": "日本国驻上海总领事馆",
+    "nameEn": "Consulate General of Japan in Shanghai",
+    "phone": "021-5257-4766",
+    "addressZh": "上海市延安西路 2299 号上海世贸商城 8 楼",
+    "addressEn": "8F Shanghai Mart, 2299 Yan'an West Road, Shanghai"
+  }
+]

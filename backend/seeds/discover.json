@@ -1,0 +1,168 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000070001",
+    "category": "curated",
+    "titleZh": "上海编辑精选 Top 10",
+    "titleEn": "Editor's Top 10 in Shanghai",
+    "summaryZh": "本地编辑团队精选 · 每月更新",
+    "summaryEn": "Hand-picked by our local editors · updated monthly",
+    "imageUrl": "https://images.sightour.example/discover/cur-1.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000001",
+      "00000000-0000-0000-0000-000000000002",
+      "00000000-0000-0000-0000-000000000003"
+    ],
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070002",
+    "category": "curated",
+    "titleZh": "首次到访必看",
+    "titleEn": "First-time visitor essentials",
+    "summaryZh": "首访 72 小时内不可错过的精华",
+    "summaryEn": "What every first-time visitor should see in 72 hours",
+    "imageUrl": "https://images.sightour.example/discover/cur-2.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000001",
+      "00000000-0000-0000-0000-000000000009",
+      "00000000-0000-0000-0000-000000000004"
+    ],
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070003",
+    "category": "curated",
+    "titleZh": "浦东与陆家嘴精华",
+    "titleEn": "Best of Pudong & Lujiazui",
+    "summaryZh": "天际线与现代上海全景",
+    "summaryEn": "Skyline views and modern Shanghai essentials",
+    "imageUrl": "https://images.sightour.example/discover/cur-3.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000003",
+      "00000000-0000-0000-0000-00000000000f"
+    ],
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070004",
+    "category": "authentic",
+    "titleZh": "本地面馆（不在大众点评上）",
+    "titleEn": "Local noodle spots (not on TripAdvisor)",
+    "summaryZh": "本地作家亲测 · 8 家精选小店",
+    "summaryEn": "Verified by local writers · 8 hand-picked shops",
+    "imageUrl": "https://images.sightour.example/discover/auth-1.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-00000000000b"
+    ],
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070005",
+    "category": "authentic",
+    "titleZh": "老城厢茶馆",
+    "titleEn": "Old town teahouses",
+    "summaryZh": "本地人真正爱去的安静去处",
+    "summaryEn": "Quiet spots that locals actually go to",
+    "imageUrl": "https://images.sightour.example/discover/auth-2.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000002",
+      "00000000-0000-0000-0000-000000000006"
+    ],
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070006",
+    "category": "authentic",
+    "titleZh": "深夜食堂",
+    "titleEn": "Late-night food streets",
+    "summaryZh": "晚上 22 点之后城市的去处",
+    "summaryEn": "Where the city eats after 22:00",
+    "imageUrl": "https://images.sightour.example/discover/auth-3.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000004",
+      "00000000-0000-0000-0000-000000000005"
+    ],
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070007",
+    "category": "heads_up",
+    "titleZh": "日落时分的拥挤外滩",
+    "titleEn": "Bund crowds at sunset",
+    "summaryZh": "提前 30 分钟到，否则人山人海",
+    "summaryEn": "Arrive 30 min before sunset or expect a wall of people",
+    "imageUrl": "https://images.sightour.example/discover/hu-1.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000001"
+    ],
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070008",
+    "category": "heads_up",
+    "titleZh": "出租车计价器与宰客",
+    "titleEn": "Taxi meters & scams",
+    "summaryZh": "如何识别不打表的车及应对方法",
+    "summaryEn": "How to spot an unmetered cab and what to do",
+    "imageUrl": "https://images.sightour.example/discover/hu-2.jpg",
+    "relatedPoiIds": [],
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000070009",
+    "category": "heads_up",
+    "titleZh": "支付宝 / 微信支付开通",
+    "titleEn": "Alipay & WeChat Pay onboarding",
+    "summaryZh": "多数商家已不支持外卡，建议先开通",
+    "summaryEn": "Most vendors no longer take foreign cards — set this up first",
+    "imageUrl": "https://images.sightour.example/discover/hu-3.jpg",
+    "relatedPoiIds": [],
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000007000a",
+    "category": "curated",
+    "titleZh": "上海 Top 5 美食",
+    "titleEn": "Shanghai Top 5 Dining",
+    "summaryZh": "编辑精选 5 家必吃上海餐厅",
+    "summaryEn": "Editor's picks: 5 must-try Shanghai restaurants",
+    "imageUrl": "https://images.sightour.example/discover/rank-dining.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-00000000000a",
+      "00000000-0000-0000-0000-00000000000b",
+      "00000000-0000-0000-0000-000000000005"
+    ],
+    "order": 4
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000007000b",
+    "category": "authentic",
+    "titleZh": "上海 Top 5 景点",
+    "titleEn": "Shanghai Top 5 Attractions",
+    "summaryZh": "本地编辑的 5 个不可错过之地",
+    "summaryEn": "5 places you can't miss, picked by our local editors",
+    "imageUrl": "https://images.sightour.example/discover/rank-attraction.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000001",
+      "00000000-0000-0000-0000-000000000002",
+      "00000000-0000-0000-0000-000000000003",
+      "00000000-0000-0000-0000-000000000009",
+      "00000000-0000-0000-0000-000000000007"
+    ],
+    "order": 4
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000007000c",
+    "category": "heads_up",
+    "titleZh": "购物避雷 Top 5",
+    "titleEn": "Warning list · Top 5 shopping pitfalls",
+    "summaryZh": "本地人不会去的购物陷阱清单",
+    "summaryEn": "Shopping traps locals avoid",
+    "imageUrl": "https://images.sightour.example/discover/rank-warning.jpg",
+    "relatedPoiIds": [
+      "00000000-0000-0000-0000-000000000004",
+      "00000000-0000-0000-0000-00000000000e"
+    ],
+    "order": 4
+  }
+]

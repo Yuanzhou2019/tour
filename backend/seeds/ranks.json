@@ -1,0 +1,158 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000080001",
+    "category": "dining",
+    "titleZh": "上海美食 Top 5",
+    "titleEn": "Shanghai Dining Top 5",
+    "items": [
+      {
+        "poiId": "00000000-0000-0000-0000-00000000000a",
+        "reasonZh": "云南 / 缅甸融合菜，氛围独特",
+        "reasonEn": "Yunnan / Burmese fusion in a tropical-garden setting",
+        "order": 1
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-00000000000b",
+        "reasonZh": "本地最爱的汤包店，性价比高",
+        "reasonEn": "Local-favorite xiaolongbao at a fair price",
+        "order": 2
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000005",
+        "reasonZh": "新天地精品餐厅，适合晚餐",
+        "reasonEn": "Upscale dining in Xintiandi — perfect for dinner",
+        "order": 3
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000002",
+        "reasonZh": "豫园内的传统本帮菜",
+        "reasonEn": "Classic Shanghainese inside Yu Garden",
+        "order": 4
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000006",
+        "reasonZh": "田子坊弄堂里的独立咖啡",
+        "reasonEn": "Indie cafés tucked into Tianzifang's lanes",
+        "order": 5
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000080002",
+    "category": "shopping",
+    "titleZh": "上海购物 Top 5",
+    "titleEn": "Shanghai Shopping Top 5",
+    "items": [
+      {
+        "poiId": "00000000-0000-0000-0000-000000000004",
+        "reasonZh": "南京路步行街，标志性地标",
+        "reasonEn": "Iconic Nanjing Road pedestrian street",
+        "order": 1
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000005",
+        "reasonZh": "新天地买手店与精品",
+        "reasonEn": "Boutiques and designer shops in Xintiandi",
+        "order": 2
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000006",
+        "reasonZh": "田子坊的独立设计小店",
+        "reasonEn": "Independent designers in Tianzifang",
+        "order": 3
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-00000000000e",
+        "reasonZh": "环球港一站式购物娱乐",
+        "reasonEn": "All-in-one shopping & entertainment at Global Harbor",
+        "order": 4
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-00000000000f",
+        "reasonZh": "Apple Store 浦东旗舰（IFC）",
+        "reasonEn": "Apple flagship at IFC Pudong",
+        "order": 5
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000080003",
+    "category": "attraction",
+    "titleZh": "上海必游 Top 5",
+    "titleEn": "Shanghai Must-See Top 5",
+    "items": [
+      {
+        "poiId": "00000000-0000-0000-0000-000000000001",
+        "reasonZh": "外滩，城市的标志",
+        "reasonEn": "The Bund — the city's signature",
+        "order": 1
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000002",
+        "reasonZh": "豫园，明代古典园林",
+        "reasonEn": "Yu Garden — Ming-dynasty classic",
+        "order": 2
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000003",
+        "reasonZh": "东方明珠塔，天际线",
+        "reasonEn": "Oriental Pearl Tower — the skyline",
+        "order": 3
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000009",
+        "reasonZh": "上海博物馆，免费 + 英文",
+        "reasonEn": "Shanghai Museum — free, English-friendly",
+        "order": 4
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000007",
+        "reasonZh": "法租界漫步，浪漫",
+        "reasonEn": "Former French Concession — romantic walk",
+        "order": 5
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000080004",
+    "category": "warning",
+    "titleZh": "购物避雷清单",
+    "titleEn": "Shopping Warning List",
+    "items": [
+      {
+        "poiId": "00000000-0000-0000-0000-000000000004",
+        "reasonZh": "南京路步行街上的「国际名牌」摊位常为假货",
+        "reasonEn": "Boutique stalls on Nanjing Road often sell counterfeit luxury",
+        "order": 1
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-00000000000e",
+        "reasonZh": "环球港内「免税店」导购话术多",
+        "reasonEn": "Aggressive upsell at mall 'duty-free' counters",
+        "order": 2
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000004",
+        "reasonZh": "南京路拍照服务（与小熊合影）多收费",
+        "reasonEn": "Hidden fees for photo ops with mascot characters",
+        "order": 3
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000006",
+        "reasonZh": "田子坊里高价「手工茶」非本地出品",
+        "reasonEn": "Marked-up 'artisan tea' is often mass-produced",
+        "order": 4
+      },
+      {
+        "poiId": "00000000-0000-0000-0000-000000000005",
+        "reasonZh": "新天地某些「外滩景餐厅」实为高价小份",
+        "reasonEn": "Some Xintiandi 'Bund-view' restaurants serve tiny portions at high prices",
+        "order": 5
+      }
+    ],
+    "order": 4
+  }
+]

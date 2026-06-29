@@ -1,0 +1,548 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000040001",
+    "country": "US",
+    "reason": "tourism",
+    "city": "SH",
+    "titleZh": "美国游客 · 上海入境清单",
+    "titleEn": "U.S. tourist · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "确认护照有效期超过入境日期 6 个月以上",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "少于 6 个月有效期的护照可能在边检被拒绝入境。",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "准备好回程 / 离境机票（飞机、火车或汽车）",
+        "titleEn": "Have proof of onward/return ticket (flight, train or bus out of China)",
+        "detailZh": "可打印或保存在手机，离境时可能需要出示。",
+        "detailEn": "Keep a printed or mobile copy — you may be asked to present it on departure.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "保存酒店中文地址 — 可给出租车司机看",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "建议截图保存，避免在手机无信号时无法出示。",
+        "detailEn": "Screenshot it — taxi drivers rarely read English, and you may be offline at the airport exit.",
+        "officialUrl": null,
+        "order": 3
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "购买涵盖医疗运送的旅行保险（推荐）",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "建议保额不低于 50 万美元，并覆盖紧急医疗运送。",
+        "detailEn": "Recommended coverage: at least USD 500,000 including emergency medical evacuation.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "出发前下载首次入境城市的离线数据包",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "可在 Sightour 应用 我的 → 离线包 中下载。",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "随身携带少量人民币现金（¥500–¥1000）以备前 24 小时使用",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "抵达后办理支付 App 期间需要现金。",
+        "detailEn": "Cash is needed for taxis and small vendors while you set up mobile payment apps.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "phrases-saved",
+        "titleZh": "在 工具 → 常用短语 中保存至少 10 条应急短语",
+        "titleEn": "Save at least 10 emergency phrases in Tools → Phrase book",
+        "detailZh": "建议包含「打车」「点餐」「问路」「紧急」等场景。",
+        "detailEn": "Cover scenarios like taxi, dining, asking directions, and emergency.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "将你所在国家领事馆的紧急联系电话保存到手机主屏幕",
+        "titleEn": "Save your country's consular emergency number to your phone home screen",
+        "detailZh": "可在 Sightour 应急页面找到 24 小时紧急联系电话。",
+        "detailEn": "Find 24-hour emergency numbers on the Sightour Emergency page.",
+        "officialUrl": null,
+        "order": 8
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "到达后：确认酒店已在 24 小时内将你的住宿信息登记至当地派出所",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "由酒店自动办理，前台会扫描你的护照。",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 9
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000040002",
+    "country": "US",
+    "reason": "business",
+    "city": "SH",
+    "titleZh": "美国商务访客 · 上海入境清单",
+    "titleEn": "U.S. business visitor · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "确认护照有效期超过入境日期 6 个月以上",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "少于 6 个月有效期的护照可能在边检被拒绝入境。",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "准备好回程 / 离境机票（飞机、火车或汽车）",
+        "titleEn": "Have proof of onward/return ticket (flight, train or bus out of China)",
+        "detailZh": "可打印或保存在手机，离境时可能需要出示。",
+        "detailEn": "Keep a printed or mobile copy — you may be asked to present it on departure.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "business-invitation",
+        "titleZh": "携带中方合作方出具的邀请函（商务活动证明）",
+        "titleEn": "Bring a business invitation letter from your Chinese partner",
+        "detailZh": "包含会议名称、日期、地点及邀请方信息。",
+        "detailEn": "Should include the meeting name, date, venue, and inviting party information.",
+        "officialUrl": null,
+        "order": 3
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "保存酒店中文地址 — 可给出租车司机看",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "建议截图保存，避免在手机无信号时无法出示。",
+        "detailEn": "Screenshot it — taxi drivers rarely read English, and you may be offline at the airport exit.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "购买涵盖医疗运送的旅行保险（推荐）",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "建议保额不低于 50 万美元。",
+        "detailEn": "Recommended coverage: at least USD 500,000.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "出发前下载首次入境城市的离线数据包",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "可在 Sightour 应用 我的 → 离线包 中下载。",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "随身携带少量人民币现金（¥500–¥1000）以备前 24 小时使用",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "商务卡可能在小型商户不通用。",
+        "detailEn": "Corporate cards are not always accepted at small vendors.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "将你所在国家领事馆的紧急联系电话保存到手机主屏幕",
+        "titleEn": "Save your country's consular emergency number to your phone home screen",
+        "detailZh": "可在 Sightour 应急页面找到 24 小时紧急联系电话。",
+        "detailEn": "Find 24-hour emergency numbers on the Sightour Emergency page.",
+        "officialUrl": null,
+        "order": 8
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "到达后：确认酒店已在 24 小时内将你的住宿信息登记至当地派出所",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "由酒店自动办理，前台会扫描你的护照。",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 9
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000040003",
+    "country": "GB",
+    "reason": "tourism",
+    "city": "SH",
+    "titleZh": "英国游客 · 上海入境清单",
+    "titleEn": "U.K. tourist · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "确认护照有效期超过入境日期 6 个月以上",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "少于 6 个月有效期的护照可能在边检被拒绝入境。",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "准备好回程 / 离境机票（飞机、火车或汽车）",
+        "titleEn": "Have proof of onward/return ticket (flight, train or bus out of China)",
+        "detailZh": "可打印或保存在手机。",
+        "detailEn": "Keep a printed or mobile copy.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "保存酒店中文地址 — 可给出租车司机看",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "建议截图保存。",
+        "detailEn": "Screenshot it for offline use.",
+        "officialUrl": null,
+        "order": 3
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "购买涵盖医疗运送的旅行保险（推荐）",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "建议保额不低于 5 万英镑。",
+        "detailEn": "Recommended coverage: at least GBP 50,000 including medical evacuation.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "出发前下载首次入境城市的离线数据包",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "可在 Sightour 应用 我的 → 离线包 中下载。",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "随身携带少量人民币现金（¥500–¥1000）以备前 24 小时使用",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "英国借记卡在 ATM 上通常可取现。",
+        "detailEn": "UK debit cards usually work at major ATMs.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "phrases-saved",
+        "titleZh": "在 工具 → 常用短语 中保存至少 10 条应急短语",
+        "titleEn": "Save at least 10 emergency phrases in Tools → Phrase book",
+        "detailZh": "建议包含「打车」「点餐」「问路」「紧急」等场景。",
+        "detailEn": "Cover scenarios like taxi, dining, asking directions, and emergency.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "将你所在国家领事馆的紧急联系电话保存到手机主屏幕",
+        "titleEn": "Save your country's consular emergency number to your phone home screen",
+        "detailZh": "英国领事馆 24 小时全球热线 +44 20 7008 1500。",
+        "detailEn": "FCDO 24/7 global line: +44 20 7008 1500.",
+        "officialUrl": "https://www.gov.uk/foreign-travel-advice/china",
+        "order": 8
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "到达后：确认酒店已在 24 小时内将你的住宿信息登记至当地派出所",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "由酒店自动办理，前台会扫描你的护照。",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 9
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000040004",
+    "country": "GB",
+    "reason": "business",
+    "city": "SH",
+    "titleZh": "英国商务访客 · 上海入境清单",
+    "titleEn": "U.K. business visitor · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "确认护照有效期超过入境日期 6 个月以上",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "少于 6 个月有效期的护照可能在边检被拒绝入境。",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "准备好回程 / 离境机票（飞机、火车或汽车）",
+        "titleEn": "Have proof of onward/return ticket (flight, train or bus out of China)",
+        "detailZh": "可打印或保存在手机。",
+        "detailEn": "Keep a printed or mobile copy.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "business-invitation",
+        "titleZh": "携带中方合作方出具的邀请函（商务活动证明）",
+        "titleEn": "Bring a business invitation letter from your Chinese partner",
+        "detailZh": "包含会议名称、日期、地点及邀请方信息。",
+        "detailEn": "Should include the meeting name, date, venue, and inviting party information.",
+        "officialUrl": null,
+        "order": 3
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "保存酒店中文地址 — 可给出租车司机看",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "建议截图保存。",
+        "detailEn": "Screenshot it for offline use.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "购买涵盖医疗运送的旅行保险（推荐）",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "建议保额不低于 5 万英镑。",
+        "detailEn": "Recommended coverage: at least GBP 50,000.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "出发前下载首次入境城市的离线数据包",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "可在 Sightour 应用 我的 → 离线包 中下载。",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "随身携带少量人民币现金（¥500–¥1000）以备前 24 小时使用",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "商务卡可能在小型商户不通用。",
+        "detailEn": "Corporate cards are not always accepted at small vendors.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "将你所在国家领事馆的紧急联系电话保存到手机主屏幕",
+        "titleEn": "Save your country's consular emergency number to your phone home screen",
+        "detailZh": "FCDO 24/7 全球热线 +44 20 7008 1500。",
+        "detailEn": "FCDO 24/7 global line: +44 20 7008 1500.",
+        "officialUrl": "https://www.gov.uk/foreign-travel-advice/china",
+        "order": 8
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "到达后：确认酒店已在 24 小时内将你的住宿信息登记至当地派出所",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "由酒店自动办理，前台会扫描你的护照。",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 9
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000040005",
+    "country": "JP",
+    "reason": "tourism",
+    "city": "SH",
+    "titleZh": "日本游客 · 上海入境清单",
+    "titleEn": "Japanese tourist · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "パスポートの残存有効期間が入国日から 6 ヶ月以上あることを確認",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "6 ヶ月未満の残存期間だと入国拒否される可能性があります。",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "復路 / 出国チケット（飛行機・列車・バス）を用意",
+        "titleEn": "Have proof of onward/return ticket (flight, train or bus out of China)",
+        "detailZh": "印刷またはスマホで保存。",
+        "detailEn": "Keep a printed or mobile copy.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "ホテルの住所を中国語で保存 — タクシー運転手に見せるため",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "スクリーンショット推奨。",
+        "detailEn": "Screenshot it for offline use.",
+        "officialUrl": null,
+        "order": 3
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "医療搬送を含む旅行保険に加入（推奨）",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "補償額 500 万円以上推奨。",
+        "detailEn": "Recommended coverage: at least JPY 5,000,000.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "出発前に初入国都市のオフラインパックをダウンロード",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "Sightour アプリの「マイ → オフラインパック」からダウンロード可能。",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "最初の 24 時間用に少額の人民元現金（500〜1000 元）を携帯",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "モバイル決済アプリのセットアップ中に必要。",
+        "detailEn": "Cash is needed for taxis and small vendors while you set up mobile payment apps.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "phrases-saved",
+        "titleZh": "ツール → よく使うフレーズ に 10 件以上保存",
+        "titleEn": "Save at least 10 emergency phrases in Tools → Phrase book",
+        "detailZh": "タクシー・食事・道案内・緊急時など。",
+        "detailEn": "Cover scenarios like taxi, dining, asking directions, and emergency.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "自国領事館の緊急連絡先をスマホのホーム画面に保存",
+        "titleEn": "Save your country's consular emergency number to your phone home screen",
+        "detailZh": "在 Shanghai 日本国総領事館 代表 021-5257-4766。",
+        "detailEn": "Consulate General of Japan in Shanghai: 021-5257-4766.",
+        "officialUrl": "https://www.cn.emb-japan.go.jp/",
+        "order": 8
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "到着後、ホテルが 24 時間以内にあなたの宿泊情報を当地派出所に登録したことを確認",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "ホテルが自動で処理。",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 9
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000040006",
+    "country": "JP",
+    "reason": "business",
+    "city": "SH",
+    "titleZh": "日本商务访客 · 上海入境清单",
+    "titleEn": "Japanese business visitor · Shanghai arrival checklist",
+    "items": [
+      {
+        "id": "passport-validity",
+        "titleZh": "パスポートの残存有効期間が入国日から 6 ヶ月以上あることを確認",
+        "titleEn": "Check passport has at least 6 months validity beyond entry date",
+        "detailZh": "6 ヶ月未満の残存期間だと入国拒否される可能性があります。",
+        "detailEn": "Passports with under 6 months of remaining validity may be denied boarding or entry.",
+        "officialUrl": null,
+        "order": 1
+      },
+      {
+        "id": "return-ticket",
+        "titleZh": "復路 / 出国チケット（飛行機・列車・バス）を用意",
+        "titleEn": "Have proof of onward/return ticket (flight, train or bus out of China)",
+        "detailZh": "印刷またはスマホで保存。",
+        "detailEn": "Keep a printed or mobile copy.",
+        "officialUrl": null,
+        "order": 2
+      },
+      {
+        "id": "business-invitation",
+        "titleZh": "中国側パートナーからの招聘状を持参",
+        "titleEn": "Bring a business invitation letter from your Chinese partner",
+        "detailZh": "会議名・日時・場所・招聘元情報を含む。",
+        "detailEn": "Should include the meeting name, date, venue, and inviting party information.",
+        "officialUrl": null,
+        "order": 3
+      },
+      {
+        "id": "hotel-booking",
+        "titleZh": "ホテルの住所を中国語で保存 — タクシー運転手に見せるため",
+        "titleEn": "Save hotel address in Chinese characters — show it to taxi drivers",
+        "detailZh": "スクリーンショット推奨。",
+        "detailEn": "Screenshot it for offline use.",
+        "officialUrl": null,
+        "order": 4
+      },
+      {
+        "id": "travel-insurance",
+        "titleZh": "医療搬送を含む旅行保険に加入（推奨）",
+        "titleEn": "Buy travel insurance covering medical evacuation (recommended)",
+        "detailZh": "補償額 500 万円以上推奨。",
+        "detailEn": "Recommended coverage: at least JPY 5,000,000.",
+        "officialUrl": null,
+        "order": 5
+      },
+      {
+        "id": "offline-pack",
+        "titleZh": "出発前に初入国都市のオフラインパックをダウンロード",
+        "titleEn": "Download the offline pack for your first-arrival city before departure",
+        "detailZh": "Sightour アプリの「マイ → オフラインパック」からダウンロード可能。",
+        "detailEn": "Download from Sightour app under You → Offline packs.",
+        "officialUrl": null,
+        "order": 6
+      },
+      {
+        "id": "cash-mix",
+        "titleZh": "最初の 24 時間用に少額の人民元現金（500〜1000 元）を携帯",
+        "titleEn": "Carry a small amount of CNY cash (¥500–¥1000) for the first 24h",
+        "detailZh": "法人カードは小規模店で使えないことがある。",
+        "detailEn": "Corporate cards are not always accepted at small vendors.",
+        "officialUrl": null,
+        "order": 7
+      },
+      {
+        "id": "embassy-saved",
+        "titleZh": "自国領事館の緊急連絡先をスマホのホーム画面に保存",
+        "titleEn": "Save your country's consular emergency number to your phone home screen",
+        "detailZh": "在 Shanghai 日本国総領事館 代表 021-5257-4766。",
+        "detailEn": "Consulate General of Japan in Shanghai: 021-5257-4766.",
+        "officialUrl": "https://www.cn.emb-japan.go.jp/",
+        "order": 8
+      },
+      {
+        "id": "24h-registration",
+        "titleZh": "到着後、ホテルが 24 時間以内にあなたの宿泊情報を当地派出所に登録したことを確認",
+        "titleEn": "On arrival: confirm the hotel has registered your stay with the local police station within 24h",
+        "detailZh": "ホテルが自動で処理。",
+        "detailEn": "Hotels handle this automatically — the front desk will scan your passport on check-in.",
+        "officialUrl": null,
+        "order": 9
+      }
+    ]
+  }
+]

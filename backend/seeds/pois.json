@@ -1,0 +1,273 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "nameZh": "外滩",
+    "nameEn": "The Bund (外滩)",
+    "addressZh": "上海市黄浦区中山东一路",
+    "addressEn": "Zhongshan East 1st Road, Huangpu District, Shanghai",
+    "lat": 31.2398,
+    "lng": 121.4905,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-6321-4094",
+    "openHours": "全天开放",
+    "imageUrls": [
+      "https://images.sightour.example/poi/bund-day.jpg",
+      "https://images.sightour.example/poi/bund-night.jpg"
+    ],
+    "descriptionZh": "外滩是上海最著名的地标，沿黄浦江 1.5 公里，保留 52 栋 20 世纪初的万国建筑群。推荐傍晚前往，可以同时欣赏日落与对岸陆家嘴摩天楼灯光秀。",
+    "descriptionEn": "The Bund is Shanghai's most iconic waterfront, a 1.5 km stretch along the Huangpu River lined with 52 colonial-era buildings. Visit at sunset to catch the skyline light show across the river in Lujiazui."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "nameZh": "豫园",
+    "nameEn": "Yu Garden (豫园)",
+    "addressZh": "上海市黄浦区福佑路 279 号",
+    "addressEn": "279 Fuyou Road, Huangpu District, Shanghai",
+    "lat": 31.2270,
+    "lng": 121.4920,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-6326-0830",
+    "openHours": "周二至周日 09:00–16:30（周一闭园）",
+    "imageUrls": [
+      "https://images.sightour.example/poi/yu-garden-1.jpg"
+    ],
+    "descriptionZh": "建于明代的江南古典园林，距今已有 450 余年历史。与城隍庙、豫园商城相连，可一并游览。建议工作日上午前往以避开人潮。",
+    "descriptionEn": "A 450-year-old Ming-dynasty Jiangnan garden. Combined with the City God Temple and bazaar it forms a half-day stop. Visit on weekday mornings to avoid crowds."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "nameZh": "东方明珠塔",
+    "nameEn": "Oriental Pearl Tower",
+    "addressZh": "上海市浦东新区世纪大道 1 号",
+    "addressEn": "1 Century Avenue, Pudong New Area, Shanghai",
+    "lat": 31.2397,
+    "lng": 121.4995,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-5879-1888",
+    "openHours": "08:00–21:30",
+    "imageUrls": [
+      "https://images.sightour.example/poi/pearl-tower.jpg"
+    ],
+    "descriptionZh": "上海地标电视塔，高 468 米。建议傍晚登塔，先看日落再看夜景。注意：观景层周一至周五人较少。",
+    "descriptionEn": "Shanghai's signature TV tower at 468m. Best visited around sunset to see both daylight and the city lights. Weekday evenings are least crowded."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000004",
+    "nameZh": "南京路步行街",
+    "nameEn": "Nanjing Road Pedestrian Street",
+    "addressZh": "上海市黄浦区南京东路",
+    "addressEn": "Nanjing East Road, Huangpu District, Shanghai",
+    "lat": 31.2360,
+    "lng": 121.4800,
+    "category": "shopping",
+    "city": "SH",
+    "contact": null,
+    "openHours": "10:00–22:00（多数商户）",
+    "imageUrls": [
+      "https://images.sightour.example/poi/nanjing-road.jpg"
+    ],
+    "descriptionZh": "中国最著名的商业街之一，全长 5.5 公里。步行街段（西藏中路至外滩）适合首次到访的游客体验上海繁华。",
+    "descriptionEn": "One of the world's busiest shopping streets (5.5 km long). The pedestrian section from Xizang Road to the Bund is the tourist highlight."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000005",
+    "nameZh": "新天地",
+    "nameEn": "Xintiandi",
+    "addressZh": "上海市黄浦区马当路 245 号",
+    "addressEn": "245 Madang Road, Huangpu District, Shanghai",
+    "lat": 31.2200,
+    "lng": 121.4760,
+    "category": "dining",
+    "city": "SH",
+    "contact": "+86-21-5383-6999",
+    "openHours": "11:00–02:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/xintiandi.jpg"
+    ],
+    "descriptionZh": "石库门改造的时尚街区，融合了中西餐厅、酒吧、精品店。氛围适合晚餐与小酌。预算较中高端。",
+    "descriptionEn": "A refurbished shikumen block with upscale dining, bars, and boutique shopping. Best for dinner and a drink. Mid-to-high price range."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000006",
+    "nameZh": "田子坊",
+    "nameEn": "Tianzifang",
+    "addressZh": "上海市黄浦区泰康路 210 弄",
+    "addressEn": "Lane 210, Taikang Road, Huangpu District, Shanghai",
+    "lat": 31.2100,
+    "lng": 121.4655,
+    "category": "attraction",
+    "city": "SH",
+    "contact": null,
+    "openHours": "10:00–22:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/tianzifang.jpg"
+    ],
+    "descriptionZh": "由老厂房改造的创意园区，狭窄巷弄里有独立咖啡馆、设计小店和艺术工作室。比新天地更具本地生活气息。",
+    "descriptionEn": "A converted factory lane with indie cafés, design shops, and artist studios. Narrow lanes give a more local feel than Xintiandi."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000007",
+    "nameZh": "法租界漫步",
+    "nameEn": "Former French Concession walk",
+    "addressZh": "上海市徐汇区衡山路—武康路一带",
+    "addressEn": "Around Hengshan Rd / Wukang Rd, Xuhui District, Shanghai",
+    "lat": 31.2170,
+    "lng": 121.4520,
+    "category": "attraction",
+    "city": "SH",
+    "contact": null,
+    "openHours": "全天开放",
+    "imageUrls": [
+      "https://images.sightour.example/poi/french-concession.jpg"
+    ],
+    "descriptionZh": "上海最浪漫的街区，梧桐树荫下的法式洋房散布其中。推荐路线：武康路 → 安福路 → 衡山路，约 2 小时步行。",
+    "descriptionEn": "Shangai's most romantic district, with plane-tree-lined streets and 1920s French villas. Suggested walk: Wukang Rd → Anfu Rd → Hengshan Rd (~2 hours)."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000008",
+    "nameZh": "静安寺",
+    "nameEn": "Jing'an Temple (静安寺)",
+    "addressZh": "上海市静安区南京西路 1686 号",
+    "addressEn": "1686 Nanjing West Road, Jing'an District, Shanghai",
+    "lat": 31.2230,
+    "lng": 121.4450,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-6258-8366",
+    "openHours": "07:30–17:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/jingan-temple.jpg"
+    ],
+    "descriptionZh": "始建于三国（公元 247 年），上海最古老的佛教寺院之一。门票 ¥50，建议早晨前往，体验都市中的宁静。",
+    "descriptionEn": "Dating back to 247 AD, one of Shanghai's oldest Buddhist temples. Entrance ¥50. Best in the morning for a calm visit amid the busy city."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000009",
+    "nameZh": "上海博物馆",
+    "nameEn": "Shanghai Museum",
+    "addressZh": "上海市黄浦区人民大道 201 号",
+    "addressEn": "201 Renmin Avenue, Huangpu District, Shanghai",
+    "lat": 31.2300,
+    "lng": 121.4750,
+    "category": "attraction",
+    "city": "SH",
+    "contact": "+86-21-6372-3500",
+    "openHours": "周二至周日 09:00–17:00（周一闭馆）",
+    "imageUrls": [
+      "https://images.sightour.example/poi/shanghai-museum.jpg"
+    ],
+    "descriptionZh": "上海最重要的综合博物馆，馆藏青铜器、陶瓷、书画、钱币等 100 余万件。免费开放，需提前 1–7 天预约。",
+    "descriptionEn": "Shanghai's flagship museum — over 1M objects spanning bronzes, ceramics, calligraphy, and coins. Free entry, reservation 1–7 days ahead."
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000000000a",
+    "nameZh": "花马天堂",
+    "nameEn": "Lost Heaven (花马天堂)",
+    "addressZh": "上海市黄浦区马当路 388 号",
+    "addressEn": "388 Madang Road, Huangpu District, Shanghai",
+    "lat": 31.2200,
+    "lng": 121.4800,
+    "category": "dining",
+    "city": "SH",
+    "contact": "+86-21-6445-9525",
+    "openHours": "11:30–14:30, 17:30–22:30",
+    "imageUrls": [
+      "https://images.sightour.example/poi/lost-heaven.jpg"
+    ],
+    "descriptionZh": "云南·缅甸风味的精品餐厅，环境如同热带植物园。招牌菜：缅甸茶叶沙拉、香茅烤鱼。人均 ¥250。",
+    "descriptionEn": "Yunnan / Burmese fine dining in a tropical-garden setting. Signature dishes: Burmese tea-leaf salad and lemongrass-grilled fish. ~¥250 pp."
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000000000b",
+    "nameZh": "佳家汤包",
+    "nameEn": "Jia Jia Tang Bao (佳家汤包)",
+    "addressZh": "上海市黄浦区丽水路 41 号",
+    "addressEn": "41 Lishui Road, Huangpu District, Shanghai",
+    "lat": 31.2250,
+    "lng": 121.4850,
+    "category": "dining",
+    "city": "SH",
+    "contact": "+86-21-6328-5989",
+    "openHours": "07:00–20:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/jia-jia-tang-bao.jpg"
+    ],
+    "descriptionZh": "本地人最爱的汤包店之一，蟹粉鲜肉汤包是招牌。比南翔小笼更实惠，味道不输老字号。",
+    "descriptionEn": "A local favorite for soup dumplings. Their crab-roe pork xiaolongbao rivals the famous Nanxiang at half the price. Cash only at some counters."
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000000000c",
+    "nameZh": "上海半岛酒店",
+    "nameEn": "The Peninsula Shanghai",
+    "addressZh": "上海市黄浦区中山东一路 32 号",
+    "addressEn": "32 Zhongshan East 1st Road, Huangpu District, Shanghai",
+    "lat": 31.2380,
+    "lng": 121.4880,
+    "category": "lodging",
+    "city": "SH",
+    "contact": "+86-21-2327-2888",
+    "openHours": "全年 24 小时",
+    "imageUrls": [
+      "https://images.sightour.example/poi/peninsula-sh.jpg"
+    ],
+    "descriptionZh": "位于外滩核心位置的奢华酒店，窗外即黄浦江与陆家嘴天际线。泳池、下午茶、管家服务均为业内标杆。",
+    "descriptionEn": "A flagship luxury hotel on the Bund with direct views of Lujiazui. Famous for its rooftop pool, afternoon tea, and butler service."
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000000000d",
+    "nameZh": "养云安缦",
+    "nameEn": "Aman Shanghai (养云安缦)",
+    "addressZh": "上海市闵行区马桥镇旗忠村",
+    "addressEn": "Qizhong Village, Maqiao Town, Minhang District, Shanghai",
+    "lat": 31.0500,
+    "lng": 121.3900,
+    "category": "lodging",
+    "city": "SH",
+    "contact": "+86-21-8011-9999",
+    "openHours": "全年 24 小时",
+    "imageUrls": [
+      "https://images.sightour.example/poi/amani.jpg"
+    ],
+    "descriptionZh": "由 50 栋明清古宅复建而成的安缦度假村，毗邻 600 年香樟林。距市中心约 40 分钟车程，闹中取静。",
+    "descriptionEn": "A resort built from 50 heritage Ming/Qing-era houses relocated from Jiangxi, next to a 600-year camphor forest. ~40 min from city center."
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000000000e",
+    "nameZh": "环球港购物中心",
+    "nameEn": "Global Harbor mall",
+    "addressZh": "上海市普陀区中山北路 3300 号",
+    "addressEn": "3300 Zhongshan North Road, Putuo District, Shanghai",
+    "lat": 31.2360,
+    "lng": 121.4040,
+    "category": "shopping",
+    "city": "SH",
+    "contact": "+86-21-6025-8888",
+    "openHours": "10:00–22:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/global-harbor.jpg"
+    ],
+    "descriptionZh": "上海最大购物中心之一，欧式建筑外观内有 400+ 商铺、品牌餐饮和影院。地铁 3/4/13 号线金沙江路站直达。",
+    "descriptionEn": "One of Shanghai's largest malls with European-style architecture, 400+ shops, restaurants and a cinema. Direct metro access via lines 3/4/13."
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000000000f",
+    "nameZh": "浦东苹果零售店",
+    "nameEn": "Apple Store Pudong",
+    "addressZh": "上海市浦东新区世纪大道 8 号 IFC 商场",
+    "addressEn": "IFC Mall, 8 Century Avenue, Pudong New Area, Shanghai",
+    "lat": 31.2380,
+    "lng": 121.4990,
+    "category": "shopping",
+    "city": "SH",
+    "contact": "+86-21-8012-9900",
+    "openHours": "10:00–22:00",
+    "imageUrls": [
+      "https://images.sightour.example/poi/apple-pudong.jpg"
+    ],
+    "descriptionZh": "位于国金中心商场一层的苹果直营店，可现场体验 iPhone / Mac / Apple Vision Pro 等全系产品。提供 Today at Apple 免费课程。",
+    "descriptionEn": "Apple's flagship Pudong store inside IFC Mall. Try the full iPhone / Mac / Apple Vision Pro lineup and free Today at Apple sessions."
+  }
+]

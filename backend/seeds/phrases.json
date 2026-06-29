@@ -1,0 +1,122 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000090001",
+    "category": "customs",
+    "en": "I have nothing to declare.",
+    "zh": "我没有什么需要申报。",
+    "pinyin": "Wǒ méiyǒu shénme xūyào shēnbào.",
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090002",
+    "category": "customs",
+    "en": "This is for personal use only.",
+    "zh": "这是个人自用物品。",
+    "pinyin": "Zhè shì gèrén zìyòng wùpǐn.",
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090003",
+    "category": "customs",
+    "en": "I am transiting to a third country.",
+    "zh": "我是过境前往第三国。",
+    "pinyin": "Wǒ shì guòjìng qiánwǎng dì sān guó.",
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090004",
+    "category": "taxi",
+    "en": "Please take me to this address.",
+    "zh": "请送我到这个地址。",
+    "pinyin": "Qǐng sòng wǒ dào zhège dìzhǐ.",
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090005",
+    "category": "taxi",
+    "en": "Please use the meter.",
+    "zh": "请打表。",
+    "pinyin": "Qǐng dǎ biǎo.",
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090006",
+    "category": "taxi",
+    "en": "Stop here, thank you.",
+    "zh": "就停在这里，谢谢。",
+    "pinyin": "Jiù tíng zài zhèlǐ, xièxiè.",
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090007",
+    "category": "dining",
+    "en": "I am allergic to peanuts.",
+    "zh": "我对花生过敏。",
+    "pinyin": "Wǒ duì huāshēng guòmǐn.",
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090008",
+    "category": "dining",
+    "en": "Could I see the menu, please?",
+    "zh": "请给我看一下菜单。",
+    "pinyin": "Qǐng gěi wǒ kàn yīxià càidān.",
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000090009",
+    "category": "dining",
+    "en": "The check, please.",
+    "zh": "请买单。",
+    "pinyin": "Qǐng mǎidān.",
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000009000a",
+    "category": "medical",
+    "en": "I need a doctor.",
+    "zh": "我需要看医生。",
+    "pinyin": "Wǒ xūyào kàn yīshēng.",
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000009000b",
+    "category": "medical",
+    "en": "Please call an ambulance.",
+    "zh": "请叫救护车。",
+    "pinyin": "Qǐng jiào jiùhùchē.",
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000009000c",
+    "category": "medical",
+    "en": "Where is the nearest hospital?",
+    "zh": "最近的医院在哪里？",
+    "pinyin": "Zuìjìn de yīyuàn zài nǎlǐ?",
+    "order": 3
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000009000d",
+    "category": "emergency",
+    "en": "Help! I need the police.",
+    "zh": "救命！我需要报警。",
+    "pinyin": "Jiùmìng! Wǒ xūyào bàojǐng.",
+    "order": 1
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000009000e",
+    "category": "emergency",
+    "en": "I have lost my passport.",
+    "zh": "我的护照丢了。",
+    "pinyin": "Wǒ de hùzhào diū le.",
+    "order": 2
+  },
+  {
+    "id": "00000000-0000-0000-0000-00000009000f",
+    "category": "emergency",
+    "en": "Please contact my embassy.",
+    "zh": "请联系我的大使馆。",
+    "pinyin": "Qǐng liánxì wǒ de dàshǐguǎn.",
+    "order": 3
+  }
+]
