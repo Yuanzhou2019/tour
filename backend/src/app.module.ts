@@ -12,6 +12,7 @@ import { ChecklistModule } from './modules/checklist/checklist.module';
 import { CorrectionModule } from './modules/correction/correction.module';
 import { UserModule } from './modules/user/user.module';
 import { ContentPackModule } from './modules/content-pack/content-pack.module';
+import { SeedModule } from './seeds/seed.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { ContentPackModule } from './modules/content-pack/content-pack.module';
     CorrectionModule,
     UserModule,
     ContentPackModule,
+    SeedModule,
   ],
 })
 export class AppModule {}
