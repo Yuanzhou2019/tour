@@ -12,6 +12,8 @@ import { ChecklistModule } from './modules/checklist/checklist.module';
 import { CorrectionModule } from './modules/correction/correction.module';
 import { UserModule } from './modules/user/user.module';
 import { ContentPackModule } from './modules/content-pack/content-pack.module';
+import { DiscoverModule } from './modules/discover/discover.module';
+import { ToolsModule } from './modules/tools/tools.module';
 import { SeedModule } from './seeds/seed.module';
 
 @Module({
@@ -29,6 +31,8 @@ import { SeedModule } from './seeds/seed.module';
     CorrectionModule,
     UserModule,
     ContentPackModule,
+    DiscoverModule,
+    ToolsModule,
     SeedModule,
   ],
 })
