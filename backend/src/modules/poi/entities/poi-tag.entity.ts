@@ -1,4 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  JoinColumn,
+} from 'typeorm';
 import { Poi } from './poi.entity';
 
 @Entity('poi_tags')
@@ -18,7 +24,7 @@ export class PoiTag {
   @Column({ length: 200 })
   labelEn!: string;
 
-  @ManyToOne(() => Poi, poi => poi.tags, { onDelete: 'CASCADE' })
+  @ManyToOne(() => Poi, (poi) => poi.tags, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'poi_id' })
   poi!: Poi;
 }

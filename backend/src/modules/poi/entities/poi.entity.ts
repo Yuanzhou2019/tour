@@ -1,4 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany, Index } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+  Index,
+} from 'typeorm';
 import { PoiTag } from './poi-tag.entity';
 import { PoiReputation } from './poi-reputation.entity';
 
@@ -47,9 +53,9 @@ export class Poi {
   @Column({ type: 'text', nullable: true })
   descriptionEn?: string;
 
-  @OneToMany(() => PoiTag, tag => tag.poi)
+  @OneToMany(() => PoiTag, (tag) => tag.poi)
   tags?: PoiTag[];
 
-  @OneToMany(() => PoiReputation, rep => rep.poi)
+  @OneToMany(() => PoiReputation, (rep) => rep.poi)
   reputation?: PoiReputation;
 }

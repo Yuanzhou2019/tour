@@ -1,4 +1,11 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn, UpdateDateColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  JoinColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 import { Poi } from './poi.entity';
 
 @Entity('poi_reputations')
@@ -6,7 +13,7 @@ export class PoiReputation {
   @PrimaryGeneratedColumn('uuid')
   id!: string;
 
-  @ManyToOne(() => Poi, poi => poi.reputation, { onDelete: 'CASCADE' })
+  @ManyToOne(() => Poi, (poi) => poi.reputation, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'poi_id' })
   poi!: Poi;
 

@@ -7,7 +7,8 @@ export class Phrase {
   id!: string;
 
   @Column({ length: 32 })
-  category!: 'customs' | 'taxi' | 'dining' | 'medical' | 'emergency' | 'shopping';
+  category!:
+    'customs' | 'taxi' | 'dining' | 'medical' | 'emergency' | 'shopping';
 
   @Column({ type: 'text' })
   en!: string;

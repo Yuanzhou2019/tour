@@ -1,4 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, Index, UpdateDateColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  Index,
+  UpdateDateColumn,
+} from 'typeorm';
 
 export interface RankItem {
   poiId: string;
@@ -14,7 +20,15 @@ export class Rank {
   id!: string;
 
   @Column({ length: 32 })
-  category!: 'dining' | 'shopping' | 'attraction' | 'family' | 'couple' | 'business' | 'solo' | 'warning';
+  category!:
+    | 'dining'
+    | 'shopping'
+    | 'attraction'
+    | 'family'
+    | 'couple'
+    | 'business'
+    | 'solo'
+    | 'warning';
 
   @Column({ length: 200 })
   titleZh!: string;
