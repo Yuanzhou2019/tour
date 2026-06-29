@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { ConfigModule, ConfigService } from '@nestjs/config';
+import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TerminusModule } from '@nestjs/terminus';
 
-import { buildDatabaseConfig } from './config/database.config';
+import { buildTypeOrmConfig } from './config/typeorm.config';
 import { HealthModule } from './modules/health/health.module';
 import { PolicyModule } from './modules/policy/policy.module';
 import { PoiModule } from './modules/poi/poi.module';
@@ -17,9 +17,7 @@ import { ContentPackModule } from './modules/content-pack/content-pack.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: (configService: ConfigService) =>
-        buildDatabaseConfig(configService),
+      useFactory: () => buildTypeOrmConfig(),
     }),
     TerminusModule,
     HealthModule,

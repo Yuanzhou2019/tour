@@ -9,7 +9,9 @@ export interface MinioConfig {
   bucket: string;
 }
 
-export const buildMinioConfig = (configService: ConfigService): MinioConfig => ({
+export const buildMinioConfig = (
+  configService: ConfigService,
+): MinioConfig => ({
   endPoint: configService.get<string>('MINIO_ENDPOINT', 'localhost'),
   port: parseInt(configService.get<string>('MINIO_PORT', '9000'), 10),
   useSSL: configService.get<string>('MINIO_USE_SSL', 'false') === 'true',
