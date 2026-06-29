@@ -1,12 +1,17 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { ChecklistService } from './checklist.service';
 
-@Controller('checklist')
+@Controller('checklists')
 export class ChecklistController {
   constructor(private readonly checklistService: ChecklistService) {}
 
   @Get()
-  list() {
-    return this.checklistService.list();
+  list(@Query() query: { country?: string; reason?: string; city?: string }) {
+    return this.checklistService.list(query);
+  }
+
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.checklistService.findById(id);
   }
 }
