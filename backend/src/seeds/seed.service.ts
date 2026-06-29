@@ -57,7 +57,35 @@ export class SeedService {
     // 用 save() 实现 upsert：先清空再插入（开发期用，生产用 batch upsert）
     // 用 TRUNCATE ... CASCADE 避免被外键约束的子表阻塞
     await repo.query(`TRUNCATE TABLE "${repo.metadata.tableName}" CASCADE`);
-    await repo.save(data);
-    this.logger.log(`✓ ${key}: ${data.length} records`);
+    const processed = this.preprocessData(data, repo);
+    await repo.save(processed);
+    this.logger.log(`✓ ${key}: ${processed.length} records`);
+  }
+
+  /**
+   * Transform flat FK fields (e.g. "poiId": "uuid") into the nested form
+   * expected by TypeORM relations (e.g. "poi": { "id": "uuid" }). Any key
+   * ending with "Id" (other than "id" itself) is treated as a potential
+   * relation name; we only convert it if the seed JSON does not already
+   * provide the nested form, and the relation column is a string/number.
+   */
+  private preprocessData<T extends ObjectLiteral>(data: any[], repo: Repository<T>): T[] {
+    return data.map((record) => {
+      if (!record || typeof record !== 'object') return record;
+      const processed: any = { ...record };
+      Object.keys(processed).forEach((key) => {
+        if (key.endsWith('Id') && key !== 'id' && processed[key]) {
+          const relationName = key.slice(0, -2); // 'poiId' -> 'poi'
+          // Skip if the nested form is already present
+          if (
+            processed[relationName] === undefined ||
+            processed[relationName] === null
+          ) {
+            processed[relationName] = { id: processed[key] };
+          }
+        }
+      });
+      return processed as T;
+    });
   }
 }
